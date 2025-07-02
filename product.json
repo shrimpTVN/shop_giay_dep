@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id_product": "PrD001",
+      "name": "ULTRABOOST 5",
+      "brand": "Adidas",
+      "original_price": 1500000,
+      "rating": 4.8,
+      "product_description": "Giày thể thao adidas chạy bộ...",
+      "gender": "men",
+      "category": "sneakers",
+      "is_featured": true,
+      "id_sale": "KM01"
+    }
+  ],
+  "images": [
+    {
+      "id_image": "IMG01",
+      "id_product": "SP001",
+      "url": "images/products/product_ultraboost5.png"
+    },
+    {
+      "id_image": "IMG02",
+      "id_product": "SP001",
+      "url": "images/products/product_ultraboost5_02.png"
+    }
+  ],
+  "sizes": [
+    { "id_size": "SZ40", "size": 40 },
+    { "id_size": "SZ41", "size": 41 }
+  ],
+  "product_sizes": [
+    { "id_product": "SP001", "id_size": "SZ40", "stock": 10 },
+    { "id_product": "SP001", "id_size": "SZ41", "stock": 3 }
+  ],
+  "sales": [
+    {
+      "id_sale": "KM01",
+      "percent_of": 20.0,
+      "start_date": "2025-06-01",
+      "end_date": "2025-06-30",
+      "sale_title": "Mừng hè giảm sốc!",
+      "sale_description": "Giảm 20% cho tất cả giày nam"
+    }
+  ]
+}
