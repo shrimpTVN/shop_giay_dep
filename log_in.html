@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/log_in.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="page">
+    <header class="page__header"></header>
+
+    <main class="page__main">
+        <div class="main__container-form">
+            <div class="main__form">
+                <div class="form__header">
+                    <h1 class="form__title">Đăng Nhập</h1>
+                    <div class="form__qr">
+                        <img class="form__qr-img" src="./images/login/qr.avif" alt="QR">
+                        <p class="qr-cap">Đăng nhập bằng QR</p>
+                    </div>
+                </div>
+
+                <form action="" method="post">
+                    <div class="form__line">
+                        <label for="account"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" name="acount" id="account" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                    </div>
+                    <div class="form__line">
+                        <label for="pw"><i class="fa-solid fa-key"></i></label>
+                        <input type="password" name="pw" id="pw" placeholder="Mật khẩu">
+                    </div>
+                    <div class="form__line form__line--submit">
+                        <input type="submit" value="Đăng nhập">
+                    </div>
+                    <div class="form__line form__line--forget">
+                        <a href="#">Quên mật khẩu?</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="horizon-opt">
+                <hr><span>Hoặc</span><hr>
+            </div>
+            <div class="other-opt">
+                <a href="#">
+                    <img class="opt__img" src="./images/login/fb.jpg" alt="fb">
+                    <span class="opt__img-title">Facebook</span>
+                </a>
+                <a href="#">
+                    <img class="opt__img" src="./images/login/gg.jpg" alt="gg">
+                    <span class="opt__img-title">Gooble</span>
+                </a>
+            </div>
+            <div class="new-user">
+                <p>Bạn mới biết tới ShopGD? <a href="./register.html">Đăng ký</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page__footer"></footer>
+</body>
+
+</html>

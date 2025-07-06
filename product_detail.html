@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <script defer src="./js/detail.js"></script>
+</head>
+
+<body class="page">
+    <header class="page__header">
+        <!-- Bổ sung sau -->
+    </header>
+    <main class="page__main">
+        <section class="main__order">
+            <div class="order__slide">
+                <button id="slide__prev"><i class="fas fa-circle-arrow-left"></i></button>
+                <button id="slide__next"><i class="fas fa-circle-arrow-right"></i></button>
+                <div class="slide__transition" id="slide__transition">
+                    <img class="order__img" src="./images/products/product_ultraboost5.png" alt="product-img">
+                    <img class="order__img" src="./images/products/product_ultraboost5_02.png" alt="product-img">
+                </div>
+            </div>
+            <div class="main__opt">
+                <div class="opt__infor">
+                    <p class="opt__age">New</p>
+                    <h1 class="opt__title">Giày Sneaker Nam Nike Court Vision Low - Đen</h1>
+                    <p class="opt__type">Lifestyle, Retro Chunky, Leather, Lightweight Canvas</p>
+                    <p class="opt__price">300.000VNĐ</p>
+                </div>
+                <div class="opt__img-color">
+                    <img class="img-color" src="./images/products/detail/detail_imgColor.avif" alt="anh1">
+                    <img class="img-color" src="./images/products/detail/detail_imgColor2.avif" alt="anh2">
+                </div>
+                <div class="opt__size">
+                    <h2 class="size__title">Size</h2>
+                    <select class="size__select" id="size" name="size">
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                    </select>
+                    <span class="size__table"><a href="./images/products/detail/detail_size.jpg">Bảng size</a></span>
+                </div>
+                <div class="opt__add">
+                    <button class="add__button" type="submit">Thêm vào giỏ hàng</button>
+                    <div class="add__pick add__pick-ship">
+                        <input type="radio" name="pick" id="ship" checked>
+                        <label for="ship">
+                            <div class="pick-ship">
+                                <p class="pick__title">Giao Tới Nhà</p>
+                                <p class="pick__descript">3-5 ngày làm việc</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="add__pick add__pick-store">
+                        <input type="radio" name="pick" id="store">
+                        <label for="store">
+                            <div class="pick-store">
+                                <p class="pick__title">Lấy Tại Cửa Hàng</p>
+                                <p class="pick-store__address"><a href="#">Tìm cửa hàng(tại đây)</a></p>
+                                <p class="pick__descript">Lựa chọn của hàng để xem hàng có sẵn</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__description">
+            <h1 class="title--primary">Mô Tả</h1>
+            <div class="description">
+                <div class="description__common description__style">
+                    <h2 class="description__title--secondary">Kiểu VN000D22PWT</h2>
+                    <p>Bộ sưu tập Color Theory cho phép bạn tạo ra một câu chuyện màu sắc độc đáo bằng cách kết hợp
+                        những sắc thái rực rỡ, bất ngờ với phong cách giày dép
+                        mang tính biểu tượng của chúng tôi. Được định nghĩa bằng lưỡi giày phồng lên và Sidestripe đúc
+                        3D, đôi Knu Skool này tôn vinh phong cách giày
+                        dép ấn tượng của thập niên 90 đồng thời mang đến bảng màu tươi mới cho một nét hiện đại.
+                    </p>
+                </div>
+                <div class="description__common description__detail">
+                    <h2 class="description__title--secondary">Chi Tiết</h2>
+                    <ul class="detail__list">
+                        <li>Giày cổ thấp thập niên 90 được tái bản</li>
+                        <li>Phần trên bằng da lộn và vải bạt chắc chắn</li>
+                        <li>Lưỡi giày quá khổ và cổ giày có đệm để thoải mái hơn</li>
+                        <li>Sidestripe™ 3D Puffy kết hợp phong cách hoài cổ với nét hiện đại</li>
+                        <li>Thành bên bằng cao su bền với sọc foxing cổ điển</li>
+                        <li>Mũi giày được gia cố để chống mòn và rách nhiều</li>
+                    </ul>
+                </div>
+                <div class="description__common description__policy">
+                    <h2 class="description__title--secondary">Phí Giao Hàng &amp; Hoàn Trả</h2>
+                    <p>Nhận miễn phí vận chuyển tiêu chuẩn cho đơn hàng từ 500.000VNĐ trở lên. Bạn muốn được miễn phí
+                        vận chuyển cho mọi đơn hàng? Tham gia ShopDG để được
+                        miễn phí vận chuyển và các đặc quyền khác.
+                        <a href="./register.html">Đăng ký /</a>
+                        <a href="./log_in.html">Đăng nhập</a>
+                    </p>
+                    <p>Trả lại sản phẩm theo tình trạng ban đầu trong vòng 30 ngày và được miễn phí vận chuyển trả hàng
+                        - áp dụng cả trực tuyến và tại cửa hàng ShopGD.</p>
+                </div>
+            </div>
+        </section>
+        <section class="main__review">
+            <h1 class="title--primary">Phản Hồi</h1>
+            <div class="review__content">
+                <div class="review__star" id="rating">
+                    <input type="radio" name="rating" id="star1" value="1">
+                    <label class="start" for="star1" title="Tuyệt vời 5 sao"></label>
+
+                    <input type="radio" name="rating" id="star2" value="2">
+                    <label class="start" for="star2" title="Khá tôt 4 sao"></label>
+
+                    <input type="radio" name="rating" id="star3" value="3">
+                    <label class="start" for="star3" title="Ổn 3 sao"></label>
+
+                    <input type="radio" name="rating" id="star4" value="4">
+                    <label class="start" for="star4" title="Khá tệ 2 sao"></label>
+
+                    <input type="radio" name="rating" id="star5" value="5">
+                    <label class="start" for="star5" title="Tệ quá 1 sao"></label>
+                </div>
+                <div class="review__comment">
+                    <textarea name="comment" id="comment" placeholder="Nhận xét của bạn là động lực cho chúng tôi ngày càng hoàn thiện"></textarea>
+                </div>
+            </div>
+            <div class="review__submit">
+                <button class="button__submit" type="submit">Gửi</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page__footer">
+        <!-- Bổ sung sau -->
+    </footer>
+</body>
+
+</html>
