@@ -1,0 +1,89 @@
+[
+  {
+    "id": "PrD001",
+    "name": "Pureboost 5",
+    "brand": "Adidas",
+    "price": 3200000,
+    "discount": 30,
+    "price_after_discount": 2240000,
+    "gender": "men",
+    "category": "Giày chạy bộ",
+    "is_featured": true,
+    "images": [
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_mau_xanh_la_IE0523_06_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_mau_xanh_la_IE0523_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_06_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_trang_IE8463_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_trang_IE8463_06_standard.png"
+    ],
+    "sizes": [
+        { "size": 39, "stock": 4 },
+        { "size": 40, "stock": 10 },
+        { "size": 41, "stock": 3 }
+    ],
+    "color": [
+        "#113434",
+        "#776BBF",
+        "#F46092"
+    ]
+  },
+  {
+    "id": "PrD001",
+    "name": "Pureboost 5",
+    "brand": "Adidas",
+    "price": 3200000,
+    "discount": 30,
+    "price_after_discount": 2240000,
+    "gender": "men",
+    "category": "Giày chạy bộ",
+    "is_featured": true,
+    "images": [
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_mau_xanh_la_IE0523_06_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_mau_xanh_la_IE0523_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_06_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_trang_IE8463_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_trang_IE8463_06_standard.png"
+    ],
+    "sizes": [
+        { "size": 39, "stock": 4 },
+        { "size": 40, "stock": 10 },
+        { "size": 41, "stock": 3 }
+    ],
+    "color": [
+        "#113434",
+        "#776BBF",
+        "#F46092"
+    ]
+  },
+  {
+    "id": "PrD001",
+    "name": "Pureboost 5",
+    "brand": "Adidas",
+    "price": 3200000,
+    "discount": 30,
+    "price_after_discount": 2240000,
+    "gender": "men",
+    "category": "Giày chạy bộ",
+    "is_featured": true,
+    "images": [
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_mau_xanh_la_IE0523_06_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_mau_xanh_la_IE0523_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_06_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_trang_IE8463_02_standard.png",
+        "images/products/product_1/Giay_Chay_Bo_Pureboost_5_trang_IE8463_06_standard.png"
+    ],
+    "sizes": [
+        { "size": 39, "stock": 4 },
+        { "size": 40, "stock": 10 },
+        { "size": 41, "stock": 3 }
+    ],
+    "color": [
+        "#113434",
+        "#776BBF",
+        "#F46092"
+    ]
+  }
+]
