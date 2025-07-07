@@ -1,0 +1,12 @@
+//gender:[men, women, kids]
++ id:int
++ name: string
+//+ type: 
++ brand: string
++ gender: string
++ value: float
++ discount: float 
++ image: []
++ color: []
++ color_name: []
++ describe: 
