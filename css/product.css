@@ -1,43 +1,3 @@
-/* ===== ĐỊNH NGHĨA GIRD VÀ VÙNG ===== */
-.page {
-    display: grid;
-
-    grid-template-areas: "header-cell" "main-cell" "footer-cell";
-
-    margin: 0 auto;
-    border: 1px solid;
-    padding: 0 5px;
-    max-width: 1440px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
-    border: dashed blue;
-}
-.page__header {
-    grid-area: header-cell;
-    border: 3px solid red;
-}
-.header__nav {
-    border: 1px solid black;
-    padding-top: 10px;
-    display: flow-root;
-}
-.page__content {
-    grid-area: main-cell;
-    border: 3px solid purple;
-}
-.page__footer {
-    grid-area: footer-cell;
-    border: 3px solid black;
-}
-
-/* --- Định nghĩa bổ sung cho main --- */
-.page__content{
-    /* grid-area: main_cell; */
-    display: grid;      /*  Nested-gird muc I */
-    border-radius: 5px;
-    padding: 0 5px;
-}
-
 /* ===== Định nghĩa MAIN thành hai cột ===== */
 .page__content--one-column{
     /* grid-template-columns: auto; co the dinh nghia mot o nhu nay  */
@@ -60,7 +20,7 @@
 }
 /* --- Định nghĩa PRODUCT-LISTING dạt phải hàng thứ hai --- */
 .product-filter-listing--two-column-rightside {
-    border: solid green;
+    /* border: solid green; */
     border-left: 1px solid rgba(0,0,0,0.3);
     grid-area: product_listing-cell;
 }
@@ -86,356 +46,183 @@
     .product-filter__title {
         border-bottom: 1px solid rgba(0, 0, 0, 1);
         width: 100%;
-        margin: 2rem 0 2rem 0;
+        margin: 0.5rem 0 1rem 0;
         padding-bottom: 1rem;
     }
     /* --- các GROUP filter ---  */
-    .product-filter__group {
-        /* border: 1px solid red; */
-        margin-bottom: 2rem;
-        width: 100%;
+    .filter-group__accordion {
+        background-color: #3f3f3f;
+        cursor: pointer;
+        
+        margin: 1px;
+        padding: 1.5rem 1rem 1.5rem 0.8rem;
+        width: 98%;
+        border: none;
+        
+        text-align: left;
+        color: #fff;
+        outline: none;
 
+        transition: 0.4s;
     }
-        .filter-group__title {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    .active, .filter-group__accordion:hover {
+        background-color: #111111;
+        color: #fff;
+    }
+    .filter-group__options {
+        background-color: #f9f9f9;
 
-            height: 2rem;
-            margin: 0 1rem;
-            padding-bottom: 0.3rem;
-            border-bottom: 1px solid rgba(0,0,0,0.3);
-        }
-            .filter-group__title h4 {
-                margin: 0;
-            }
-            .filter-group__custom-checkbox {
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
+        width: 100%;
+        margin: -1px 0 1rem 1px;
+        padding: 1rem 1rem 0 1rem;
+        border-left: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
 
-                aspect-ratio: 1/ 1;
-                height: 100%;
-                padding: 0.6rem 0 0.8rem 0.7rem;
-                /* margin: 0.7rem; */
-                
-                cursor: pointer;
-            }
-                .filter-group__custom-checkbox input[type="checkbox"] {
-                    display: none;
-                }
-                .filter-group__custom-checkbox span {
-                    display: flex;
-                    align-items: center;
-                    aspect-ratio: 1/ 1;
-                    height: 60%;
- 
-                    background-image: url(../images/products/product_bottom_arrow_black.png);
-                    background-size: cover;
-                    background-position: center;
-                    
-                }
-                .filter-group__options {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    margin: 0.3rem 1rem;
-                    padding-bottom: 0.3rem;
-                }
-                    .filter-group-option__custom-checkbox {
-                        display: flex;
-                        align-items: center;
-                        margin: 0.3rem 0;
-                    }
-                        /* ----- Tạo khoảng cách giữ check box và text ------  */
-                        .filter-group-option__custom-checkbox span {
-                            margin-left: 0.4rem;
-                        }
-                .filter-group__custom-checkbox input[type="checkbox"]:checked + span{
-                    background-image: url(../images/products/product_top_arrow_black.png);
-                }
-                .
+        display: none; 
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .filter-group-option__custom-checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    .filter-group-option__custom-checkbox span {
+        margin-left: 0.9rem;
+        padding-top: 0.2rem;
+    }
+    .filter-group-option__custom-checkbox input {
+        transform: scale(1.2);
+    }
+    .filter-group__accordion:after {
+        content: '∨';
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #fff;
+        float: right;
+    }
+    /* .filter-group-option__custom-checkbox input[type="checkbox"] {
+        accent-color: #fde4c3;
+    }
+    .filter-group-option__custom-range input[type="range"] {
+        accent-color: red;
+    } */
 
-
-
-
-        .product-filter__options {
-            margin: 1.5rem 0 0 0;
-            /* border: solid pink; */
-            padding: 0;
-        }
-            .product-filter__option {
-                margin: 0 0 1.5rem -0.3rem;
-                padding: 0.3rem;
-                
-            }
-            /* --- Tạo hiệu ứng lớp nền xám nhạt khi hover ---  */
-            .product-filter__option--visual-hower:hover {
-                border-radius: 0.15rem;
-                background-color: rgba(0,0,0,0.08);
-            }
-            
-            /* --- Bỏ point đánh dấu cho <li> của các checkbox ---  */
-            .product-filter__option--nonpoint::marker{
-                content: "";
-            }
-                .product-filter__label {
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-                }
-                    .product-filter__checkbox--custom {
-                        accent-color: red;
-                        transform: scale(1.5) translateY(1%);
-                        margin-right: 0.8rem;
-                    }
-
-
-/* ===== Định nghĩa PRODUCT-LISTING kiểu Flex column ===== */
+    .active:after {
+        content: "∧";
+    }
 .product-listing {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 10px 0 23px;
+    padding: 0 0.7rem 0 1rem;
 }
     .product-listing__grid {
         display: grid;
-        grid-template-columns: 21.125rem 21.125rem 21.125rem;
+        grid-template-columns: 21rem 21rem 21rem 21rem;
         gap: 2rem;
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
     }
-        .product-card {
-            background-image: url("../images/products/product-card_ADIDAS-backgroud_01.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        .product-listing__card {
+            /* border: 1px solid red; */
+            /* padding: 1.375rem; */
+            background-color: #fff;
 
-            border: 1px solid rgba(0,0,0,0.3);
-            border-radius: 1.1875rem;
-            padding: 1.375rem;
-
-            text-align: center;
             position: relative;
 
-            display: grid;
-            grid-template-areas: 
-                "title-cell         title-cell"
-                "size-cell          fav-cell"
-                "size-cell          color-cell"
-                "price-cell         color-cell"
-                "buy_button-cell    buy_button-cell";
+            display: flex;
+            flex-direction: column;
         }
-            .product-card__title-cell {
-                grid-area: title-cell;
-            }
-            .product-card__size-cell {
-                grid-area: size-cell;
-                height: 22.25rem;
-            }
-            .product-card__favourite-cell {
-                grid-area: fav-cell;
-            }
-            .product-card__price-cell {
-                grid-area: price-cell;
-            }
-            .product-card__color-cell {
-                grid-area: color-cell;
-            }
-            .product-card__buy-cell {
-                grid-area: buy_button-cell;
-            }
-
-            /* ===== Sale phần trăm gốc trên, trái =====  */
-            .product-card__sale-persent {
+        .product-listing__card:hover {
+            border: 1px solid #111111;
+            /* width: 120%;
+            height: 120%;
+            z-index: 5; */
+        }
+            .product-card__main-image {
                 position: absolute;
-                width: 3.625rem;
-                height: 2.25rem;
-                background-color: red;
-                border-radius: 1.1rem 0 0.5rem 0;
 
+                display: grid;
             }
-                .sale-persent__number {
-                    margin: 0.5rem;
-                    color: white;
-                    font-size: 10;
+                .product-card__main-image:hover .product-card-main-image__first-img--hover {
+                    opacity: 0;
+                    transition: 0.3s ;
                 }
-            
-            /* ===== Ảnh giày chính =====  */
-            .product-card__image {
-                /* border: 1px solid red; */
-                width: 100%;
-                height: 18.75rem;
-
-                position: absolute;
-                top: 12.375rem;
-                z-index: 0;
-
-                background-image: url(../images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_06_standard.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-                /* .product-card__image img {
-                    
-                } */
-            /* --- Đặt lại các z-index để img kh che các nút ---  */
-            .product-card *:not(.product-card__image, .product-card__sale-persent) {
-                position: relative;
-                z-index: 1;
-            }
-            /* ===== TITLE Chính của product-card =====  */
-            .product-card__title-cell {
-                /* border: 1px solid green; */
-                margin: 3rem 0 1.4375rem 0;
-
-            }
-                .product-card-title-cell__name {
-                    margin: 0 0 0.4375rem 0;
+                .product-card-main-image__first-img,
+                .product-card-main-image__first-img--hover {
+                    z-index: 2;
+                    width: 100%;
+                    grid-area: main-image;
                 }
-                .product-card-title-cell__genttle {
-                    margin: 0 0 0 0;
-                    color: rgba(0,0,0,0.3);
-                }
+            .product-card__header-content {
+                z-index: 3;
 
-            /* ===== SIZE + FAV + PRICE + COLOR ===== */
-            .product-card__size-cell,
-            .product-card__favourite-cell,
-            .product-card__color-cell,
-            .product-card__price-cell {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;    
-            }
-            /* ---- Title thuộc tính -----  */
-            .product-card-size-cell__title,
-            .product-card-favourite-cell__title,
-            .product-card-color-cell__title,
-            .product-card-price-cell__title {
-                margin: 0 5px 0 0;
-
-                font-size: 0.9rem;
-            }
-            
-            /* ----- SET margin trên và dưới -----  */
-            .product-card-size-cell__custom-radio,
-            .product-card-favourite-cell__custom-radio {
-                margin-top: 0.875rem;
-            }
-            .product-card-color-cell__custom-radio {
-                margin-bottom: 0.875rem;
-            }
-            
-            /* --- Xóa ô radio mặc định ---  */
-            .product-card-size-cell__custom-radio input[type="radio"],
-            .product-card-favourite-cell__custom-radio input[type="checkbox"],
-            .product-card-color-cell__custom-radio input[type="radio"] {
-                display: none;
-            }
-                /* --- Custom lại block chọn ---  */
-                .product-card-size-cell__custom-radio b,
-                .product-card-favourite-cell__custom-radio span,
-                .product-card-color-cell__custom-radio span {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-                    width: 2.25rem;
-                    height: 2.25rem;
-                    border: 2px solid rgba(0,0,0,0.25);
-                    border-radius: 0.6875rem;
-                    
-                    cursor: pointer;
-
-                    font-size: 0.9rem;
-                }
-                /* --- Thay đổi khi được chọn ---  */
-                .product-card-size-cell__custom-radio input[type="radio"]:checked + b ,
-                .product-card-favourite-cell__custom-radio input[type="checkbox"]:checked + span{
-                    background-color: #111;
-                    border: 2.3px solid #111;
-
-                    color: #fff;
-                }
-                .product-card-color-cell__custom-radio input[type="radio"]:checked + span {
-                    border: 2.3px solid #111;
-                }
-            .product-card__color-cell {
-                flex-direction: column-reverse;
-                align-items: flex-end;
-            }
-            .product-card__favourite-cell {
-                align-items: flex-end;
-                height: 5.5625rem;
-            }
-                .product-card__favourite-cell span {
-                    color: rgba(0,0,0,0.25);
-                }
-                    .product-card-color-cell__product-color {
-                        width: 0.625rem;
-                        height: 0.625rem;
-                        border-radius: 0.25rem;
-                        
-                        /* màu sẽ tạo theo products.json  */
-                        background-color: red;
-                    }
-            .product-card__price-cell {
-                flex-direction: column-reverse;
-            }
-                
-                .product-card-price-cell__original {
-                    margin: 0 0 0.3rem 0;
-
-                    color: rgba(0,0,0,0.5);
-                    text-decoration: line-through;
-                    font-size: 1.25rem;
-                }
-                .product-card-price-cell__then-price {
-                    margin: 0 0 0.5rem 0;
-
-                    color: red;
-                    font-size: 1.5rem;
-                }
-
-            .product-card__buy-cell {
-                display: flex;
+                align-items: center;
                 justify-content: space-between;
 
-                margin-top: 3.3125rem;
+                margin-top: 1rem;
             }
-                .product-card-buy-cell-add-to-cart__custom-button input[type="button"],
-                .product-card-buy-cell-buy-now__custom-button input[type="button"] {
-                    display: none;
+                .product-card-header__feature {
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 0 1rem 1rem 0;
+                    border: 1px solid #111111;
+                    background-color: #fff;
+                    box-shadow: 0 0.3rem #113E21;
                 }
-                .product-card-buy-cell-add-to-cart__custom-button span,
-                .product-card-buy-cell-buy-now__custom-button strong {
+                .product-card-header__favourite {
+                    margin-right: 1rem;
+                    padding: 0.2rem 0.6rem;
+                    border-radius: 1rem;
+                    border: 1px solid #111111;
+                    background-color: #fff;
+                }
+            .product-card__mini-image {
+                z-index: 1;
+                
+                display: flex;
+                align-items: center;
+                
+                margin: 19rem 1rem 0.7rem 1rem;
+                border-radius: 100%;
+                width: 3.1rem;
+                height: 3.1rem;
+            }
+                .product-card-mini-image__first-img {
+                    width: 100%;
+                }
+            .product-card__main-content {
+                padding-left: 0.5rem;
+            }
+                .checked {
+                    color: #1a73e8;
+                }
+                .product-card-main__name {
+                    margin: 1rem 0;
+                }
+                .product-card-main__gender, 
+                .product-card-main__color {
+                    margin: 0.5rem 0.5rem 0 0;
+                    color: rgba(0,0,0,0.6);
+                }
+                .product-card-main__price {
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-                    width: 3.375rem;
-                    height: 3.375rem;
-                    border: 2.3px solid rgba(0,0,0);
-                    border-radius: 0.6875rem;
-                    background-image: url(../images/products/product-card__add-cart.png);
-                    
-                    cursor: pointer;
                 }
-                .product-card-buy-cell-buy-now__custom-button strong {
-                    width: 13rem;
-                    background-image: none;
-                    background-color: #111;
-                    color: #fff;
-
-                    transition: transform 1s ease;
+                .product-card-main__then-price {
+                    margin: 0.5rem 0.5rem 0.5rem 0;
+                    font-weight: bold;
+                    color: #1a73e8;
+                    font-size: 1.5rem;
                 }
-                .product-card-buy-cell-add-to-cart__custom-button span:active {
-                    transform: scale(0.9);
+                .product-card-main__original-price {
+                    margin: 0.5rem 0.5rem 0.5rem 0;
+                    color: rgba(0,0,0,0.5);
+                    font-weight: bold;
+                    text-decoration: line-through;
                 }
-
-        .product-card .product-card__image{
-            transition: transform 0.6s ease;
-        }
-        .product-card:hover .product-card__image{
-            transform: scale(1.2);
-            background-image: url("../images/products/product_1/Giay_Chay_Bo_Pureboost_5_Mau_xanh_da_troi_IF9194_02_standard.png");
-        }
+                .product-card-main__sale-percent {
+                    margin: 0.5rem 0.5rem 0.5rem 0;
+                    font-weight: bold;
+                    color: #1a73e8;
+                    font-size: 1.5rem;
+                }
