@@ -82,13 +82,27 @@ html {
     margin-left: 20px;
     padding-top: 20px;
     line-height: 30px;
-    cursor: pointer;
     min-width: 160px;
 }
 
 .opt__age {
     color: #956a29;
 }
+
+.opt__header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.opt__add-to-cart {
+    font-size: 1.4rem;
+    border: 1px solid gray;
+    background-color: #bfc2c3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .opt__title {
     font-size: 2rem;
@@ -97,6 +111,7 @@ html {
 .opt__type {
     color: gray;
     font-weight: 200;
+    cursor: pointer;
 }
 
 .opt__price {
@@ -106,6 +121,11 @@ html {
 
 .opt__img-color {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.opt__img-color h2 {
+    width: 100%;
 }
 
 .img-color {
