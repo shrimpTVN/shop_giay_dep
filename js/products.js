@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         article.innerHTML = `
           <div class="product-card__sale-persent">
-            <p class="sale-persent__number">${percent}%</p>
+            <p class="sale-persent__number">-${product.discount}%</p>
           </div>
           <div class="product-card__title-cell">
             <h3 class="product-card-title-cell__name">${product.name}</h3>
