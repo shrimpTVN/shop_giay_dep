@@ -25,8 +25,12 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="nav__list">
-                        <li class="nav__list-item"><a class="nav__link" href="index.html">Trang chủ</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="products.html">Sản phẩm</a></li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="products.html">Sản phẩm</a>
+                        </li>
                         <li class="nav__list-item nav__list-item--cart">
                             <a class="nav__link" href="cart.html">
                                 <i class="nav__cart-icon fa-solid fa-bag-shopping"></i>
@@ -43,7 +47,46 @@
             </div>
         </header>
 
-        <main></main>
+        <main class="page__main grid wide">
+            <div class="register container">
+                <h2 class="register__title">Đăng ký tài khoản</h2>
+                <form class="register__form" action="#" method="post">
+                    <div class="form__group">
+                        <label for="fullname">Họ và tên *</label>
+                        <input type="text" id="fullname" name="fullname" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="phone">Số điện thoại *</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="username">Tên đăng nhập *</label>
+                        <input type="text" id="username" name="username" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="password">Mật khẩu *</label>
+                        <input type="password" id="password" name="password" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="confirm-password">Nhập lại mật khẩu *</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required />
+                    </div>
+
+                    <button type="submit" class="register__button">Đăng ký</button>
+                </form>
+
+                <p class="register__login-link">Đã có tài khoản? <a href="log_in.html">Đăng nhập</a></p>
+            </div>
+        </main>
 
         <footer class="page__footer">
             <div class="grid wide">
@@ -54,12 +97,18 @@
                             <li class="services__list-item">
                                 <a class="services__link" href="">Trung Tâm Hỗ Trợ Khách Hàng</a>
                             </li>
-                            <li class="services__list-item"><a class="services__link" href="">LMNH Store Blog</a></li>
-                            <li class="services__list-item"><a class="services__link" href="">Nhãn hàng</a></li>
+                            <li class="services__list-item">
+                                <a class="services__link" href="">LMNH Store Blog</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__link" href="">Nhãn hàng</a>
+                            </li>
                             <li class="services__list-item">
                                 <a class="services__link" href="">Hướng dẫn mua hàng/ Đặt hàng</a>
                             </li>
-                            <li class="services__list-item"><a class="services__link" href="">Đơn hàng</a></li>
+                            <li class="services__list-item">
+                                <a class="services__link" href="">Đơn hàng</a>
+                            </li>
                             <li class="services__list-item">
                                 <a class="services__link" href="">Trả hàng/ Hoàn tiền</a>
                             </li>
@@ -75,8 +124,12 @@
                     <div class="services__container">
                         <h3 class="div__title--tertiary">LMHN SHOE STORE</h3>
                         <ul class="services__list">
-                            <li class="services__list-item"><a class="services__link" href="">Về LMNH Store</a></li>
-                            <li class="services__list-item"><a class="services__link" href="">Tuyển dụng</a></li>
+                            <li class="services__list-item">
+                                <a class="services__link" href="">Về LMNH Store</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__link" href="">Tuyển dụng</a>
+                            </li>
                             <li class="services__list-item">
                                 <a class="services__link" href="">Chính sách bảo mật</a>
                             </li>
@@ -86,7 +139,9 @@
                             <li class="services__list-item">
                                 <a class="services__link" href="">Chính sách vận chuyển</a>
                             </li>
-                            <li class="services__list-item"><a class="services__link" href="">Flash sale</a></li>
+                            <li class="services__list-item">
+                                <a class="services__link" href="">Flash sale</a>
+                            </li>
                         </ul>
                     </div>
 

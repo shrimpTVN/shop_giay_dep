@@ -6,6 +6,7 @@
         <title>Giỏ hàng</title>
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./css/cart.css" />
+        <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
     </head>
     <body class="page">
@@ -45,9 +46,65 @@
         </header>
 
         <main class="page__main grid wide">
-            <h1>Giỏ hàng</h1>
-            <p>Giỏ hàng của bạn hiện đang trống.</p>
-            <p><a href="products.html">Tiếp tục mua sắm</a></p>
+            <!-- <i class="fa-solid fa-trash"></i> -trash -->
+            <!-- <i class="fa-solid fa-pen-to-square"></i> - edit -->
+            <article>
+                <h1 class="article__title--primary">Giỏ hàng</h1>
+                <section class="cart__container">
+                    <div class="cart__list-wrap">
+                        <ul class="cart__list">
+                            <li class="cart__item">
+                                <div class="cart__item-info">
+                                    <img
+                                        class="cart__item-image"
+                                        src="./images/products/product_2/image_1.png"
+                                        alt=""
+                                    />
+                                    <div class="cart__item-detail-wrap">
+                                        <h3 class="cart__item-name">Vans knu skool</h3>
+                                        <div class="cart__item-price-wrap">
+                                            <p class="cart__item-price">Giá: 250000</p>
+                                            <p class="cart__item-price"></p>
+                                        </div>
+
+                                        <p class="cart__item-detail">Màu: Trắng/Đen</p>
+                                        <p class="cart__item-detail">Kích cở: 41</p>
+                                        <p class="cart__item-detail">Số lượng: 1</p>
+                                    </div>
+                                </div>
+                                <div class="cart__item-actions">
+                                    <button class="cart__button cart__item-edit" type="button">
+                                        <i class="cart__button-icon fa-solid fa-pen-to-square"></i><br />Chỉnh sửa
+                                    </button>
+                                    <button class="cart__button cart__item-remove" type="button">
+                                        <i class="cart__button-icon cart__button-icon--remove fa-solid fa-trash"></i
+                                        ><br />Xóa
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="cart__item"></li>
+                            <li class="cart__item"></li>
+                        </ul>
+                    </div>
+
+                    <div class="cart__summary">
+                        <h2 class="cart__summary-title">Tóm tắt đơn hàng</h2>
+                        <div class="cart__summary-item">
+                            <span class="cart__summary-label">Tổng tiền:</span>
+                            <span class="cart__summary-value">0 VNĐ</span>
+                        </div>
+                        <div class="cart__summary-item">
+                            <span class="cart__summary-label">Phí vận chuyển:</span>
+                            <span class="cart__summary-value">Miễn phí</span>
+                        </div>
+                        <div class="cart__summary-item cart__summary-item--total">
+                            <span class="cart__summary-label">Tổng cộng:</span>
+                            <span class="cart__summary-value cart__summary-value--total">0 VNĐ</span>
+                        </div>
+                        <button class="cart__checkout-button" type="button">Thanh toán</button>
+                    </div>
+                </section>
+            </article>
         </main>
 
         <footer class="page__footer">
