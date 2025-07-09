@@ -76,5 +76,113 @@
         ],
         "color_names": ["Xám", "Xám", "Nâu/Nâu rám nắng", "Xanh nước biển/Tím", "Đỏ/Cam/Trắng"],
         "describe": ""
+    },
+     {
+        "id": 25,
+        "name": "Adidas Originals Gazelle Bold",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 120000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_25/image_1.jpg",
+            "./images/products/product_25/image_2.jpg",
+            "./images/products/product_25/image_3.jpg",
+            "./images/products/product_25/image_4.jpg",
+            "./images/products/product_25/image_5.jpg"
+        ],
+        "color_names": ["Kem/Xanh nước biển", "Kem/Xanh nước biển", "Tia lửa xanh đậm/hồng", "Hồng", "Hồng trong trẻo"],
+        "describe": ""
+    },
+     {
+        "id": 26,
+        "name": "Nike Air Force 1 '07 LE Low",
+        "brand": "Nike",
+        "gender": "Women",
+        "price": 115000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_26/image_1.jpg",
+            "./images/products/product_26/image_2.jpg",
+            "./images/products/product_26/image_3.jpg",
+            "./images/products/product_26/image_4.jpg",
+            "./images/products/product_26/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Đen", "Xoài dại trắng/nhạt", "Cánh buồm/Hồng Canyon"],
+        "describe": ""
+    },
+     {
+        "id": 27,
+        "name": "Adidas Originals Samba OG",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 100000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_27/image_1.jpg",
+            "./images/products/product_27/image_2.jpg",
+            "./images/products/product_27/image_3.jpg",
+            "./images/products/product_27/image_4.jpg",
+            "./images/products/product_27/image_5.jpg"
+        ],
+        "color_names": ["Đen/Be", "Đen/Be", "Lõi Đen/Trắng Mây", "Trắng/Đen", "Trắng/Trắng nhạt/Đỏ năng lượng mặt trời"],
+        "describe": ""
+    },
+     {
+        "id": 28,
+        "name": "Adidas Originals Handball Spezial",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 110000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_28/image_1.jpg",
+            "./images/products/product_28/image_2.jpg",
+            "./images/products/product_28/image_3.jpg",
+            "./images/products/product_28/image_4.jpg",
+            "./images/products/product_28/image_5.jpg"
+        ],
+        "color_names": ["Tầng đất/Trắng nhạt", "Tầng đất/Trắng nhạt", "Wonder Bạc/Trắng nhạt", "Lõi Đen/Nhôm/Trắng", "Tia lửa xanh/Xanh lá cây bán phần"],
+        "describe": ""
+    },
+     {
+        "id": 29,
+        "name": "ASICS GEL-1130",
+        "brand": "ASICS",
+        "gender": "Women",
+        "price": 110000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_29/image_1.jpg",
+            "./images/products/product_29/image_2.jpg",
+            "./images/products/product_29/image_3.jpg",
+            "./images/products/product_29/image_4.jpg",
+            "./images/products/product_29/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Hồng/Bạc", "Trắng/Hồng/Bạc", "Xanh nước biển/Trắng", "Kem/Bạc nguyên chất", "Trắng/Bạc"],
+        "describe": ""
+    },
+     {
+        "id": 30,
+        "name": "Nike Zoom Vomero 5",
+        "brand": "Nike",
+        "gender": "Women",
+        "price": 129900,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_30/image_1.jpg",
+            "./images/products/product_30/image_2.jpg",
+            "./images/products/product_30/image_3.jpg",
+            "./images/products/product_30/image_4.jpg",
+            "./images/products/product_30/image_5.jpg"
+        ],
+        "color_names": ["Vàng/Xám", "Vàng/Xám", "Than củi/Bụi Photon", "Bụi Photon/Bạc kim loại/Bọt hồng", "Xanh lá cây cổ điển"],
+        "describe": ""
     }
 ]
