@@ -44,17 +44,6 @@ html {
     }
 }
 
-/* ///////////////////////////// */
-/* CSS for page */
-.page {
-    display: grid;
-    grid-template-areas: "header-cell" "main-cell" "footer-cell";
-    padding: 0 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    background-color: rgb(245, 245, 245);
-}
-
 /* /////////////////////////////// */
 /* CSS for page__header and its component */
 .page__header {
@@ -215,9 +204,9 @@ html {
     border: 1px solid purple;
     display: grid;
     /* width: 100%; */
-    min-height: 110rem;
+    min-height: 100vh;
     margin: 1rem auto;
-    padding: 1.4rem 1rem;
+    /* padding: 1.4rem 1rem; */
 }
 
 .page__content {
@@ -315,8 +304,10 @@ html {
     height: 4px;
     bottom: -5px;
     left: 50%;
-    background: radial-gradient(#cddc39, #fff);
+    background: radial-gradient(coral, #fff);
     transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
+    /* left 50%(dịch sang phải) thÌ đầu mút của phần tử giả(before) sẽ nằm giữa title, chứ không phải chính giữa phần tử nằm chính giữa title
+        do đó cần phần tử giả tự mình dịch chuyển sang trái 50% độ dài chính nó */
 }
 
 /* CSS for secondary title (h2) */
