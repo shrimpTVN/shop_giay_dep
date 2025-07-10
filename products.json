@@ -77,6 +77,114 @@
         "color_names": ["Xám", "Xám", "Nâu/Nâu rám nắng", "Xanh nước biển/Tím", "Đỏ/Cam/Trắng"],
         "describe": ""
     },
+    {
+        "id": 7,
+        "name": "New Balance 530",
+        "brand": "New Balance",
+        "gender": "Women",
+        "price": 280000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_7/image_1.jpg",
+            "./images/products/product_7/image_2.jpg",
+            "./images/products/product_7/image_3.jpg",
+            "./images/products/product_7/image_4.jpg",
+            "./images/products/product_7/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Trắng/Xanh nước biển", "Trắng/Hồng", "Nâu/Nâu rám nắng"],
+        "describe": ""
+    },
+    {
+        "id": 8,
+        "name": "New Balance 550",
+        "brand": "New Balance",
+        "gender": "Women",
+        "price": 280000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_8/image_1.jpg",
+            "./images/products/product_8/image_2.jpg",
+            "./images/products/product_8/image_3.jpg",
+            "./images/products/product_8/image_4.jpg",
+            "./images/products/product_8/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Be", "Trắng/Be", "Cam/Be", "Trắng/Xanh lá cây", "Trắng/Đen/Xám"],
+        "describe": ""
+    },
+    {
+        "id": 9,
+        "name": "Nike Air Force 1 '07 Next Nature",
+        "brand": "Nike",
+        "gender": "Women",
+        "price": 360000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_9/image_1.jpg",
+            "./images/products/product_9/image_2.jpg",
+            "./images/products/product_9/image_3.jpg",
+            "./images/products/product_9/image_4.jpg",
+            "./images/products/product_9/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Hồng", "Trắng/Hồng", "Trắng/Xanh nước biển", "Trắng/Hồng Aster", "Trắng ngà/Đỏ tươi"],
+        "describe": ""
+    },
+    {
+        "id": 10,
+        "name": "On Cloudnova 2",
+        "brand": "On",
+        "gender": "Women",
+        "price": 350000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_10/image_1.jpg",
+            "./images/products/product_10/image_2.jpg",
+            "./images/products/product_10/image_3.jpg",
+            "./images/products/product_10/image_4.jpg",
+            "./images/products/product_10/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Cát nhạt/Xám khói", "Trắng/Cam cháy", "Trắng lạnh/Cát nhạt"],
+        "describe": ""
+    },
+    {
+        "id": 11,
+        "name": "Crocs Classic Clogs",
+        "brand": "Crocs",
+        "gender": "Women",
+        "price": 150000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_11/image_1.jpg",
+            "./images/products/product_11/image_2.jpg",
+            "./images/products/product_11/image_3.jpg",
+            "./images/products/product_11/image_4.jpg",
+            "./images/products/product_11/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Xanh Calcite", "Hồng nhạt", "Trắng/Vàng-Pokemon"],
+        "describe": ""
+    },
+    {
+        "id": 12,
+        "name": "Adidas Originals Samba OG",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 370000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_12/image_1.jpg",
+            "./images/products/product_12/image_2.jpg",
+            "./images/products/product_12/image_3.jpg",
+            "./images/products/product_12/image_4.jpg",
+            "./images/products/product_12/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Cam"],
+        "describe": ""
+    },
      {
         "id": 25,
         "name": "Adidas Originals Gazelle Bold",
