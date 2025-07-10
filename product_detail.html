@@ -3,10 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sản phẩm</title>
-        <link rel="stylesheet" href="css/base.css" />
-        <link rel="stylesheet" href="css/product.css" />
+        <title>Chi tiết sản phẩm</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="./css/base.css" />
+        <link rel="stylesheet" href="./css/detail.css" />
         <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
+        <script defer src="./js/detail.js"></script>
     </head>
 
     <body class="page">
@@ -40,368 +42,135 @@
                                 >Đăng ký</a
                             >
                         </li>
-                    </ul>
-                </nav>
             </div>
+       
         </header>
-        <main class="page__content page__content--one-column">
-            <!-- === BANNER === -->
-            <aside class="page-content__title page-content__title--one-column">
-                <h1>Tất cả sản phẩm</h1>
-            </aside>
-
-            <!-- === FILTER === -->
-            <aside class="product-filter product-filter-listing--two-column-leftside">
-                <h2 class="product-filter__title">Filter</h2>
-                <!-- === GROUP các option filter cùng loại === -->
-                <div class="product-filter__group">
-                    <h3 class="product-filter__group-title">Tiêu đề filter thứ nhất</h3>
-                    <ul class="product-filter__options">
-                        <!-- === Các option filter === -->
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <!-- Bổ sung thêm checkbox -->
-                    </ul>
+        <main class="page__main page__main--one-column">
+            <section class="main__order">
+                <div class="order__slide">
+                    <button id="slide__prev"><i class="fas fa-circle-arrow-left"></i></button>
+                    <button id="slide__next"><i class="fas fa-circle-arrow-right"></i></button>
+                    <div class="slide__transition" id="slide__transition">
+                        <img class="order__img" src="./images/products/product_ultraboost5.png" alt="product-img" />
+                        <img class="order__img" src="./images/products/product_ultraboost5_02.png" alt="product-img" />
+                    </div>
                 </div>
-                <div class="product-filter__group">
-                    <h3 class="product-filter__group-title">Tiêu đề filter thứ hai</h3>
-                    <ul class="product-filter__options">
-                        <!-- === Các option filter === -->
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
+                <div class="main__opt">
+                    <div class="opt__infor">
+                        <p class="opt__age">New</p>
+                        <h1 class="opt__title">Giày Sneaker Nam Nike Court Vision Low - Đen</h1>
+                        <p class="opt__type">Lifestyle, Retro Chunky, Leather, Lightweight Canvas</p>
+                        <p class="opt__price">300.000VNĐ</p>
+                    </div>
+                    <div class="opt__img-color">
+                        <img class="img-color" src="./images/products/detail/detail_imgColor.avif" alt="anh1" />
+                        <img class="img-color" src="./images/products/detail/detail_imgColor2.avif" alt="anh2" />
+                    </div>
+                    <div class="opt__size">
+                        <h2 class="size__title">Size</h2>
+                        <select class="size__select" id="size" name="size">
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                        </select>
+                        <span class="size__table"
+                            ><a href="./images/products/detail/detail_size.jpg">Bảng size</a></span
                         >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
+                    </div>
+                    <div class="opt__add">
+                        <button class="add__button" type="submit">Thêm vào giỏ hàng</button>
+                        <div class="add__pick add__pick-ship">
+                            <input type="radio" name="pick" id="ship" checked />
+                            <label for="ship">
+                                <div class="pick-ship">
+                                    <p class="pick__title">Giao Tới Nhà</p>
+                                    <p class="pick__descript">3-5 ngày làm việc</p>
+                                </div>
                             </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
+                        </div>
+                        <div class="add__pick add__pick-store">
+                            <input type="radio" name="pick" id="store" />
+                            <label for="store">
+                                <div class="pick-store">
+                                    <p class="pick__title">Lấy Tại Cửa Hàng</p>
+                                    <p class="pick-store__address"><a href="#">Tìm cửa hàng(tại đây)</a></p>
+                                    <p class="pick__descript">Lựa chọn của hàng để xem hàng có sẵn</p>
+                                </div>
                             </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <!-- Bổ sung thêm checkbox -->
-                    </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-filter__group">
-                    <h3 class="product-filter__group-title">Tiêu đề filter thứ ba</h3>
-                    <ul class="product-filter__options">
-                        <!-- === Các option filter === -->
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <!-- Bổ sung thêm checkbox -->
-                    </ul>
+            </section>
+            <section class="main__description">
+                <h1 class="title--primary">Mô Tả</h1>
+                <div class="description">
+                    <div class="description__common description__style">
+                        <h2 class="description__title--secondary">Kiểu VN000D22PWT</h2>
+                        <p>
+                            Bộ sưu tập Color Theory cho phép bạn tạo ra một câu chuyện màu sắc độc đáo bằng cách kết hợp
+                            những sắc thái rực rỡ, bất ngờ với phong cách giày dép mang tính biểu tượng của chúng tôi.
+                            Được định nghĩa bằng lưỡi giày phồng lên và Sidestripe đúc 3D, đôi Knu Skool này tôn vinh
+                            phong cách giày dép ấn tượng của thập niên 90 đồng thời mang đến bảng màu tươi mới cho một
+                            nét hiện đại.
+                        </p>
+                    </div>
+                    <div class="description__common description__detail">
+                        <h2 class="description__title--secondary">Chi Tiết</h2>
+                        <ul class="detail__list">
+                            <li>Giày cổ thấp thập niên 90 được tái bản</li>
+                            <li>Phần trên bằng da lộn và vải bạt chắc chắn</li>
+                            <li>Lưỡi giày quá khổ và cổ giày có đệm để thoải mái hơn</li>
+                            <li>Sidestripe™ 3D Puffy kết hợp phong cách hoài cổ với nét hiện đại</li>
+                            <li>Thành bên bằng cao su bền với sọc foxing cổ điển</li>
+                            <li>Mũi giày được gia cố để chống mòn và rách nhiều</li>
+                        </ul>
+                    </div>
+                    <div class="description__common description__policy">
+                        <h2 class="description__title--secondary">Phí Giao Hàng &amp; Hoàn Trả</h2>
+                        <p>
+                            Nhận miễn phí vận chuyển tiêu chuẩn cho đơn hàng từ 500.000VNĐ trở lên. Bạn muốn được miễn
+                            phí vận chuyển cho mọi đơn hàng? Tham gia ShopDG để được miễn phí vận chuyển và các đặc
+                            quyền khác.
+                            <a href="./register.html">Đăng ký /</a>
+                            <a href="./log_in.html">Đăng nhập</a>
+                        </p>
+                        <p>
+                            Trả lại sản phẩm theo tình trạng ban đầu trong vòng 30 ngày và được miễn phí vận chuyển trả
+                            hàng - áp dụng cả trực tuyến và tại cửa hàng ShopGD.
+                        </p>
+                    </div>
                 </div>
-                <div class="product-filter__group">
-                    <h3 class="product-filter__group-title">Tiêu đề filter thứ tư</h3>
-                    <ul class="product-filter__options">
-                        <!-- === Các option filter === -->
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <!-- Bổ sung thêm checkbox -->
-                    </ul>
+            </section>
+            <section class="main__review">
+                <h1 class="title--primary">Phản Hồi</h1>
+                <div class="review__content">
+                    <div class="review__star" id="rating">
+                        <input type="radio" name="rating" id="star1" value="1" />
+                        <label class="start" for="star1" title="Tuyệt vời 5 sao"></label>
+
+                        <input type="radio" name="rating" id="star2" value="2" />
+                        <label class="start" for="star2" title="Khá tôt 4 sao"></label>
+
+                        <input type="radio" name="rating" id="star3" value="3" />
+                        <label class="start" for="star3" title="Ổn 3 sao"></label>
+
+                        <input type="radio" name="rating" id="star4" value="4" />
+                        <label class="start" for="star4" title="Khá tệ 2 sao"></label>
+
+                        <input type="radio" name="rating" id="star5" value="5" />
+                        <label class="start" for="star5" title="Tệ quá 1 sao"></label>
+                    </div>
+                    <div class="review__comment">
+                        <textarea
+                            name="comment"
+                            id="comment"
+                            placeholder="Nhận xét của bạn là động lực cho chúng tôi ngày càng hoàn thiện"
+                        ></textarea>
+                    </div>
                 </div>
-                <div class="product-filter__group">
-                    <h3 class="product-filter__group-title">Tiêu đề filter thứ năm</h3>
-                    <ul class="product-filter__options">
-                        <!-- === Các option filter === -->
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <li
-                            class="product-filter__option product-filter__option--visual-hower product-filter__option--nonpoint"
-                        >
-                            <label class="product-filter__label">
-                                <input
-                                    type="checkbox"
-                                    class="product-filter__checkbox product-filter__checkbox--custom"
-                                />
-                                genttle-male
-                            </label>
-                        </li>
-                        <!-- Bổ sung thêm checkbox -->
-                    </ul>
-                </div>
-                <!-- Bổ sung thêm group lọc  -->
-            </aside>
-
-            <!-- === PRODUCT LISTING === -->
-            <section class="product-listing product-filter-listing--two-column-rightside">
-                <div class="product-listing__grid" id="productGrid">
-                    <!-- Gồm border và backgroud -->
-                    <article class="product-card">
-                        <!-- điểm đánh dấu phần trăm sale của sản phẩm trên gốc trái  -->
-                        <div class="product-card__sale-persent">
-                            <p class="sale-persent__number">30%</p>
-                        </div>
-
-                        <!-- Tên và phân loại genttle  -->
-                        <!-- Khi bấm vào sẽ đi đến trang chi tiết sản phẩm -->
-                        <div for="link_p_detail" class="product-card__title-cell">
-                            <h3 class="product-card-title-cell__name">Pureboost 5</h3>
-                            <p class="product-card-title-cell__genttle">Men's shoes</p>
-                        </div>
-
-                        <!-- các block size dạng radio custom -->
-                        <div class="product-card__size-cell">
-                            <a class="product-card-size-cell__title">Size</a>
-                            <label class="product-card-size-cell__custom-radio">
-                                <input type="radio" name="size" value="39" />
-                                <b>39</b>
-                            </label>
-                            <label class="product-card-size-cell__custom-radio">
-                                <input type="radio" name="size" value="40" />
-                                <b>40</b>
-                            </label>
-                            <label class="product-card-size-cell__custom-radio">
-                                <input type="radio" name="size" value="41" />
-                                <b>41</b>
-                            </label>
-                        </div>
-
-                        <!-- block đánh dấu iu thích dạng checkbox custom -->
-                        <div class="product-card__favourite-cell">
-                            <a class="product-card-favourite-cell__title">Fav</a>
-                            <label class="product-card-favourite-cell__custom-radio">
-                                <input type="checkbox" name="favourite" value="love" />
-                                <span>❤</span>
-                            </label>
-                        </div>
-
-                        <!-- Ảnh giày chính đây là một khối block sẽ lấy ảnh giày chính của card làm backgroud-->
-                        <div class="product-card__image"></div>
-
-                        <!-- Danh sách màu của giày (color block) dạng checkbox-custom-->
-                        <div class="product-card__color-cell">
-                            <a class="product-card-color-cell__title">Color</a>
-                            <label class="product-card-color-cell__custom-radio">
-                                <input type="radio" name="color" value="red" />
-                                <span>
-                                    <div class="product-card-color-cell__product-color"></div>
-                                </span>
-                            </label>
-                            <label class="product-card-color-cell__custom-radio">
-                                <input type="radio" name="color" value="blue" />
-                                <span>
-                                    <div class="product-card-color-cell__product-color"></div>
-                                </span>
-                            </label>
-                            <label class="product-card-color-cell__custom-radio">
-                                <input type="radio" name="color" value="yellow" />
-                                <span>
-                                    <div class="product-card-color-cell__product-color"></div>
-                                </span>
-                            </label>
-                        </div>
-
-                        <!-- Giá và giá khuyến mãi -->
-                        <div class="product-card__price-cell">
-                            <a class="product-card-price-cell__title">Price</a>
-                            <b class="product-card-price-cell__then-price">1.289.000đ</b>
-                            <p class="product-card-price-cell__original">1.589.000đ</p>
-                        </div>
-
-                        <!-- nút thêm vào giỏ hàng và mua ngay -->
-                        <div class="product-card__buy-cell">
-                            <label class="product-card-buy-cell-add-to-cart__custom-button">
-                                <input type="button" name="add_to_cart" value="id sản phẩm" />
-                                <span>
-                                    <div class="product-card-buy-cell-add-cart__logo"></div>
-                                </span>
-                            </label>
-                            <label class="product-card-buy-cell-buy-now__custom-button">
-                                <input type="button" name="buy_now" value="đường dẫn đến giỏ hàng kèm id, size, màu" />
-                                <strong> Mua ngay </strong>
-                            </label>
-                        </div>
-                    </article>
+                <div class="review__submit">
+                    <button class="button__submit" type="submit">Gửi</button>
                 </div>
             </section>
         </main>
@@ -684,7 +453,5 @@
                 </div>
             </div>
         </footer>
-
-        <!-- <script src="products.js"></script> -->
     </body>
 </html>
