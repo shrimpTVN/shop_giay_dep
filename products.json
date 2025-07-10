@@ -154,7 +154,7 @@
         "name": "Crocs Classic Clogs",
         "brand": "Crocs",
         "gender": "Women",
-        "price": 150000,
+        "price": 180000,
         "discount": 0.15,
         "tags": [],
         "images": [
@@ -182,7 +182,7 @@
             "./images/products/product_12/image_4.jpg",
             "./images/products/product_12/image_5.jpg"
         ],
-        "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Cam"],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Be/Đen"],
         "describe": ""
     },
      {
