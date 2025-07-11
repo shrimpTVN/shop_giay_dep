@@ -147,6 +147,10 @@
             z-index: 5;
             
         }
+        .product-card__main-image {
+            padding: 1.5rem 1.5rem;
+            background-color: #EAEEEF;
+        }
         .product-listing__card:hover .product-card__mini-image {
             display: flex;
         }
@@ -157,8 +161,7 @@
             .product-card__main-image > img.active {
                 display: block;
             }
-                .product-card-main-image__img,
-                .product-card-main-image__img--hover {
+                .product-card-main-image__img {
                     z-index: 2;
                     width: 100%;
                 }
@@ -232,6 +235,9 @@
                 }
             .product-card__main-content {
                 padding-left: 0.5rem;
+
+                text-decoration: none;
+                color: #111;
             }
                 .checked {
                     color: #1a73e8;

@@ -17,9 +17,9 @@ for (i = 0; i < acc.length; i++) {
 
 document.querySelectorAll('.product-listing__card').forEach(function (card) {
   const miniImages = card.querySelectorAll('.product-card-mini-image__img');
-  const mainImages = card.querySelectorAll('.product-card-main-image__img, .product-card-main-image__img--hover');
+  const mainImages = card.querySelectorAll('.product-card-main-image__img');
 
-  // Mặc định hiển thị cặp ảnh đầu tiên
+  // Mặc định hiển thị ảnh đầu tiên
   mainImages.forEach(img => img.classList.remove('active'));
   if (mainImages[0]) mainImages[0].classList.add('active');
   // if (mainImages[1]) mainImages[1].classList.add('hover-target'); // tạm đánh dấu ảnh hover
@@ -29,13 +29,13 @@ document.querySelectorAll('.product-listing__card').forEach(function (card) {
   miniImages.forEach(function (miniImg, index) {
     miniImg.addEventListener('mouseenter', function () {
       currentIndex = index;
-      mainImages.forEach(img => img.classList.remove('active', 'hover-target'));
+      mainImages.forEach(img => img.classList.remove('active'));
 
-      const mainIndex1 = index * 2;
-      const mainIndex2 = index * 2 + 1;
+      const mainIndex1 = index + 1;
+      // const mainIndex2 = index + 2;
 
       if (mainImages[mainIndex1]) mainImages[mainIndex1].classList.add('active');
-      if (mainImages[mainIndex2]) mainImages[mainIndex2].classList.add('hover-target');
+      // if (mainImages[mainIndex2]) mainImages[mainIndex2].classList.add('hover-target');
 
       // Cập nhật lại css border cho ảnh nhỏ được hover
       miniImages.forEach(img => img.classList.remove('product-card-mini-image__img--active'));
@@ -45,18 +45,17 @@ document.querySelectorAll('.product-listing__card').forEach(function (card) {
 
   // Hiệu ứng hover chuyển ảnh chính -> ảnh hover
   const mainImageContainer = card.querySelector('.product-card__main-image');
-  mainImageContainer.addEventListener('mouseenter', function () {
-    const active = mainImageContainer.querySelector('.active');
-    const hover = mainImageContainer.querySelector('.hover-target');
-    if (active) active.classList.remove('active');
-    if (hover) hover.classList.add('active');
-  });
+ 
 
   mainImageContainer.addEventListener('mouseleave', function () {
     const active = mainImageContainer.querySelector('.active');
-    const hover = mainImageContainer.querySelector('.hover-target');
     if (active) active.classList.remove('active');
-    if (mainImages[currentIndex * 2]) mainImages[currentIndex * 2].classList.add('active');
+    if (mainImages[0]) mainImages[0].classList.add('active');
+  });
+  card.addEventListener('mouseleave', function () {
+    const active = mainImageContainer.querySelector('.active');
+    if (active) active.classList.remove('active');
+    if (mainImages[0]) mainImages[0].classList.add('active');
   });
 });
 
