@@ -22,7 +22,7 @@ document.querySelectorAll('.product-listing__card').forEach(function (card) {
   // Mặc định hiển thị cặp ảnh đầu tiên
   mainImages.forEach(img => img.classList.remove('active'));
   if (mainImages[0]) mainImages[0].classList.add('active');
-  if (mainImages[1]) mainImages[1].classList.add('hover-target'); // tạm đánh dấu ảnh hover
+  // if (mainImages[1]) mainImages[1].classList.add('hover-target'); // tạm đánh dấu ảnh hover
 
   let currentIndex = 0;
 
