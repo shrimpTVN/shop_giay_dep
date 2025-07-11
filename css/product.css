@@ -102,7 +102,7 @@
         transform: scale(1.2);
     }
     .filter-group__accordion:after {
-        content: '∨';
+        content: '+';
         font-size: 1.3rem;
         font-weight: bold;
         color: #fff;
@@ -116,7 +116,7 @@
     }
 
     .active:after {
-        content: "∧";
+        content: "-";
     }
 .product-listing {
     display: flex;
@@ -228,7 +228,7 @@
                 }
                 .product-card-mini-image__img--active {
                     border-radius: 100%;
-                    border: 1.5      px solid #2e1e2e;
+                    border: 1.5px solid #2e1e2e;
                 }
             .product-card__main-content {
                 padding-left: 0.5rem;

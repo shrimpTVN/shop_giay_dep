@@ -190,7 +190,7 @@
         "name": "New Balance 9060",
         "brand": "New Balance",
         "gender": "Men",
-        "price": 3900000,
+        "price": 390000,
         "discount": 0.20,
         "tags": [],
         "images": [
@@ -208,7 +208,7 @@
         "name": "New Balance 740",
         "brand": "New Balance",
         "gender": "Men",
-        "price": 2800000,
+        "price": 280000,
         "discount": 0.15,
         "tags": [],
         "images": [
@@ -226,7 +226,7 @@
         "name": "New Balance 574",
         "brand": "New Balance",
         "gender": "Men",
-        "price": 2600000,
+        "price": 260000,
         "discount": 0.20,
         "tags": [],
         "images": [
@@ -244,7 +244,7 @@
         "name": "adidas Originals Samba",
         "brand": "Adidas",
         "gender": "Men",
-        "price": 2600000,
+        "price": 260000,
         "discount": 0.20,
         "tags": [],
         "images": [
@@ -262,7 +262,7 @@
         "name": "Nike Air Force 1 '07",
         "brand": "Nike",
         "gender": "Men",
-        "price": 2900000,
+        "price": 290000,
         "discount": 0.30,
         "tags": [],
         "images": [
@@ -280,7 +280,7 @@
         "name": "Nike Dunk Low Retro",
         "brand": "Nike",
         "gender": "Men",
-        "price": 3100000,
+        "price": 310000,
         "discount": 0.20,
         "tags": [],
         "images": [
