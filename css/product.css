@@ -70,7 +70,7 @@
         color: #fff;
     }
     .filter-group__options {
-        background-color: #f9f9f9;
+        background-color: #fff;
 
         width: 100%;
         margin: -1px 0 1rem 1px;
@@ -109,10 +109,10 @@
         float: right;
     }
     .filter-group-option__custom-checkbox input[type="checkbox"] {
-        accent-color: #26663c;
+        accent-color: #3cc6b7;
     }
     .filter-group-option__custom-range input[type="range"] {
-        accent-color: #26663c;
+        accent-color: #3cc6b7;
     }
 
     .active:after {
@@ -131,7 +131,7 @@
         padding: 0 1rem 1rem 1rem;
     }
         .product-listing__card {
-            background-color: #fff;
+            background-color: #f6f6f6;
 
             position: relative;
 
@@ -141,7 +141,8 @@
             transition: transform 0.4s ease;
         }
         .product-listing__card:hover {
-            border: 1px solid #111111;
+            border: 2px solid #fff;
+            box-shadow: 2px 4px #2e1e2e;
             transform: scale(1.1);
             z-index: 5;
             
@@ -178,16 +179,12 @@
                     border-radius: 0 1rem 1rem 0;
                     border: 1px solid #111111;
                     background-color: #fff;
-                    box-shadow: 0 0.3rem #113E21;
+                    box-shadow: 0 0.3rem #3cc6b7;
                 }
                 .product-card-header__favourite {
                     width: 3.5rem;
                     height: 105%;
                     padding-right: 0.7rem;
-                    
-
-                    
-                    
                 }
                     .product-card-header__favourite span {
                         display: flex;
@@ -208,9 +205,9 @@
                     display: none;
                 }
                 .product-card-header__favourite input[type="checkbox"]:checked + span {
-                    background-color: #1a73e8;
-                    border: 1px solid #fff;
-                    box-shadow: 1px 0.2rem #113E21;
+                    background-color: #3cc6b7;
+                    border: 1px solid #dedace;
+                    box-shadow: 1px 0.2rem #2e1e2e;
                     color: #fff;
                 }
             .product-card__mini-image {
@@ -231,7 +228,7 @@
                 }
                 .product-card-mini-image__img--active {
                     border-radius: 100%;
-                    border: 2px solid #113E21;
+                    border: 1.5      px solid #2e1e2e;
                 }
             .product-card__main-content {
                 padding-left: 0.5rem;

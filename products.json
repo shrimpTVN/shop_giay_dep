@@ -185,6 +185,114 @@
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Be/Đen"],
         "describe": ""
     },
+    {
+        "id": 13,
+        "name": "New Balance 9060",
+        "brand": "New Balance",
+        "gender": "Men",
+        "price": 3900000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_13/image_1.jpg",
+            "./images/products/product_13/image_2.jpg",
+            "./images/products/product_13/image_3.jpg",
+            "./images/products/product_13/image_4.jpg",
+            "./images/products/product_13/image_5.jpg"
+        ],
+        "color_names": ["Phản chiếu/Đen/Xám", "Phản chiếu/Đen/Xám", "Xám/Xanh diệc", "Vân sam mới/Sarsh muối/Chim bồ câu", "Màu be/Trắng/Xám"],
+        "describe": ""
+    },
+    {
+        "id": 14,
+        "name": "New Balance 740",
+        "brand": "New Balance",
+        "gender": "Men",
+        "price": 2800000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_14/image_1.jpg",
+            "./images/products/product_14/image_2.jpg",
+            "./images/products/product_14/image_3.jpg",
+            "./images/products/product_14/image_4.jpg",
+            "./images/products/product_14/image_5.jpg"
+        ],
+        "color_names": ["Xanh lam/Đen", "Xanh lam/Đen", "Đen/Bạc/Trắng", "Nho Concord/Hoa vân anh tím/Ánh nắng rực rỡ", "Thủy ngân đỏ/Đá lâu đài/Trắng"],
+        "describe": ""
+    },
+    {
+        "id": 15,
+        "name": "New Balance 574",
+        "brand": "New Balance",
+        "gender": "Men",
+        "price": 2600000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_15/image_1.jpg",
+            "./images/products/product_15/image_2.jpg",
+            "./images/products/product_15/image_3.jpg",
+            "./images/products/product_15/image_4.jpg",
+            "./images/products/product_15/image_5.jpg"
+        ],
+        "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh nước biển/Trắng", "Trắng/Xám", "Mây Nimbus/Trắng"],
+        "describe": ""
+    },
+    {
+        "id": 16,
+        "name": "adidas Originals Samba",
+        "brand": "Adidas",
+        "gender": "Men",
+        "price": 2600000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_16/image_1.jpg",
+            "./images/products/product_16/image_2.jpg",
+            "./images/products/product_16/image_3.jpg",
+            "./images/products/product_16/image_4.jpg",
+            "./images/products/product_16/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Trắng/Xanh lá cây", "Trắng/Đỏ", "Da bò/Be"],
+        "describe": ""
+    },
+    {
+        "id": 17,
+        "name": "Nike Air Force 1 '07",
+        "brand": "Nike",
+        "gender": "Men",
+        "price": 2900000,
+        "discount": 0.30,
+        "tags": [],
+        "images": [
+            "./images/products/product_17/image_1.jpg",
+            "./images/products/product_17/image_2.jpg",
+            "./images/products/product_17/image_3.jpg",
+            "./images/products/product_17/image_4.jpg",
+            "./images/products/product_17/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Đen", "Trắng/Đen", "Trắng/Be"],
+        "describe": ""
+    },
+    {
+        "id": 18,
+        "name": "Nike Dunk Low Retro",
+        "brand": "Nike",
+        "gender": "Men",
+        "price": 3100000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_18/image_1.jpg",
+            "./images/products/product_18/image_2.jpg",
+            "./images/products/product_18/image_3.jpg",
+            "./images/products/product_18/image_4.jpg",
+            "./images/products/product_18/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Vàng/Đen", "Trắng/Đen/Đỏ", "Trắng/Xanh nước biển/Cam"],
+        "describe": ""
+    },
      {
         "id": 25,
         "name": "Adidas Originals Gazelle Bold",
