@@ -1,80 +1,242 @@
 [
+  {
+    "id": 2,
+    "name": "Vans knu skool",
+    "brand": "Vans",
+    "gender": "kids",
+    "price": 250000,
+    "discount": 0.2,
+    "tags": [],
+    "images": [
+      "./images/products/product_2/image_1.jpg",
+      "./images/products/product_2/image_2.jpg",
+      "./images/products/product_2/image_3.jpg",
+      "./images/products/product_2/image_4.jpg",
+      "./images/products/product_2/image_5.jpg"
+    ],
+    "color_names": [
+      "Đen/Trắng",
+      "Đen/Trắng",
+      "Xanh/Trắng",
+      "Nâu nhạt/Đen",
+      "Xanh lá/ Hồng"
+    ],
+    "describe": ""
+  },
+  {
+    "id": 3,
+    "name": "Adidas Originals Gazelle Indoor",
+    "brand": "Adidas",
+    "gender": "Men",
+    "price": 350000,
+    "discount": 0.15,
+    "tags": [],
+    "images": [
+      "./images/products/product_3/image_1.jpg",
+      "./images/products/product_3/image_2.jpg",
+      "./images/products/product_3/image_3.jpg",
+      "./images/products/product_3/image_4.jpg",
+      "./images/products/product_3/image_5.jpg"
+    ],
+    "color_names": [
+      "Xanh biển/Trắng/Đỏ",
+      "Xanh biển/Trắng/Đỏ",
+      "Xanh dương/Trắng/Gum",
+      "Xanh lá/Trắng",
+      "Nâu đỏ/Trắng"
+    ],
+    "describe": ""
+  },
+  {
+    "id": 4,
+    "name": "Jordan AJ 2/3",
+    "brand": "Jordan",
+    "gender": "Men",
+    "price": 570000,
+    "discount": 0.2,
+    "tags": [],
+    "images": [
+      "./images/products/product_4/image_1.jpg",
+      "./images/products/product_4/image_2.jpg",
+      "./images/products/product_4/image_3.jpg",
+      "./images/products/product_4/image_4.jpg",
+      "./images/products/product_4/image_5.jpg"
+    ],
+    "color_names": [
+      "Đen/Xám/Bạc",
+      "Đen/Xám/Bạc",
+      "Đen/Xám/Trắng",
+      "Trắng/Đỏ lửa",
+      "Trắng/Carolina/Đen"
+    ],
+    "describe": ""
+  },
+  {
+    "id": 5,
+    "name": "New Balance 9060",
+    "brand": "New Balance",
+    "gender": "Women",
+    "price": 280000,
+    "discount": 0.15,
+    "tags": [],
+    "images": [
+      "./images/products/product_5/image_1.jpg",
+      "./images/products/product_5/image_2.jpg",
+      "./images/products/product_5/image_3.jpg",
+      "./images/products/product_5/image_4.jpg",
+      "./images/products/product_5/image_5.jpg"
+    ],
+    "color_names": [
+      "Xám",
+      "Xám",
+      "Nâu/Nâu rám nắng",
+      "Xanh nước biển/Tím",
+      "Đỏ/Cam/Trắng"
+    ],
+    "describe": ""
+  }
+   {
+    "id": 19,
+    "name": "Nike Dunk Low",
+    "brand": "Nike",
+    "gender": "Kids",
+    "price": 90.00,
+    "discount": 0.0,
+    "tags": [],
+    "images": [
+      "./images/products/product_19/image_1.jpg",
+      "./images/products/product_19/image_2.jpg",
+      "./images/products/product_19/image_3.jpg",
+      "./images/products/product_19/image_4.jpg",
+      "./images/products/product_19/image_5.jpg"
+    ],
+    "color_names": [
+      "Trắng/Đen",
+      "Trắng/Đen",
+      "Trắng/Đỏ",
+      "Xám khói/Trắng",
+      "Xanh nước biển/Trắng"
+    ],
+    "describe": ""
+  } 
+   {
+   "id": 20,
+    "name": "adidas Originals Samba",
+    "brand": "adidas",
+    "gender": "Kids",
+    "price": 80.00,
+    "discount": 0.0,
+    "tags": [],
+    "images": [
+      "./images/products/product_20/image_1.jpg",
+      "./images/products/product_20/image_2.jpg",
+      "./images/products/product_20/image_3.jpg",
+      "./images/products/product_20/image_4.jpg",
+      "./images/products/product_20/image_5.jpg"
+    ],
+    "color_names": [
+      "Trắng/Đen",
+      "Trắng/Đen",
+      "Trắng/Xanh",
+      "Trắng/Xanh lá cây",
+      "Trắng/Xanh dương"
+    ],
+    "describe": ""
+  },
+  {
+  "id": 21,
+    "name": "Nike Vomero 5",
+    "brand": "Nike",
+    "gender": "Kids",
+    "price": 110.00,
+    "discount": 0.2,
+    "tags": [],
+    "images": [
+      "./images/products/product_21/image_1.jpg",
+      "./images/products/product_21/image_2.jpg",
+      "./images/products/product_21/image_3.jpg",
+      "./images/products/product_21/image_4.jpg",
+      "./images/products/product_21/image_5.jpg"
+    ],
+    "color_names": [
+      "Trắng ngà/Xanh băng",
+      "Trắng ngà/Xanh băng",
+      "Đen",
+      "Trắng ngà/Nâu cát",
+      "Kaki lính/Xám thép"
+    ],
+    "describe": ""
+  }
+   {
+    "id": 22,
+    "name": "Vans Knu Skool",
+    "brand": "Vans",
+    "gender": "Kids",
+    "price": 55.00,
+    "discount": 0.1,
+    "tags": [],
+    "images": [
+      "./images/products/product_22/image_1.jpg",
+      "./images/products/product_22/image_2.jpg",
+      "./images/products/product_22/image_3.jpg",
+      "./images/products/product_22/image_4.jpg",
+      "./images/products/product_22/image_5.jpg"
+    ],
+    "color_names": [
+      "Đen",
+      "Đen",
+      "Nâu/Trắng",
+      "Đen/Nâu",
+      "Đen/Trắng"
+    ],
+    "describe": ""
+  }
     {
-        "id": 2,
-        "name": "Vans knu skool",
-        "brand": "Vans",
-        "gender": "kids",
-        "price": 250000,
-        "discount": 0.2,
-        "tags": [],
-        "images": [
-            "./images/products/product_2/image_1.jpg",
-            "./images/products/product_2/image_2.jpg",
-            "./images/products/product_2/image_3.jpg",
-            "./images/products/product_2/image_4.jpg",
-            "./images/products/product_2/image_5.jpg"
-        ],
-        "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh/Trắng", "Nâu nhạt/Đen", "Xanh lá/ Hồng"],
-        "describe": ""
-    },
-    {
-        "id": 3,
-        "name": "Adidas Originals Gazelle Indoor",
-        "brand": "Adidas",
-        "gender": "Men",
-        "price": 350000,
-        "discount": 0.15,
-        "tags": [],
-        "images": [
-            "./images/products/product_3/image_1.jpg",
-            "./images/products/product_3/image_2.jpg",
-            "./images/products/product_3/image_3.jpg",
-            "./images/products/product_3/image_4.jpg",
-            "./images/products/product_3/image_5.jpg"
-        ],
-        "color_names": [
-            "Xanh biển/Trắng/Đỏ",
-            "Xanh biển/Trắng/Đỏ",
-            "Xanh dương/Trắng/Gum",
-            "Xanh lá/Trắng",
-            "Nâu đỏ/Trắng"
-        ],
-        "describe": ""
-    },
-    {
-        "id": 4,
-        "name": "Jordan AJ 2/3",
-        "brand": "Jordan",
-        "gender": "Men",
-        "price": 570000,
-        "discount": 0.2,
-        "tags": [],
-        "images": [
-            "./images/products/product_4/image_1.jpg",
-            "./images/products/product_4/image_2.jpg",
-            "./images/products/product_4/image_3.jpg",
-            "./images/products/product_4/image_4.jpg",
-            "./images/products/product_4/image_5.jpg"
-        ],
-        "color_names": ["Đen/Xám/Bạc", "Đen/Xám/Bạc", "Đen/Xám/Trắng", "Trắng/Đỏ lửa", "Trắng/Carolina/Đen"],
-        "describe": ""
-    },
-    {
-        "id": 5,
-        "name": "New Balance 9060",
-        "brand": "New Balance",
-        "gender": "Women",
-        "price": 280000,
-        "discount": 0.15,
-        "tags": [],
-        "images": [
-            "./images/products/product_5/image_1.jpg",
-            "./images/products/product_5/image_2.jpg",
-            "./images/products/product_5/image_3.jpg",
-            "./images/products/product_5/image_4.jpg",
-            "./images/products/product_5/image_5.jpg"
-        ],
-        "color_names": ["Xám", "Xám", "Nâu/Nâu rám nắng", "Xanh nước biển/Tím", "Đỏ/Cam/Trắng"],
-        "describe": ""
-    }
+      "id": 23,
+    "name": "New Balance 9060",
+    "brand": "New Balance",
+    "gender": "Kids",
+    "price": 110.00,
+    "discount": 0.25,
+    "tags": [],
+    "images": [
+      "./images/products/product_23/image_1.jpg",
+      "./images/products/product_23/image_2.jpg",
+      "./images/products/product_23/image_3.jpg",
+      "./images/products/product_23/image_4.jpg",
+      "./images/products/product_23/image_5.jpg"
+    ],
+    "color_names": [
+      "Muối biển/Kem",
+      "Muối biển/Kem",
+      "Xám bạc",
+      "Trắng/Xám/Đen",
+      "Đen/Xanh tím"
+    ],
+    "describe": ""
+  }
+   {
+    "id": 24,
+    "name": "Nike Air Max 270",
+    "brand": "Nike",
+    "gender": "Kids",
+    "price": 130.00,
+    "discount": 0.2,
+    "tags": [],
+    "images": [
+      "./images/products/product_24/image_1.jpg",
+      "./images/products/product_24/image_2.jpg",
+      "./images/products/product_24/image_3.jpg",
+      "./images/products/product_24/image_4.jpg",
+      "./images/products/product_24/image_5.jpg"
+    ],
+    "color_names": [
+      "Xám than/Đen/Trắng",
+      "Xám than/Đen/Trắng",
+      "Trắng/Kim loại bạc",
+      "Đen",
+      "Trắng/Cam/Đỏ"
+    ],
+    "describe": ""
+  }
 ]
