@@ -192,6 +192,7 @@
     "describe": ""
   }
     {
+<<<<<<< HEAD
       "id": 23,
     "name": "New Balance 9060",
     "brand": "New Balance",
@@ -239,4 +240,407 @@
     ],
     "describe": ""
   }
+=======
+        "id": 2,
+        "name": "Vans knu skool",
+        "brand": "Vans",
+        "gender": "kids",
+        "price": 250000,
+        "discount": 0.2,
+        "tags": [],
+        "images": [
+            "./images/products/product_2/image_1.jpg",
+            "./images/products/product_2/image_2.jpg",
+            "./images/products/product_2/image_3.jpg",
+            "./images/products/product_2/image_4.jpg",
+            "./images/products/product_2/image_5.jpg"
+        ],
+        "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh/Trắng", "Nâu nhạt/Đen", "Xanh lá/ Hồng"],
+        "describe": ""
+    },
+    {
+        "id": 3,
+        "name": "Adidas Originals Gazelle Indoor",
+        "brand": "Adidas",
+        "gender": "Men",
+        "price": 350000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_3/image_1.jpg",
+            "./images/products/product_3/image_2.jpg",
+            "./images/products/product_3/image_3.jpg",
+            "./images/products/product_3/image_4.jpg",
+            "./images/products/product_3/image_5.jpg"
+        ],
+        "color_names": [
+            "Xanh biển/Trắng/Đỏ",
+            "Xanh biển/Trắng/Đỏ",
+            "Xanh dương/Trắng/Gum",
+            "Xanh lá/Trắng",
+            "Nâu đỏ/Trắng"
+        ],
+        "describe": ""
+    },
+    {
+        "id": 4,
+        "name": "Jordan AJ 2/3",
+        "brand": "Jordan",
+        "gender": "Men",
+        "price": 570000,
+        "discount": 0.2,
+        "tags": [],
+        "images": [
+            "./images/products/product_4/image_1.jpg",
+            "./images/products/product_4/image_2.jpg",
+            "./images/products/product_4/image_3.jpg",
+            "./images/products/product_4/image_4.jpg",
+            "./images/products/product_4/image_5.jpg"
+        ],
+        "color_names": ["Đen/Xám/Bạc", "Đen/Xám/Bạc", "Đen/Xám/Trắng", "Trắng/Đỏ lửa", "Trắng/Carolina/Đen"],
+        "describe": ""
+    },
+    {
+        "id": 5,
+        "name": "New Balance 9060",
+        "brand": "New Balance",
+        "gender": "Women",
+        "price": 280000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_5/image_1.jpg",
+            "./images/products/product_5/image_2.jpg",
+            "./images/products/product_5/image_3.jpg",
+            "./images/products/product_5/image_4.jpg",
+            "./images/products/product_5/image_5.jpg"
+        ],
+        "color_names": ["Xám", "Xám", "Nâu/Nâu rám nắng", "Xanh nước biển/Tím", "Đỏ/Cam/Trắng"],
+        "describe": ""
+    },
+    {
+        "id": 7,
+        "name": "New Balance 530",
+        "brand": "New Balance",
+        "gender": "Women",
+        "price": 280000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_7/image_1.jpg",
+            "./images/products/product_7/image_2.jpg",
+            "./images/products/product_7/image_3.jpg",
+            "./images/products/product_7/image_4.jpg",
+            "./images/products/product_7/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Trắng/Xanh nước biển", "Trắng/Hồng", "Nâu/Nâu rám nắng"],
+        "describe": ""
+    },
+    {
+        "id": 8,
+        "name": "New Balance 550",
+        "brand": "New Balance",
+        "gender": "Women",
+        "price": 280000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_8/image_1.jpg",
+            "./images/products/product_8/image_2.jpg",
+            "./images/products/product_8/image_3.jpg",
+            "./images/products/product_8/image_4.jpg",
+            "./images/products/product_8/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Be", "Trắng/Be", "Cam/Be", "Trắng/Xanh lá cây", "Trắng/Đen/Xám"],
+        "describe": ""
+    },
+    {
+        "id": 9,
+        "name": "Nike Air Force 1 '07 Next Nature",
+        "brand": "Nike",
+        "gender": "Women",
+        "price": 360000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_9/image_1.jpg",
+            "./images/products/product_9/image_2.jpg",
+            "./images/products/product_9/image_3.jpg",
+            "./images/products/product_9/image_4.jpg",
+            "./images/products/product_9/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Hồng", "Trắng/Hồng", "Trắng/Xanh nước biển", "Trắng/Hồng Aster", "Trắng ngà/Đỏ tươi"],
+        "describe": ""
+    },
+    {
+        "id": 10,
+        "name": "On Cloudnova 2",
+        "brand": "On",
+        "gender": "Women",
+        "price": 350000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_10/image_1.jpg",
+            "./images/products/product_10/image_2.jpg",
+            "./images/products/product_10/image_3.jpg",
+            "./images/products/product_10/image_4.jpg",
+            "./images/products/product_10/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Cát nhạt/Xám khói", "Trắng/Cam cháy", "Trắng lạnh/Cát nhạt"],
+        "describe": ""
+    },
+    {
+        "id": 11,
+        "name": "Crocs Classic Clogs",
+        "brand": "Crocs",
+        "gender": "Women",
+        "price": 180000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_11/image_1.jpg",
+            "./images/products/product_11/image_2.jpg",
+            "./images/products/product_11/image_3.jpg",
+            "./images/products/product_11/image_4.jpg",
+            "./images/products/product_11/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Xanh Calcite", "Hồng nhạt", "Trắng/Vàng-Pokemon"],
+        "describe": ""
+    },
+    {
+        "id": 12,
+        "name": "Adidas Originals Samba OG",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 370000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_12/image_1.jpg",
+            "./images/products/product_12/image_2.jpg",
+            "./images/products/product_12/image_3.jpg",
+            "./images/products/product_12/image_4.jpg",
+            "./images/products/product_12/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Be/Đen"],
+        "describe": ""
+    },
+    {
+        "id": 13,
+        "name": "New Balance 9060",
+        "brand": "New Balance",
+        "gender": "Men",
+        "price": 390000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_13/image_1.jpg",
+            "./images/products/product_13/image_2.jpg",
+            "./images/products/product_13/image_3.jpg",
+            "./images/products/product_13/image_4.jpg",
+            "./images/products/product_13/image_5.jpg"
+        ],
+        "color_names": ["Phản chiếu/Đen/Xám", "Phản chiếu/Đen/Xám", "Xám/Xanh diệc", "Vân sam mới/Sarsh muối/Chim bồ câu", "Màu be/Trắng/Xám"],
+        "describe": ""
+    },
+    {
+        "id": 14,
+        "name": "New Balance 740",
+        "brand": "New Balance",
+        "gender": "Men",
+        "price": 280000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_14/image_1.jpg",
+            "./images/products/product_14/image_2.jpg",
+            "./images/products/product_14/image_3.jpg",
+            "./images/products/product_14/image_4.jpg",
+            "./images/products/product_14/image_5.jpg"
+        ],
+        "color_names": ["Xanh lam/Đen", "Xanh lam/Đen", "Đen/Bạc/Trắng", "Nho Concord/Hoa vân anh tím/Ánh nắng rực rỡ", "Thủy ngân đỏ/Đá lâu đài/Trắng"],
+        "describe": ""
+    },
+    {
+        "id": 15,
+        "name": "New Balance 574",
+        "brand": "New Balance",
+        "gender": "Men",
+        "price": 260000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_15/image_1.jpg",
+            "./images/products/product_15/image_2.jpg",
+            "./images/products/product_15/image_3.jpg",
+            "./images/products/product_15/image_4.jpg",
+            "./images/products/product_15/image_5.jpg"
+        ],
+        "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh nước biển/Trắng", "Trắng/Xám", "Mây Nimbus/Trắng"],
+        "describe": ""
+    },
+    {
+        "id": 16,
+        "name": "adidas Originals Samba",
+        "brand": "Adidas",
+        "gender": "Men",
+        "price": 260000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_16/image_1.jpg",
+            "./images/products/product_16/image_2.jpg",
+            "./images/products/product_16/image_3.jpg",
+            "./images/products/product_16/image_4.jpg",
+            "./images/products/product_16/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Trắng/Xanh lá cây", "Trắng/Đỏ", "Da bò/Be"],
+        "describe": ""
+    },
+    {
+        "id": 17,
+        "name": "Nike Air Force 1 '07",
+        "brand": "Nike",
+        "gender": "Men",
+        "price": 290000,
+        "discount": 0.30,
+        "tags": [],
+        "images": [
+            "./images/products/product_17/image_1.jpg",
+            "./images/products/product_17/image_2.jpg",
+            "./images/products/product_17/image_3.jpg",
+            "./images/products/product_17/image_4.jpg",
+            "./images/products/product_17/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Đen", "Trắng/Đen", "Trắng/Be"],
+        "describe": ""
+    },
+    {
+        "id": 18,
+        "name": "Nike Dunk Low Retro",
+        "brand": "Nike",
+        "gender": "Men",
+        "price": 310000,
+        "discount": 0.20,
+        "tags": [],
+        "images": [
+            "./images/products/product_18/image_1.jpg",
+            "./images/products/product_18/image_2.jpg",
+            "./images/products/product_18/image_3.jpg",
+            "./images/products/product_18/image_4.jpg",
+            "./images/products/product_18/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Vàng/Đen", "Trắng/Đen/Đỏ", "Trắng/Xanh nước biển/Cam"],
+        "describe": ""
+    },
+     {
+        "id": 25,
+        "name": "Adidas Originals Gazelle Bold",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 120000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_25/image_1.jpg",
+            "./images/products/product_25/image_2.jpg",
+            "./images/products/product_25/image_3.jpg",
+            "./images/products/product_25/image_4.jpg",
+            "./images/products/product_25/image_5.jpg"
+        ],
+        "color_names": ["Kem/Xanh nước biển", "Kem/Xanh nước biển", "Tia lửa xanh đậm/hồng", "Hồng", "Hồng trong trẻo"],
+        "describe": ""
+    },
+     {
+        "id": 26,
+        "name": "Nike Air Force 1 '07 LE Low",
+        "brand": "Nike",
+        "gender": "Women",
+        "price": 115000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_26/image_1.jpg",
+            "./images/products/product_26/image_2.jpg",
+            "./images/products/product_26/image_3.jpg",
+            "./images/products/product_26/image_4.jpg",
+            "./images/products/product_26/image_5.jpg"
+        ],
+        "color_names": ["Trắng", "Trắng", "Đen", "Xoài dại trắng/nhạt", "Cánh buồm/Hồng Canyon"],
+        "describe": ""
+    },
+     {
+        "id": 27,
+        "name": "Adidas Originals Samba OG",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 100000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_27/image_1.jpg",
+            "./images/products/product_27/image_2.jpg",
+            "./images/products/product_27/image_3.jpg",
+            "./images/products/product_27/image_4.jpg",
+            "./images/products/product_27/image_5.jpg"
+        ],
+        "color_names": ["Đen/Be", "Đen/Be", "Lõi Đen/Trắng Mây", "Trắng/Đen", "Trắng/Trắng nhạt/Đỏ năng lượng mặt trời"],
+        "describe": ""
+    },
+     {
+        "id": 28,
+        "name": "Adidas Originals Handball Spezial",
+        "brand": "Adidas",
+        "gender": "Women",
+        "price": 110000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_28/image_1.jpg",
+            "./images/products/product_28/image_2.jpg",
+            "./images/products/product_28/image_3.jpg",
+            "./images/products/product_28/image_4.jpg",
+            "./images/products/product_28/image_5.jpg"
+        ],
+        "color_names": ["Tầng đất/Trắng nhạt", "Tầng đất/Trắng nhạt", "Wonder Bạc/Trắng nhạt", "Lõi Đen/Nhôm/Trắng", "Tia lửa xanh/Xanh lá cây bán phần"],
+        "describe": ""
+    },
+     {
+        "id": 29,
+        "name": "ASICS GEL-1130",
+        "brand": "ASICS",
+        "gender": "Women",
+        "price": 110000,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_29/image_1.jpg",
+            "./images/products/product_29/image_2.jpg",
+            "./images/products/product_29/image_3.jpg",
+            "./images/products/product_29/image_4.jpg",
+            "./images/products/product_29/image_5.jpg"
+        ],
+        "color_names": ["Trắng/Hồng/Bạc", "Trắng/Hồng/Bạc", "Xanh nước biển/Trắng", "Kem/Bạc nguyên chất", "Trắng/Bạc"],
+        "describe": ""
+    },
+     {
+        "id": 30,
+        "name": "Nike Zoom Vomero 5",
+        "brand": "Nike",
+        "gender": "Women",
+        "price": 129900,
+        "discount": 0.15,
+        "tags": [],
+        "images": [
+            "./images/products/product_30/image_1.jpg",
+            "./images/products/product_30/image_2.jpg",
+            "./images/products/product_30/image_3.jpg",
+            "./images/products/product_30/image_4.jpg",
+            "./images/products/product_30/image_5.jpg"
+        ],
+        "color_names": ["Vàng/Xám", "Vàng/Xám", "Than củi/Bụi Photon", "Bụi Photon/Bạc kim loại/Bọt hồng", "Xanh lá cây cổ điển"],
+        "describe": ""
+    }
+>>>>>>> f795658e258bf47f3e498ea662e858641f3e8e30
 ]

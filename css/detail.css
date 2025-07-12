@@ -31,13 +31,13 @@
     width: 100%;
     aspect-ratio: 3 / 2;
     position: relative;
-    min-width: 320px;
 }
 
 .slide__transition {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 100%; /* đảm bảo chiều cao */
+    height: 100%;
+    /* đảm bảo chiều cao */
     width: 100%;
 }
 
@@ -68,7 +68,8 @@
     height: 100%;
     object-fit: contain;
     flex-shrink: 0;
-    background-color: #f5f5f5; /* để lấp vùng trống nếu ảnh nhỏ hơn khung */
+    background-color: #f5f5f5;
+    /* để lấp vùng trống nếu ảnh nhỏ hơn khung */
 }
 
 /* Lựa chọn bên canh ảnh trượt */
@@ -78,7 +79,6 @@
     margin-left: 20px;
     padding-top: 20px;
     line-height: 30px;
-    min-width: 160px;
 }
 
 .opt__age {
@@ -134,8 +134,7 @@
     margin-top: 20px;
 }
 
-.size__title {
-}
+.size__title {}
 
 .size__select {
     width: 100%;
@@ -210,10 +209,11 @@ input[type="radio"] {
 .title--primary {
     width: 100%;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.8rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
     position: relative;
-    margin-bottom: 20px;
+    line-height: 34px;
+    margin: 12px 0 16px 0;
 }
 
 .title--primary::after {
@@ -221,7 +221,7 @@ input[type="radio"] {
     display: block;
     position: absolute;
     left: 50%;
-    bottom: -15px;
+    bottom: -5px;
     width: 20%;
     height: 3px;
     background: radial-gradient(black, #fff);
@@ -232,13 +232,15 @@ input[type="radio"] {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .description__common {
     font-size: 1.6rem;
     flex: 1;
     line-height: 30px;
-    min-width: 500px;
+    padding: 10px;
+    text-align: justify;
 }
 
 .description__common p {
@@ -256,6 +258,7 @@ input[type="radio"] {
 }
 
 .detail__list {
+    padding: 21px;
 }
 
 /* Phan review */
@@ -281,11 +284,11 @@ input[type="radio"] {
 }
 
 /* Ẩn radio  đi để thay bằng ngôi sao */
-.review__star > input {
+.review__star>input {
     display: none;
 }
 
-.review__star > label::before {
+.review__star>label::before {
     margin: 5px;
     font-size: 1.5rem;
     font-family: FontAwesome;
@@ -293,35 +296,38 @@ input[type="radio"] {
     content: "\f005";
 }
 
-.review__star > label {
+.review__star>label {
     color: #ddd;
     cursor: pointer;
 }
 
-.review__star input:checked ~ label {
+.review__star input:checked~label {
     color: gold;
 }
 
 .review__star label:hover,
-.review__star label:hover ~ label {
+.review__star label:hover~label {
     color: gold;
 }
 
-.start {
-}
+.start {}
 
 /* Phần comment */
 
 .review__comment {
     flex: 1;
 }
+
 .review__comment textarea {
     border: 1px solid black;
-    width: 50%;
+    width: 80%;
     height: 60px;
     border-radius: 5px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
     min-width: 240px;
+    padding: 2px;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 textarea::placeholder {
@@ -349,4 +355,59 @@ textarea::placeholder {
     margin: 0 auto;
 }
 
-/* responsive cho review */
+
+/* RWD cho tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .order__slide {
+        min-width: 600.6px;
+    }
+
+    .main__opt {
+        min-width: 600.8px;
+    }
+
+    .description__common {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 739px) {
+    .wide {
+        width: 480px;
+    }
+
+    .order__slide {
+        min-width: 400px;
+    }
+
+    .main__opt {
+        min-width: 400px;
+    }
+
+    .description__common {
+        min-width: 400px;
+    }
+
+    .review__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .review__star {
+        display: flex;
+        justify-content: center;
+        /* Hoặc 'flex-start' (trái), 'flex-end' (phải) */
+        direction: rtl;
+        width: 100%;
+    }
+
+
+    .review__comment {
+        min-width: 100%;
+        display: flex;
+    }
+
+    #comment {
+        margin: 0 auto;
+    }
+}

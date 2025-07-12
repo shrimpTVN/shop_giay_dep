@@ -31,8 +31,25 @@ document.getElementById("slide__prev").addEventListener("click", prevSlide);
 
 setInterval(nextSlide, 5000);
 
+//js cho chọn màu sắc
+
+var img_color = document.querySelectorAll(".img-color");
+img_color.forEach(function(e){
+  e.addEventListener("click", function () {
+    img_color.forEach(function(img) {
+      img.style.border = "none";
+    });
+    e.style.border = "1px solid black";
+    let p = document.querySelector(".opt__img-color h2");
+    // bổ sung thêm sau
+    p.innerHTML = "Màu sắc " + "Thêm màu json";
+  });
+})
+  
+
 //js cho phan rating
 
 document.getElementById("rating").addEventListener("click", function () {
   document.getElementById("comment").focus();
 });
+
