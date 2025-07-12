@@ -304,7 +304,7 @@ html {
     height: 4px;
     bottom: -5px;
     left: 50%;
-    background: radial-gradient(coral, #fff);
+    background: radial-gradient(#333, #fff);
     transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
     /* left 50%(dịch sang phải) thÌ đầu mút của phần tử giả(before) sẽ nằm giữa title, chứ không phải chính giữa phần tử nằm chính giữa title
         do đó cần phần tử giả tự mình dịch chuyển sang trái 50% độ dài chính nó */
