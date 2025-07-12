@@ -46,15 +46,18 @@
         </header>
 
         <main class="page__main grid wide">
-            <!-- <i class="fa-solid fa-trash"></i> -trash -->
-            <!-- <i class="fa-solid fa-pen-to-square"></i> - edit -->
             <article>
                 <h1 class="article__title--primary">Giỏ hàng</h1>
+                <h2 class="article__title-- cart__total-item">Tổng: sản phẩm</h2>
                 <section class="cart__container">
                     <div class="cart__list-wrap">
                         <ul class="cart__list">
                             <li class="cart__item">
                                 <div class="cart__item-info">
+                                    <div class="cart__item-checkbox-wrap">
+                                        <input type="checkbox" class="cart__item-checkbox" />
+                                    </div>
+
                                     <img
                                         class="cart__item-image"
                                         src="./images/products/product_2/image_1.png"
@@ -81,27 +84,67 @@
                                         ><br />Xóa
                                     </button>
                                 </div>
+                                <div class="cart__edit-component">
+                                    <div class="edit__color">
+                                        <span> Màu: </span>
+                                        <select name="" id="">
+                                            <option value="">Trắng</option>
+                                            <option value="">Xanh</option>
+                                            <option value="">Vàng</option>
+                                            <option value="">Tím</option>
+                                        </select>
+                                    </div>
+                                    <div class="edit__size">
+                                        <span> Kích cỡ: </span>
+                                        <select name="" id="">
+                                            <option value="35">34</option>
+                                            <option value="36">36</option>
+                                            <option value="37">37</option>
+                                            <option value="38">38</option>
+                                            <option value="39">39</option>
+                                            <option value="40">40</option>
+                                            <option value="41">41</option>
+                                            <option value="42">42</option>
+                                        </select>
+                                    </div>
+                                    <div class="edit__quanlity">
+                                        <span>Số lượng:</span>
+                                        <input type="number" value="1" />
+                                    </div>
+                                    <div class="edit__button-wrap">
+                                        <button class="edit__button cart__button--confirm" type="button">
+                                            Trở lại
+                                        </button>
+                                        <button class="edit__button cart__button--cancel" type="button">
+                                            Xác nhận
+                                        </button>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="cart__item"></li>
-                            <li class="cart__item"></li>
                         </ul>
                     </div>
 
-                    <div class="cart__summary">
-                        <h2 class="cart__summary-title">Tóm tắt đơn hàng</h2>
-                        <div class="cart__summary-item">
-                            <span class="cart__summary-label">Tổng tiền:</span>
-                            <span class="cart__summary-value">0 VNĐ</span>
+                    <div class="cart__summary-wrap">
+                        <div class="cart__summary">
+                            <h2 class="cart__summary-title">Đơn đặt hàng</h2>
+                            <div class="cart__summary-item summary__total-item">
+                                <span class="cart__summary-label">Tổng số sản phẩm:</span>
+                                <span class="cart__summary-value">4 </span>
+                            </div>
+                            <div class="cart__summary-item summary__total-price">
+                                <span class="cart__summary-label">Tổng tiền hàng:</span>
+                                <span class="cart__summary-value">₫250000</span>
+                            </div>
+                            <div class="cart__summary-item summary__total-discount">
+                                <span class="cart__summary-label">Tiết kiệm: </span>
+                                <span class="cart__summary-value">₫10000</span>
+                            </div>
+                            <div class="cart__summary-item summary__final-total">
+                                <span class="cart__summary-label">Giá cuối:</span>
+                                <span class="cart__summary-value cart__summary-value--total">₫2686880</span>
+                            </div>
+                            <button class="cart__checkout-button" type="button">Đặt hàng</button>
                         </div>
-                        <div class="cart__summary-item">
-                            <span class="cart__summary-label">Phí vận chuyển:</span>
-                            <span class="cart__summary-value">Miễn phí</span>
-                        </div>
-                        <div class="cart__summary-item cart__summary-item--total">
-                            <span class="cart__summary-label">Tổng cộng:</span>
-                            <span class="cart__summary-value cart__summary-value--total">0 VNĐ</span>
-                        </div>
-                        <button class="cart__checkout-button" type="button">Thanh toán</button>
                     </div>
                 </section>
             </article>

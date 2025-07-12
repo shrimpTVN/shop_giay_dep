@@ -1,4 +1,5 @@
 [
+  {
         "id": 2,
         "name": "Vans knu skool",
         "brand": "Vans",
@@ -16,7 +17,7 @@
         "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh/Trắng", "Nâu nhạt/Đen", "Xanh lá/ Hồng"],
         "describe": ""
     },
-    {
+     {
         "id": 3,
         "name": "Adidas Originals Gazelle Indoor",
         "brand": "Adidas",
@@ -58,7 +59,7 @@
         "color_names": ["Đen/Xám/Bạc", "Đen/Xám/Bạc", "Đen/Xám/Trắng", "Trắng/Đỏ lửa", "Trắng/Carolina/Đen"],
         "describe": ""
     },
-    {
+     {
         "id": 5,
         "name": "New Balance 9060",
         "brand": "New Balance",
@@ -76,7 +77,7 @@
         "color_names": ["Xám", "Xám", "Nâu/Nâu rám nắng", "Xanh nước biển/Tím", "Đỏ/Cam/Trắng"],
         "describe": ""
     },
-    {
+     {
         "id": 7,
         "name": "New Balance 530",
         "brand": "New Balance",
@@ -94,7 +95,7 @@
         "color_names": ["Trắng", "Trắng", "Trắng/Xanh nước biển", "Trắng/Hồng", "Nâu/Nâu rám nắng"],
         "describe": ""
     },
-    {
+     {
         "id": 8,
         "name": "New Balance 550",
         "brand": "New Balance",
@@ -112,7 +113,7 @@
         "color_names": ["Trắng/Be", "Trắng/Be", "Cam/Be", "Trắng/Xanh lá cây", "Trắng/Đen/Xám"],
         "describe": ""
     },
-    {
+     {
         "id": 9,
         "name": "Nike Air Force 1 '07 Next Nature",
         "brand": "Nike",
@@ -130,7 +131,7 @@
         "color_names": ["Trắng/Hồng", "Trắng/Hồng", "Trắng/Xanh nước biển", "Trắng/Hồng Aster", "Trắng ngà/Đỏ tươi"],
         "describe": ""
     },
-    {
+     {
         "id": 10,
         "name": "On Cloudnova 2",
         "brand": "On",
@@ -148,7 +149,7 @@
         "color_names": ["Trắng", "Trắng", "Cát nhạt/Xám khói", "Trắng/Cam cháy", "Trắng lạnh/Cát nhạt"],
         "describe": ""
     },
-    {
+     {
         "id": 11,
         "name": "Crocs Classic Clogs",
         "brand": "Crocs",
@@ -166,7 +167,7 @@
         "color_names": ["Trắng", "Trắng", "Xanh Calcite", "Hồng nhạt", "Trắng/Vàng-Pokemon"],
         "describe": ""
     },
-    {
+     {
         "id": 12,
         "name": "Adidas Originals Samba OG",
         "brand": "Adidas",
@@ -181,16 +182,16 @@
             "./images/products/product_12/image_4.jpg",
             "./images/products/product_12/image_5.jpg"
         ],
-        "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Be/Đen"],
+        "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Be/Đen:"],
         "describe": ""
     },
-    {
+     {
         "id": 13,
         "name": "New Balance 9060",
         "brand": "New Balance",
         "gender": "Men",
         "price": 390000,
-        "discount": 0.20,
+        "discount": 0.2,
         "tags": [],
         "images": [
             "./images/products/product_13/image_1.jpg",
@@ -199,10 +200,16 @@
             "./images/products/product_13/image_4.jpg",
             "./images/products/product_13/image_5.jpg"
         ],
-        "color_names": ["Phản chiếu/Đen/Xám", "Phản chiếu/Đen/Xám", "Xám/Xanh diệc", "Vân sam mới/Sarsh muối/Chim bồ câu", "Màu be/Trắng/Xám"],
+        "color_names": [
+            "Phản chiếu/Đen/Xám",
+            "Phản chiếu/Đen/Xám",
+            "Xám/Xanh diệc",
+            "Vân sam mới/Sarsh muối/Chim bồ câu",
+            "Màu be/Trắng/Xám"
+        ],
         "describe": ""
     },
-    {
+     {
         "id": 14,
         "name": "New Balance 740",
         "brand": "New Balance",
@@ -217,16 +224,22 @@
             "./images/products/product_14/image_4.jpg",
             "./images/products/product_14/image_5.jpg"
         ],
-        "color_names": ["Xanh lam/Đen", "Xanh lam/Đen", "Đen/Bạc/Trắng", "Nho Concord/Hoa vân anh tím/Ánh nắng rực rỡ", "Thủy ngân đỏ/Đá lâu đài/Trắng"],
+        "color_names": [
+            "Xanh lam/Đen",
+            "Xanh lam/Đen",
+            "Đen/Bạc/Trắng",
+            "Nho Concord/Hoa vân anh tím/Ánh nắng rực rỡ",
+            "Thủy ngân đỏ/Đá lâu đài/Trắng"
+        ],
         "describe": ""
     },
-    {
+     {
         "id": 15,
         "name": "New Balance 574",
         "brand": "New Balance",
         "gender": "Men",
         "price": 260000,
-        "discount": 0.20,
+        "discount": 0.2,
         "tags": [],
         "images": [
             "./images/products/product_15/image_1.jpg",
@@ -238,13 +251,13 @@
         "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh nước biển/Trắng", "Trắng/Xám", "Mây Nimbus/Trắng"],
         "describe": ""
     },
-    {
+     {
         "id": 16,
         "name": "adidas Originals Samba",
         "brand": "Adidas",
         "gender": "Men",
         "price": 260000,
-        "discount": 0.20,
+        "discount": 0.2,
         "tags": [],
         "images": [
             "./images/products/product_16/image_1.jpg",
@@ -256,13 +269,13 @@
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Trắng/Xanh lá cây", "Trắng/Đỏ", "Da bò/Be"],
         "describe": ""
     },
-    {
+     {
         "id": 17,
         "name": "Nike Air Force 1 '07",
         "brand": "Nike",
         "gender": "Men",
         "price": 290000,
-        "discount": 0.30,
+        "discount": 0.3,
         "tags": [],
         "images": [
             "./images/products/product_17/image_1.jpg",
@@ -274,13 +287,13 @@
         "color_names": ["Trắng", "Trắng", "Đen", "Trắng/Đen", "Trắng/Be"],
         "describe": ""
     },
-    {
+     {
         "id": 18,
         "name": "Nike Dunk Low Retro",
         "brand": "Nike",
         "gender": "Men",
         "price": 310000,
-        "discount": 0.20,
+        "discount": 0.2,
         "tags": [],
         "images": [
             "./images/products/product_18/image_1.jpg",
@@ -292,7 +305,7 @@
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Vàng/Đen", "Trắng/Đen/Đỏ", "Trắng/Xanh nước biển/Cam"],
         "describe": ""
     },
-      {
+     {
     "id": 19,
     "name": "Nike Dunk Low",
     "brand": "Nike",
@@ -315,8 +328,8 @@
       "Xanh nước biển/Trắng"
     ],
     "describe": ""
-   } 
-    {
+  } 
+   {
    "id": 20,
     "name": "adidas Originals Samba",
     "brand": "adidas",
@@ -341,7 +354,7 @@
     "describe": ""
   },
    {
-   "id": 21,
+  "id": 21,
     "name": "Nike Vomero 5",
     "brand": "Nike",
     "gender": "Kids",
@@ -387,9 +400,9 @@
       "Đen/Trắng"
     ],
     "describe": ""
-  }
-    {
-      "id": 23,
+  } 
+   {
+        "id": 23,
     "name": "New Balance 9060",
     "brand": "New Balance",
     "gender": "Kids",
@@ -543,5 +556,6 @@
         ],
         "color_names": ["Vàng/Xám", "Vàng/Xám", "Than củi/Bụi Photon", "Bụi Photon/Bạc kim loại/Bọt hồng", "Xanh lá cây cổ điển"],
         "describe": ""
-    }
+  }
+   
 ]

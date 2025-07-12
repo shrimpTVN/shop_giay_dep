@@ -1,288 +1,288 @@
 html {
-  /* HACK -> 1.2rem=12px , 1.6rem=16px*/
-  font-size: 62.5%;
-  line-height: 1.6rem;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+    /* HACK -> 1.2rem=12px , 1.6rem=16px*/
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 .overflow-text {
-  overflow: hidden;
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    text-overflow: ellipsis;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .grid {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .grid.wide {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-  .wide {
-    width: 644px;
-  }
+    .wide {
+        width: 644px;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
-  .wide {
-    width: 984px;
-  }
+    .wide {
+        width: 984px;
+    }
 }
 
 /* ///////////////////////////// */
 /* CSS for page */
 .page {
-  display: grid;
-  grid-template-areas: "header-cell" "main-cell" "footer-cell";
-  padding: 0 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  background-color: rgb(245, 245, 245);
+    display: grid;
+    grid-template-areas: "header-cell" "main-cell" "footer-cell";
+    padding: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: rgb(245, 245, 245);
 }
 
 /* /////////////////////////////// */
 /* CSS for page__header and its component */
 .page__header {
-  grid-area: header-cell;
-  /* border: 3px solid red; */
-  background-color: rgb(235, 235, 235);
-  padding: 3.2rem 0;
+    grid-area: header-cell;
+    /* border: 3px solid red; */
+    background-color: rgb(235, 235, 235);
+    padding: 3.2rem 0;
 }
 
 .header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  margin: 2.8rem auto 1rem;
-  padding: 1rem 0;
+    margin: 2.8rem auto 1rem;
+    padding: 1rem 0;
 }
 
 /* logo */
 .header__logo {
-  width: 12rem;
-  height: 6.4rem;
-  align-self: center;
+    width: 12rem;
+    height: 6.4rem;
+    align-self: center;
 }
 
 /* search */
 .header__search {
-  border: 1px solid #ccc;
-  border-left: none;
-  border-right: none;
-  position: relative;
-  z-index: 10;
-  background-color: #fff;
-  width: 40%;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    width: 40%;
 }
 .header__search::after,
 .header__search::before {
-  content: "";
-  /* background-color: aquamarine; */
-  width: 8rem;
-  height: 100%;
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  z-index: -1;
-  top: -0.07rem;
-  background-color: #fff;
+    content: "";
+    /* background-color: aquamarine; */
+    width: 8rem;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    z-index: -1;
+    top: -0.07rem;
+    background-color: #fff;
 }
 
 .header__search::before {
-  left: -4rem;
-  clip-path: inset(0 50% 0 0);
+    left: -4rem;
+    clip-path: inset(0 50% 0 0);
 }
 .header__search::after {
-  right: -4rem;
-  clip-path: inset(0 0 0 50%);
+    right: -4rem;
+    clip-path: inset(0 0 0 50%);
 }
 
 .header__search-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .header__search-input {
-  flex-basis: 100%;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  font-size: 1.6rem;
-  color: #000;
+    flex-basis: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: #000;
 }
 
 .header__search-button {
-  border: none;
-  background-color: coral;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-  margin: 0.5rem 0;
+    border: none;
+    background-color: coral;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    margin: 0.5rem 0;
 }
 
 .header__search-button:hover {
-  background-color: #ff5722;
-  cursor: pointer;
+    background-color: #ff5722;
+    cursor: pointer;
 }
 
 .header__search-icon {
-  padding: 0;
-  border: none;
+    padding: 0;
+    border: none;
 }
 
 /* nav */
 .header__nav {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
 }
 .nav__list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 .nav__list-item {
-  padding: 1rem;
+    padding: 1rem;
 }
 .nav__list-item--cart {
-  padding: 0 1rem;
-  margin: auto 0;
+    padding: 0 1rem;
+    margin: auto 0;
 }
 .nav__link {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  font-size: 1.6rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .nav__link:hover {
-  color: #777777;
+    color: #777777;
 }
 .nav__link--white {
-  color: #fff;
+    color: #fff;
 }
 
 .nav__link--border-right {
-  border-right: 2px solid #fff;
-  padding-right: 0.5rem;
+    border-right: 2px solid #fff;
+    padding-right: 0.5rem;
 }
 .nav__link--border-left {
-  border-left: 2px solid #fff;
-  padding-left: 0.5rem;
+    border-left: 2px solid #fff;
+    padding-left: 0.5rem;
 }
 .nav__cart-icon {
-  font-size: 2.6rem;
-  /* color: rgb(255, 115, 1); */
-  padding-right: 1rem;
-  position: relative;
-  /* top: -0.4rem; */
+    font-size: 2.6rem;
+    /* color: rgb(255, 115, 1); */
+    padding-right: 1rem;
+    position: relative;
+    /* top: -0.4rem; */
 }
 
 .nav__cart-icon:hover {
-  color: rgb(240, 1, 1);
-  cursor: pointer;
+    color: rgb(240, 1, 1);
+    cursor: pointer;
 }
 
 .nav__list-item--login {
-  background-color: coral;
-  color: #fff;
-  border-radius: 8px;
+    background-color: coral;
+    color: #fff;
+    border-radius: 8px;
 }
 
 /* ///////////////////////////// */
 /* CSS for main */
 .page__main {
-  grid-area: main-cell;
-  border: 1px solid purple;
-  display: grid;
-  /* width: 100%; */
-  min-height: 110rem;
-  margin: 1rem auto;
-  padding: 1.4rem 1rem;
+    grid-area: main-cell;
+    border: 1px solid purple;
+    display: grid;
+    /* width: 100%; */
+    min-height: 110rem;
+    margin: 1rem auto;
+    padding: 1.4rem 1rem;
 }
 
 .page__content {
-  display: grid;
-  border-radius: 5px;
-  padding: 0 5px;
+    display: grid;
+    border-radius: 5px;
+    padding: 0 5px;
 }
 
 .main__aside {
-  margin: 2px;
-  padding: 5px;
-  color: #000;
-  text-align: justify;
-  text-justify: inter-word; /* Justify text in the aside section */
+    margin: 2px;
+    padding: 5px;
+    color: #000;
+    text-align: justify;
+    text-justify: inter-word; /* Justify text in the aside section */
 }
 
 /* định nghĩa các area tương ứng với các cột của main */
 .main__aside--left {
-  grid-area: left-cell;
+    grid-area: left-cell;
 }
 
 .main_aside--right {
-  grid-area: right-cell;
+    grid-area: right-cell;
 }
 
 .main__article {
-  grid-area: article-cell;
-  padding: 0 5px;
+    grid-area: article-cell;
+    padding: 0 5px;
 }
 
 /* define size for main sides */
 /* main page have only one column -> three grows - một cột và 3 hàng */
 .page__main--one-column {
-  grid-template-areas: "left-cell" "aticle-cell" "right-cell";
-  /* grid-template-columns: auto; */
+    grid-template-areas: "left-cell" "aticle-cell" "right-cell";
+    /* grid-template-columns: auto; */
 }
 
 /* 2 columns and main-content on right side - 2 cột và article nằm bên phải */
 .page__main--two-columns-rightside {
-  grid-template-columns: 1fr 3fr; /* 1fr for left aside, 3fr for article */
-  grid-template-areas: "left-cell article-cell";
+    grid-template-columns: 1fr 3fr; /* 1fr for left aside, 3fr for article */
+    grid-template-areas: "left-cell article-cell";
 }
 
 /* 2 columns and main-content on left side - 2 cột và article nằm bên trái*/
 .page__main--two-columns-leftside {
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "article-cell right-cell";
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "article-cell right-cell";
 }
 
 /* main page have three columns -> 1 row - 3 cột và article ở giữa */
 .page__main--three-columns {
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: " left-cell article-cell right-cell";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: " left-cell article-cell right-cell";
 }
 .main__article {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 }
 
 /* phần này mình vẫn chưa sửa đễ thích ứng với trang web của nhóm, nên khi cần thì các bạn sửa lại nha !!! */
 /* CSS for image in main__article */
 .article__image,
 .aside__image {
-  width: 100%;
+    width: 100%;
 }
 
 /* css for titile in main__article */
@@ -290,25 +290,26 @@ html {
 .section__title,
 .div__title,
 .aside__title {
-  font-family: "open sans", sans-serif;
-  font-weight: 300;
-  /* color: #f90b6d; */
+    font-family: "open sans", sans-serif;
+    font-weight: 300;
+    /* color: #f90b6d; */
 }
 
 /* CSS for primary title (h1) */
 .article__title--primary,
 .aside__title--primary {
-  line-height: 34px;
-  margin: 12px 0 16px 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 28px;
-  position: relative;
+    line-height: 34px;
+    margin: 12px 0 16px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
 }
 
 /* css for pseudo element underline on centered header */
 .article__title--primary::before,
 .aside__title--primary::before {
+<<<<<<< HEAD
 <<<<<<< HEAD
   content: "";
   position: absolute;
@@ -319,33 +320,38 @@ html {
   background: radial-gradient(#cddc39, #fff);
   transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
 =======
+=======
+>>>>>>> c07bcee820bc7a2e2471cde2ff147c84ddcbe7db
     content: "";
     position: absolute;
     width: 200px;
     height: 4px;
     bottom: -5px;
     left: 50%;
-    background: radial-gradient(coral, #fff);
+    background: radial-gradient(#cddc39, #fff);
     transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
+<<<<<<< HEAD
     /* left 50%(dịch sang phải) thÌ đầu mút của phần tử giả(before) sẽ nằm giữa title, chứ không phải chính giữa phần tử nằm chính giữa title
         do đó cần phần tử giả tự mình dịch chuyển sang trái 50% độ dài chính nó */
 >>>>>>> f795658e258bf47f3e498ea662e858641f3e8e30
+=======
+>>>>>>> c07bcee820bc7a2e2471cde2ff147c84ddcbe7db
 }
 
 /* CSS for secondary title (h2) */
 .section__title--secondary,
 .aside__title--secondary,
 .article__title--secondary {
-  line-height: 28px;
-  margin: 12px 0 10px 0;
-  font-size: 24px;
+    line-height: 28px;
+    margin: 12px 0 10px 0;
+    font-size: 24px;
 }
 
 /* CSS for tertiary title (h3) */
 .div__title--tertiary {
-  line-height: 24px;
-  margin: 5px 0 6px 0;
-  font-size: 1.6rem;
+    line-height: 24px;
+    margin: 5px 0 6px 0;
+    font-size: 1.6rem;
 }
 
 .article__section {
@@ -353,235 +359,230 @@ html {
 
 /* CSS for content in section in main__article */
 .section__content {
-  width: 70%;
-  padding: 0 5px;
-  margin-bottom: 5px;
-  text-align: justify;
+    width: 70%;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    text-align: justify;
 }
 
 .section__content--float-left {
-  float: left;
+    float: left;
 }
 
 .section__content--float-right {
-  float: right;
-  /* border: solid green; */
+    float: right;
+    /* border: solid green; */
 }
 
 .section__div-column-count {
-  column-count: 2; /*I dont understand*/
+    column-count: 2; /*I dont understand*/
 }
 
 .column-break {
-  break-before: column; /*I dont understand*/
+    break-before: column; /*I dont understand*/
 }
 
 .section__div-order-steps {
-  margin: 5px 0;
-  width: 100%;
-  text-align: center;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
 }
 
 /* css for video, image in section in main__article */
 .section__image--float-left .section__video--float-left {
-  float: left;
+    float: left;
 }
 
 .section__image--float-right,
 .section__video--float-right {
-  float: right;
-  /* border: none; */
+    float: right;
+    /* border: none; */
 }
 
 .section__video,
 .section__image {
-  width: 30%;
-  border-radius: 5px;
+    width: 30%;
+    border-radius: 5px;
 }
 
 /* ///////////////////////////// */
 /* css for page__footer */
 .page__footer {
-  grid-area: footer-cell;
-  /* border: 1px solid black; */
-  min-height: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-  background-color: rgb(235, 235, 235);
-  margin-top: 1rem;
+    grid-area: footer-cell;
+    /* border: 1px solid black; */
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: rgb(235, 235, 235);
+    margin-top: 1rem;
 }
 
 .footer__services {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .services__container {
-  width: 20%;
-  display: inline-block;
-  margin: 0 8px;
+    width: 20%;
+    display: inline-block;
+    margin: 0 8px;
 }
 
 .services__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .services__list-item {
-  margin: 0;
+    margin: 0;
 }
 
 .services__list-item:hover {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 .services__link {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
 }
 
 .services__logo-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-  width: 80%;
-  margin-bottom: 1rem;
+    width: 80%;
+    margin-bottom: 1rem;
 }
 
 .services__list-item--logo:hover {
-  background-color: rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
 }
 
 .services__logo {
-  padding: 0.5rem;
-  margin: 0 0.4rem;
-  background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    margin: 0 0.4rem;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .services__logo:hover {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .services__social-logo {
-  /* width: 2rem;
+    /* width: 2rem;
     height: 2rem; */
-  margin-right: 0.5rem;
-  vertical-align: middle;
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
 
 .services__download {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .download__platform {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
 }
 
 .download__platform-logo {
-  border: 1px solid #ccc;
-  background-color: #fff;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
 .download__platform-logo:hover {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 .footer__bottom {
-  width: 100%;
-  text-align: center;
-  font-size: 1.4rem;
-  color: #000;
-  margin-top: 2rem;
-}
-body {
-  background-color: #1212121a
-  color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000;
+    margin-top: 2rem;
 }
 
 .register.container {
-  max-width: 500px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
 }
 
 .register__title {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 30px;
-  font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .register__form .form__group {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .register__form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
 .register__form input {
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  background-color: #2a2a2a;
-  color: #fff;
-  font-size: 15px;
-  transition: border-color 0.3s ease;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
 }
 
 .register__form input:focus {
-  border-color: #0099ff;
-  outline: none;
-  background-color: #333;
+    border-color: #0099ff;
+    outline: none;
+    background-color: #333;
 }
 
 .register__button {
-  width: 100%;
-  padding: 14px;
-  font-size: 16px;
-  background-color: yellow;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: yellow;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .register__button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 .register__login-link {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .register__login-link a {
-  color: #1e90ff;
-  text-decoration: none;
+    color: #1e90ff;
+    text-decoration: none;
 }
 
 .register__login-link a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }

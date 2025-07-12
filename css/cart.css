@@ -1,3 +1,7 @@
+.page__main {
+    border: none;
+    position: inherit;
+}
 .cart__container {
     width: 100%;
     display: flex;
@@ -20,16 +24,51 @@
     margin-bottom: 1rem;
     background-color: #fff;
     border-radius: 3px;
+    position: relative;
 }
 
+.cart__edit-component {
+    width: 32rem;
+    height: 10rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: absolute;
+    bottom: -7rem;
+    right: 7.6rem;
+}
+.cart__total-item {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
 .cart__item-info {
     display: flex;
     align-items: center;
 }
+
+.cart__item-checkbox-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    color: #fff;
+}
+.cart__item-checkbox {
+    margin-right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    accent-color: red;
+}
+
 .cart__item-image {
-    width: 16rem;
+    width: 14rem;
     margin-right: 2rem;
     background-color: #e7e7e7;
+    border-radius: 3px;
     padding: 0 1rem;
 }
 
@@ -38,6 +77,11 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 0.5rem;
+}
+.cart__item-price-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .cart__item-price {
     font-size: 1.6rem;
@@ -49,6 +93,7 @@
 .cart__item-detail {
     font-size: 1.4rem;
     color: #666;
+    margin-bottom: 0.2rem;
     /* font-weight: bold; */
 }
 
@@ -69,10 +114,53 @@
 .cart__button-icon--remove {
     color: #e74c3c;
 }
+
+.cart__item-edit {
+    position: inherit;
+}
+
 /* css for cart_summary */
-.cart__summary {
+.cart__summary-wrap {
     width: 30%;
+}
+.cart__summary {
     border: 1px solid #ccc;
+    border-radius: 3px;
     margin-left: 1rem;
-    padding: 0 1rem;
+    padding: 1rem;
+}
+
+.cart__summary-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+
+.cart__summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.cart__summary-label {
+    font-weight: bold;
+}
+.summary__final-total .cart__summary-value {
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.cart__checkout-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
 }
