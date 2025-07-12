@@ -44,6 +44,17 @@ html {
     }
 }
 
+/* ///////////////////////////// */
+/* CSS for page */
+.page {
+    display: grid;
+    grid-template-areas: "header-cell" "main-cell" "footer-cell";
+    padding: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: rgb(245, 245, 245);
+}
+
 /* /////////////////////////////// */
 /* CSS for page__header and its component */
 .page__header {
@@ -204,9 +215,9 @@ html {
     border: 1px solid purple;
     display: grid;
     /* width: 100%; */
-    min-height: 100vh;
+    min-height: 110rem;
     margin: 1rem auto;
-    /* padding: 1.4rem 1rem; */
+    padding: 1.4rem 1rem;
 }
 
 .page__content {
@@ -304,10 +315,8 @@ html {
     height: 4px;
     bottom: -5px;
     left: 50%;
-    background: radial-gradient(#333, #fff);
+    background: radial-gradient(#cddc39, #fff);
     transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
-    /* left 50%(dịch sang phải) thÌ đầu mút của phần tử giả(before) sẽ nằm giữa title, chứ không phải chính giữa phần tử nằm chính giữa title
-        do đó cần phần tử giả tự mình dịch chuyển sang trái 50% độ dài chính nó */
 }
 
 /* CSS for secondary title (h2) */
@@ -482,4 +491,79 @@ html {
     font-size: 1.4rem;
     color: #000;
     margin-top: 2rem;
+}
+
+.register.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.register__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.register__form .form__group {
+    margin-bottom: 20px;
+}
+
+.register__form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.register__form input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.register__form input:focus {
+    border-color: #0099ff;
+    outline: none;
+    background-color: #333;
+}
+
+.register__button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: yellow;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register__button:hover {
+    background-color: #0056b3;
+}
+
+.register__login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register__login-link a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.register__login-link a:hover {
+    text-decoration: underline;
 }
