@@ -14,7 +14,7 @@
     max-width: 100%;       /* Không vượt quá khung */
     height: auto;          /* Cho phép co chiều cao */
     object-fit: cover;
-    padding-right: 0.5rem;
+   
 }
 .div__content {
      white-space: normal;
@@ -78,4 +78,23 @@
 
 .section-brand__item img:hover {
     transform: scale(1.05);
+}
+.section__video {
+    width: 30%;
+}
+
+.section__video--float-left {
+    float: left;          
+}
+.section__content {
+    width: 70%;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.section__content--float-right {
+    float: right;
+}
+.section__content--sale {
+    overflow: hidden;
 }
