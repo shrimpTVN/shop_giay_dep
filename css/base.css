@@ -309,6 +309,19 @@ html {
 /* css for pseudo element underline on centered header */
 .article__title--primary::before,
 .aside__title--primary::before {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 4px;
+  bottom: -5px;
+  left: 50%;
+  background: radial-gradient(#cddc39, #fff);
+  transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
+=======
+=======
+>>>>>>> c07bcee820bc7a2e2471cde2ff147c84ddcbe7db
     content: "";
     position: absolute;
     width: 200px;
@@ -317,6 +330,12 @@ html {
     left: 50%;
     background: radial-gradient(black, #fff);
     transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
+<<<<<<< HEAD
+    /* left 50%(dịch sang phải) thÌ đầu mút của phần tử giả(before) sẽ nằm giữa title, chứ không phải chính giữa phần tử nằm chính giữa title
+        do đó cần phần tử giả tự mình dịch chuyển sang trái 50% độ dài chính nó */
+>>>>>>> f795658e258bf47f3e498ea662e858641f3e8e30
+=======
+>>>>>>> c07bcee820bc7a2e2471cde2ff147c84ddcbe7db
 }
 
 /* CSS for secondary title (h2) */
