@@ -14,6 +14,7 @@
     max-width: 100%;       /* Không vượt quá khung */
     height: auto;          /* Cho phép co chiều cao */
     object-fit: cover;
+    padding-right: 0.5rem;
 }
 .div__content {
      white-space: normal;
