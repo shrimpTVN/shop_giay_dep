@@ -122,6 +122,10 @@
 .opt__img-color h2 {
     width: 100%;
 }
+.opt__img-color h2 p {
+    color: rgb(56, 57, 57);
+    font-size: 1.4rem;
+}
 
 .img-color {
     width: 70px;
@@ -140,7 +144,7 @@
 
 .size__select {
     display: inline;
-    width: 5rem;
+    width: 6rem;
     padding: 3px 10px;
     font-size: 1.6rem;
     border-radius: 5px;
@@ -151,11 +155,30 @@
     display: block;
     font-size: 1.4rem;
     text-decoration: none;
-    color: cyan;
+    color: coral;
+}
+
+.opt__quantity {
+    display: flex;
+    gap: 1rem;
+}
+
+.opt__quantity label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.opt__quantity input {
+    width: 3rem;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 .opt__add {
     margin-top: 20px;
+    display: flex;
+    gap: 1rem;
 }
 
 .add__button {
@@ -165,8 +188,11 @@
     height: 50px;
     color: white;
     background-color: black;
-    margin-bottom: 20px;
     cursor: pointer;
+}
+
+.add__button--buy {
+    background-color: coral;
 }
 
 

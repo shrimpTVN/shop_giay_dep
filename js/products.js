@@ -52,6 +52,7 @@ document.querySelectorAll('.product-listing__card').forEach(function (card) {
     if (active) active.classList.remove('active');
     if (mainImages[0]) mainImages[0].classList.add('active');
   });
+  
   card.addEventListener('mouseleave', function () {
     const active = mainImageContainer.querySelector('.active');
     if (active) active.classList.remove('active');
