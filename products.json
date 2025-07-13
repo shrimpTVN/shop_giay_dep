@@ -1,5 +1,23 @@
 [
     {
+        "id": 1,
+        "name": "Nike Air Max 90",
+        "brand": "Nike",
+        "gender": "Men",
+        "price": 565000,
+        "discount": 0,
+        "tags": [],
+        "images": [
+            "./images/products/product_1/image_1.png",
+            "./images/products/product_1/image_2.png",
+            "./images/products/product_1/image_3.png",
+            "./images/products/product_1/image_4.png",
+            "./images/products/product_1/image_5.png"
+        ],
+        "color_names": ["Xanh rêu", "Xanh rêu", "Trắng", "Đen", "Xanh/Trắng/Xám"],
+        "describe": ""
+    },
+    {
         "id": 2,
         "name": "Vans knu skool",
         "brand": "Vans",
@@ -8,11 +26,11 @@
         "discount": 0.2,
         "tags": [],
         "images": [
-            "./images/products/product_2/image_1.jpg",
-            "./images/products/product_2/image_2.jpg",
-            "./images/products/product_2/image_3.jpg",
-            "./images/products/product_2/image_4.jpg",
-            "./images/products/product_2/image_5.jpg"
+            "./images/products/product_2/image_1.png",
+            "./images/products/product_2/image_2.png",
+            "./images/products/product_2/image_3.png",
+            "./images/products/product_2/image_4.png",
+            "./images/products/product_2/image_5.png"
         ],
         "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh/Trắng", "Nâu nhạt/Đen", "Xanh lá/ Hồng"],
         "describe": ""
@@ -26,11 +44,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_3/image_1.jpg",
-            "./images/products/product_3/image_2.jpg",
-            "./images/products/product_3/image_3.jpg",
-            "./images/products/product_3/image_4.jpg",
-            "./images/products/product_3/image_5.jpg"
+            "./images/products/product_3/image_1.png",
+            "./images/products/product_3/image_2.png",
+            "./images/products/product_3/image_3.png",
+            "./images/products/product_3/image_4.png",
+            "./images/products/product_3/image_5.png"
         ],
         "color_names": [
             "Xanh biển/Trắng/Đỏ",
@@ -50,11 +68,11 @@
         "discount": 0.2,
         "tags": [],
         "images": [
-            "./images/products/product_4/image_1.jpg",
-            "./images/products/product_4/image_2.jpg",
-            "./images/products/product_4/image_3.jpg",
-            "./images/products/product_4/image_4.jpg",
-            "./images/products/product_4/image_5.jpg"
+            "./images/products/product_4/image_1.png",
+            "./images/products/product_4/image_2.png",
+            "./images/products/product_4/image_3.png",
+            "./images/products/product_4/image_4.png",
+            "./images/products/product_4/image_5.png"
         ],
         "color_names": ["Đen/Xám/Bạc", "Đen/Xám/Bạc", "Đen/Xám/Trắng", "Trắng/Đỏ lửa", "Trắng/Carolina/Đen"],
         "describe": ""
@@ -68,31 +86,49 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_5/image_1.jpg",
-            "./images/products/product_5/image_2.jpg",
-            "./images/products/product_5/image_3.jpg",
-            "./images/products/product_5/image_4.jpg",
-            "./images/products/product_5/image_5.jpg"
+            "./images/products/product_5/image_1.png",
+            "./images/products/product_5/image_2.png",
+            "./images/products/product_5/image_3.png",
+            "./images/products/product_5/image_4.png",
+            "./images/products/product_5/image_5.png"
         ],
         "color_names": ["Xám", "Xám", "Nâu/Nâu rám nắng", "Xanh nước biển/Tím", "Đỏ/Cam/Trắng"],
         "describe": ""
     },
     {
-        "id": 7,
-        "name": "New Balance 530",
+        "id": 6,
+        "name": "New Balance 9060",
         "brand": "New Balance",
         "gender": "Women",
         "price": 280000,
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_7/image_1.jpg",
-            "./images/products/product_7/image_2.jpg",
-            "./images/products/product_7/image_3.jpg",
-            "./images/products/product_7/image_4.jpg",
-            "./images/products/product_7/image_5.jpg"
+            "./images/products/product_6/image_1.png",
+            "./images/products/product_6/image_2.png",
+            "./images/products/product_6/image_3.png",
+            "./images/products/product_6/image_4.png",
+            "./images/products/product_6/image_5.png"
         ],
-        "color_names": ["Trắng", "Trắng", "Trắng/Xanh nước biển", "Trắng/Hồng", "Nâu/Nâu rám nắng"],
+        "color_names": ["Xám", "Xám", "Nâu/Nâu rám nắng", "Xanh nước biển/Tím", "Đỏ/Cam/Trắng"],
+        "describe": ""
+    },
+    {
+        "id": 7,
+        "name": "ASICS® GEL-Nimbus 27",
+        "brand": "ASICS",
+        "gender": "Men",
+        "price": 350000,
+        "discount": 0,
+        "tags": [],
+        "images": [
+            "./images/products/product_7/image_1.png",
+            "./images/products/product_7/image_2.png",
+            "./images/products/product_7/image_3.png",
+            "./images/products/product_7/image_4.png",
+            "./images/products/product_7/image_5.png"
+        ],
+        "color_names": ["Xám/ Xanh rêu", "Xám/ Xanh rêu", "Đen", "Trắng", "Chàm/Xanh Demin"],
         "describe": ""
     },
     {
@@ -104,11 +140,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_8/image_1.jpg",
-            "./images/products/product_8/image_2.jpg",
-            "./images/products/product_8/image_3.jpg",
-            "./images/products/product_8/image_4.jpg",
-            "./images/products/product_8/image_5.jpg"
+            "./images/products/product_8/image_1.png",
+            "./images/products/product_8/image_2.png",
+            "./images/products/product_8/image_3.png",
+            "./images/products/product_8/image_4.png",
+            "./images/products/product_8/image_5.png"
         ],
         "color_names": ["Trắng/Be", "Trắng/Be", "Cam/Be", "Trắng/Xanh lá cây", "Trắng/Đen/Xám"],
         "describe": ""
@@ -122,11 +158,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_9/image_1.jpg",
-            "./images/products/product_9/image_2.jpg",
-            "./images/products/product_9/image_3.jpg",
-            "./images/products/product_9/image_4.jpg",
-            "./images/products/product_9/image_5.jpg"
+            "./images/products/product_9/image_1.png",
+            "./images/products/product_9/image_2.png",
+            "./images/products/product_9/image_3.png",
+            "./images/products/product_9/image_4.png",
+            "./images/products/product_9/image_5.png"
         ],
         "color_names": ["Trắng/Hồng", "Trắng/Hồng", "Trắng/Xanh nước biển", "Trắng/Hồng Aster", "Trắng ngà/Đỏ tươi"],
         "describe": ""
@@ -140,11 +176,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_10/image_1.jpg",
-            "./images/products/product_10/image_2.jpg",
-            "./images/products/product_10/image_3.jpg",
-            "./images/products/product_10/image_4.jpg",
-            "./images/products/product_10/image_5.jpg"
+            "./images/products/product_10/image_1.png",
+            "./images/products/product_10/image_2.png",
+            "./images/products/product_10/image_3.png",
+            "./images/products/product_10/image_4.png",
+            "./images/products/product_10/image_5.png"
         ],
         "color_names": ["Trắng", "Trắng", "Cát nhạt/Xám khói", "Trắng/Cam cháy", "Trắng lạnh/Cát nhạt"],
         "describe": ""
@@ -158,11 +194,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_11/image_1.jpg",
-            "./images/products/product_11/image_2.jpg",
-            "./images/products/product_11/image_3.jpg",
-            "./images/products/product_11/image_4.jpg",
-            "./images/products/product_11/image_5.jpg"
+            "./images/products/product_11/image_1.png",
+            "./images/products/product_11/image_2.png",
+            "./images/products/product_11/image_3.png",
+            "./images/products/product_11/image_4.png",
+            "./images/products/product_11/image_5.png"
         ],
         "color_names": ["Trắng", "Trắng", "Xanh Calcite", "Hồng nhạt", "Trắng/Vàng-Pokemon"],
         "describe": ""
@@ -176,11 +212,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_12/image_1.jpg",
-            "./images/products/product_12/image_2.jpg",
-            "./images/products/product_12/image_3.jpg",
-            "./images/products/product_12/image_4.jpg",
-            "./images/products/product_12/image_5.jpg"
+            "./images/products/product_12/image_1.png",
+            "./images/products/product_12/image_2.png",
+            "./images/products/product_12/image_3.png",
+            "./images/products/product_12/image_4.png",
+            "./images/products/product_12/image_5.png"
         ],
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Hồng", "Xanh lam", "Be/Đen:"],
         "describe": ""
@@ -194,11 +230,11 @@
         "discount": 0.2,
         "tags": [],
         "images": [
-            "./images/products/product_13/image_1.jpg",
-            "./images/products/product_13/image_2.jpg",
-            "./images/products/product_13/image_3.jpg",
-            "./images/products/product_13/image_4.jpg",
-            "./images/products/product_13/image_5.jpg"
+            "./images/products/product_13/image_1.png",
+            "./images/products/product_13/image_2.png",
+            "./images/products/product_13/image_3.png",
+            "./images/products/product_13/image_4.png",
+            "./images/products/product_13/image_5.png"
         ],
         "color_names": [
             "Phản chiếu/Đen/Xám",
@@ -218,11 +254,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_14/image_1.jpg",
-            "./images/products/product_14/image_2.jpg",
-            "./images/products/product_14/image_3.jpg",
-            "./images/products/product_14/image_4.jpg",
-            "./images/products/product_14/image_5.jpg"
+            "./images/products/product_14/image_1.png",
+            "./images/products/product_14/image_2.png",
+            "./images/products/product_14/image_3.png",
+            "./images/products/product_14/image_4.png",
+            "./images/products/product_14/image_5.png"
         ],
         "color_names": [
             "Xanh lam/Đen",
@@ -242,11 +278,11 @@
         "discount": 0.2,
         "tags": [],
         "images": [
-            "./images/products/product_15/image_1.jpg",
-            "./images/products/product_15/image_2.jpg",
-            "./images/products/product_15/image_3.jpg",
-            "./images/products/product_15/image_4.jpg",
-            "./images/products/product_15/image_5.jpg"
+            "./images/products/product_15/image_1.png",
+            "./images/products/product_15/image_2.png",
+            "./images/products/product_15/image_3.png",
+            "./images/products/product_15/image_4.png",
+            "./images/products/product_15/image_5.png"
         ],
         "color_names": ["Đen/Trắng", "Đen/Trắng", "Xanh nước biển/Trắng", "Trắng/Xám", "Mây Nimbus/Trắng"],
         "describe": ""
@@ -260,11 +296,11 @@
         "discount": 0.2,
         "tags": [],
         "images": [
-            "./images/products/product_16/image_1.jpg",
-            "./images/products/product_16/image_2.jpg",
-            "./images/products/product_16/image_3.jpg",
-            "./images/products/product_16/image_4.jpg",
-            "./images/products/product_16/image_5.jpg"
+            "./images/products/product_16/image_1.png",
+            "./images/products/product_16/image_2.png",
+            "./images/products/product_16/image_3.png",
+            "./images/products/product_16/image_4.png",
+            "./images/products/product_16/image_5.png"
         ],
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Trắng/Xanh lá cây", "Trắng/Đỏ", "Da bò/Be"],
         "describe": ""
@@ -278,11 +314,11 @@
         "discount": 0.3,
         "tags": [],
         "images": [
-            "./images/products/product_17/image_1.jpg",
-            "./images/products/product_17/image_2.jpg",
-            "./images/products/product_17/image_3.jpg",
-            "./images/products/product_17/image_4.jpg",
-            "./images/products/product_17/image_5.jpg"
+            "./images/products/product_17/image_1.png",
+            "./images/products/product_17/image_2.png",
+            "./images/products/product_17/image_3.png",
+            "./images/products/product_17/image_4.png",
+            "./images/products/product_17/image_5.png"
         ],
         "color_names": ["Trắng", "Trắng", "Đen", "Trắng/Đen", "Trắng/Be"],
         "describe": ""
@@ -296,11 +332,11 @@
         "discount": 0.2,
         "tags": [],
         "images": [
-            "./images/products/product_18/image_1.jpg",
-            "./images/products/product_18/image_2.jpg",
-            "./images/products/product_18/image_3.jpg",
-            "./images/products/product_18/image_4.jpg",
-            "./images/products/product_18/image_5.jpg"
+            "./images/products/product_18/image_1.png",
+            "./images/products/product_18/image_2.png",
+            "./images/products/product_18/image_3.png",
+            "./images/products/product_18/image_4.png",
+            "./images/products/product_18/image_5.png"
         ],
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Vàng/Đen", "Trắng/Đen/Đỏ", "Trắng/Xanh nước biển/Cam"],
         "describe": ""
@@ -314,11 +350,11 @@
         "discount": 0.0,
         "tags": [],
         "images": [
-            "./images/products/product_19/image_1.jpg",
-            "./images/products/product_19/image_2.jpg",
-            "./images/products/product_19/image_3.jpg",
-            "./images/products/product_19/image_4.jpg",
-            "./images/products/product_19/image_5.jpg"
+            "./images/products/product_19/image_1.png",
+            "./images/products/product_19/image_2.png",
+            "./images/products/product_19/image_3.png",
+            "./images/products/product_19/image_4.png",
+            "./images/products/product_19/image_5.png"
         ],
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Trắng/Đỏ", "Xám khói/Trắng", "Xanh nước biển/Trắng"],
         "describe": ""
@@ -332,11 +368,11 @@
         "discount": 0.0,
         "tags": [],
         "images": [
-            "./images/products/product_20/image_1.jpg",
-            "./images/products/product_20/image_2.jpg",
-            "./images/products/product_20/image_3.jpg",
-            "./images/products/product_20/image_4.jpg",
-            "./images/products/product_20/image_5.jpg"
+            "./images/products/product_20/image_1.png",
+            "./images/products/product_20/image_2.png",
+            "./images/products/product_20/image_3.png",
+            "./images/products/product_20/image_4.png",
+            "./images/products/product_20/image_5.png"
         ],
         "color_names": ["Trắng/Đen", "Trắng/Đen", "Trắng/Xanh", "Trắng/Xanh lá cây", "Trắng/Xanh dương"],
         "describe": ""
@@ -350,11 +386,11 @@
         "discount": 0.2,
         "tags": [],
         "images": [
-            "./images/products/product_21/image_1.jpg",
-            "./images/products/product_21/image_2.jpg",
-            "./images/products/product_21/image_3.jpg",
-            "./images/products/product_21/image_4.jpg",
-            "./images/products/product_21/image_5.jpg"
+            "./images/products/product_21/image_1.png",
+            "./images/products/product_21/image_2.png",
+            "./images/products/product_21/image_3.png",
+            "./images/products/product_21/image_4.png",
+            "./images/products/product_21/image_5.png"
         ],
         "color_names": ["Trắng ngà/Xanh băng", "Trắng ngà/Xanh băng", "Đen", "Trắng ngà/Nâu cát", "Kaki lính/Xám thép"],
         "describe": ""
@@ -368,11 +404,11 @@
         "discount": 0.1,
         "tags": [],
         "images": [
-            "./images/products/product_22/image_1.jpg",
-            "./images/products/product_22/image_2.jpg",
-            "./images/products/product_22/image_3.jpg",
-            "./images/products/product_22/image_4.jpg",
-            "./images/products/product_22/image_5.jpg"
+            "./images/products/product_22/image_1.png",
+            "./images/products/product_22/image_2.png",
+            "./images/products/product_22/image_3.png",
+            "./images/products/product_22/image_4.png",
+            "./images/products/product_22/image_5.png"
         ],
         "color_names": ["Đen", "Đen", "Nâu/Trắng", "Đen/Nâu", "Đen/Trắng"],
         "describe": ""
@@ -386,11 +422,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_25/image_1.jpg",
-            "./images/products/product_25/image_2.jpg",
-            "./images/products/product_25/image_3.jpg",
-            "./images/products/product_25/image_4.jpg",
-            "./images/products/product_25/image_5.jpg"
+            "./images/products/product_25/image_1.png",
+            "./images/products/product_25/image_2.png",
+            "./images/products/product_25/image_3.png",
+            "./images/products/product_25/image_4.png",
+            "./images/products/product_25/image_5.png"
         ],
         "color_names": ["Kem/Xanh nước biển", "Kem/Xanh nước biển", "Tia lửa xanh đậm/hồng", "Hồng", "Hồng trong trẻo"],
         "describe": ""
@@ -404,11 +440,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_26/image_1.jpg",
-            "./images/products/product_26/image_2.jpg",
-            "./images/products/product_26/image_3.jpg",
-            "./images/products/product_26/image_4.jpg",
-            "./images/products/product_26/image_5.jpg"
+            "./images/products/product_26/image_1.png",
+            "./images/products/product_26/image_2.png",
+            "./images/products/product_26/image_3.png",
+            "./images/products/product_26/image_4.png",
+            "./images/products/product_26/image_5.png"
         ],
         "color_names": ["Trắng", "Trắng", "Đen", "Xoài dại trắng/nhạt", "Cánh buồm/Hồng Canyon"],
         "describe": ""
@@ -422,11 +458,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_27/image_1.jpg",
-            "./images/products/product_27/image_2.jpg",
-            "./images/products/product_27/image_3.jpg",
-            "./images/products/product_27/image_4.jpg",
-            "./images/products/product_27/image_5.jpg"
+            "./images/products/product_27/image_1.png",
+            "./images/products/product_27/image_2.png",
+            "./images/products/product_27/image_3.png",
+            "./images/products/product_27/image_4.png",
+            "./images/products/product_27/image_5.png"
         ],
         "color_names": [
             "Đen/Be",
@@ -446,11 +482,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_28/image_1.jpg",
-            "./images/products/product_28/image_2.jpg",
-            "./images/products/product_28/image_3.jpg",
-            "./images/products/product_28/image_4.jpg",
-            "./images/products/product_28/image_5.jpg"
+            "./images/products/product_28/image_1.png",
+            "./images/products/product_28/image_2.png",
+            "./images/products/product_28/image_3.png",
+            "./images/products/product_28/image_4.png",
+            "./images/products/product_28/image_5.png"
         ],
         "color_names": [
             "Tầng đất/Trắng nhạt",
@@ -470,11 +506,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_29/image_1.jpg",
-            "./images/products/product_29/image_2.jpg",
-            "./images/products/product_29/image_3.jpg",
-            "./images/products/product_29/image_4.jpg",
-            "./images/products/product_29/image_5.jpg"
+            "./images/products/product_29/image_1.png",
+            "./images/products/product_29/image_2.png",
+            "./images/products/product_29/image_3.png",
+            "./images/products/product_29/image_4.png",
+            "./images/products/product_29/image_5.png"
         ],
         "color_names": ["Trắng/Hồng/Bạc", "Trắng/Hồng/Bạc", "Xanh nước biển/Trắng", "Kem/Bạc nguyên chất", "Trắng/Bạc"],
         "describe": ""
@@ -488,11 +524,11 @@
         "discount": 0.15,
         "tags": [],
         "images": [
-            "./images/products/product_30/image_1.jpg",
-            "./images/products/product_30/image_2.jpg",
-            "./images/products/product_30/image_3.jpg",
-            "./images/products/product_30/image_4.jpg",
-            "./images/products/product_30/image_5.jpg"
+            "./images/products/product_30/image_1.png",
+            "./images/products/product_30/image_2.png",
+            "./images/products/product_30/image_3.png",
+            "./images/products/product_30/image_4.png",
+            "./images/products/product_30/image_5.png"
         ],
         "color_names": [
             "Vàng/Xám",
