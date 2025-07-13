@@ -134,20 +134,24 @@
     margin-top: 20px;
 }
 
-.size__title {}
+.size__title {
+    display: inline;
+}
 
 .size__select {
-    width: 100%;
-    height: 50px;
+    display: inline;
+    width: 5rem;
+    padding: 3px 10px;
     font-size: 1.6rem;
     border-radius: 5px;
-    padding-left: 10px;
+    margin-left: 1rem;
 }
 
 .size__table a {
+    display: block;
     font-size: 1.4rem;
     text-decoration: none;
-    color: gray;
+    color: cyan;
 }
 
 .opt__add {
@@ -165,40 +169,6 @@
     cursor: pointer;
 }
 
-.add__pick {
-    display: flex;
-    border: 1px solid gray;
-    background-color: rgb(240, 231, 231);
-    padding: 10px;
-    align-items: flex-start;
-    gap: 8px;
-}
-
-.add__pick label {
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    width: 20px;
-    height: 20px;
-    accent-color: black;
-}
-
-.pick-ship,
-.pick-store {
-    line-height: 24px;
-}
-
-.pick__title {
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
-.pick__descript,
-.pick-store__address a {
-    font-size: 1.4rem;
-    color: gray;
-}
 
 /* Phần mô tả */
 
@@ -277,9 +247,8 @@ input[type="radio"] {
 
 .review__star {
     border: none;
-    /* vì các ngôi sao bi ngược nên khi float right về đúng vị trí thì sẽ căn phải nên float left lại */
+    /* vì các ngôi sao bi ngược nên cần rtl */
     direction: rtl;
-    float: left;
     flex: 1;
 }
 
@@ -372,9 +341,6 @@ textarea::placeholder {
 }
 
 @media (max-width: 739px) {
-    .wide {
-        width: 480px;
-    }
 
     .order__slide {
         min-width: 400px;
@@ -396,8 +362,6 @@ textarea::placeholder {
     .review__star {
         display: flex;
         justify-content: center;
-        /* Hoặc 'flex-start' (trái), 'flex-end' (phải) */
-        direction: rtl;
         width: 100%;
     }
 
