@@ -4,24 +4,23 @@
 }
 
 .section-banner__slider {
-    width: 100%;
-    height: 25rem;
     display: flex;
-    overflow: hidden;
-    position: relative;
+    flex-wrap: wrap; /* Cho phép xuống dòng nếu cần */
+    gap: 2rem;
 }
 
 .section-banner__image {
-    width: 100%;
-    height: 100%;
+    flex: 1 1 100%;        /* Mặc định ảnh chiếm 100% chiều ngang khung cha */
+    max-width: 100%;       /* Không vượt quá khung */
+    height: auto;          /* Cho phép co chiều cao */
     object-fit: cover;
-    flex-shrink: 0;
-    display: block;
 }
-.background {
-  font-size: 2.5rem;
-  line-height: 1.6;
-  background-color: rgb(253, 181, 155);
+.div__content {
+     white-space: normal;
+     word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    font-size: 2.5rem;
 }
 .section-product {
     padding: 2rem 0;
@@ -29,7 +28,7 @@
 
 .section-product__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); /* tự chia cột theo kích thước */
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); 
     gap: 2rem;
     margin-top: 2rem;
     padding: 0 3rem;
