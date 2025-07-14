@@ -116,6 +116,15 @@
     padding: 3rem;
     color: white;
 }
+.div__content--background2 {
+    background-color: #e7e1e1;
+    padding: 3rem;
+    margin: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(57, 92, 173);
+    border-radius: 8px;
+}
 .section__content--row {
     display: flex;
     align-items: center;
