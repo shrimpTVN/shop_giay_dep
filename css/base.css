@@ -129,7 +129,7 @@ html {
 
 .header__search-button {
     border: none;
-    background-color: coral;
+    background-color: #ff5722;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 3px;
@@ -137,7 +137,7 @@ html {
 }
 
 .header__search-button:hover {
-    background-color: #ff5722;
+    background-color: rgb(240, 87, 34);
     cursor: pointer;
 }
 
@@ -203,7 +203,7 @@ html {
 }
 
 .nav__list-item--login {
-    background-color: coral;
+    background-color: #ff5722;
     color: #fff;
     border-radius: 8px;
 }
@@ -212,7 +212,7 @@ html {
 /* CSS for main */
 .page__main {
     grid-area: main-cell;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: grid;
     /* width: 100%; */
     min-height: 110rem;
@@ -328,7 +328,7 @@ html {
     height: 4px;
     bottom: -5px;
     left: 50%;
-    background: radial-gradient(#cddc39, #fff);
+    background: radial-gradient(black, #fff);
     transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
 <<<<<<< HEAD
     /* left 50%(dịch sang phải) thÌ đầu mút của phần tử giả(before) sẽ nằm giữa title, chứ không phải chính giữa phần tử nằm chính giữa title
