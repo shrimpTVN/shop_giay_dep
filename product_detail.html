@@ -1,3 +1,4 @@
+<!-- Tác giả: Nguyễn Huy Lợi MSSV: B2306556 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +15,7 @@
 </head>
 
 <body class="page">
+    <!-- Phần header chung cho dự án -->
     <header class="page__header">
         <div class="header__container grid wide">
             <a href="./index.html"><img class="header__logo" src="./images/shop-logo.png" alt="shop-logo" /></a>
@@ -44,16 +46,24 @@
         </div>
     </header>
     <main class="page__main page__main--one-column grid wide">
+        <!-- chỉ có 1 container là article -> Sau này có thể phát triển thêm 1 section
+            chứa các sản phẩm tương tự -->
         <article class="main__article">
+            <!-- Gồm 3 phần  Order, Description và Review-->
             <section class="main__order">
+                <!-- Gồm 2 phần slides: các ảnh trượt và option: các thông tin về lượt chọn của sp-->
                 <div class="order__slide">
                     <button id="slide__prev"><i class="fas fa-circle-arrow-left"></i></button>
                     <button id="slide__next"><i class="fas fa-circle-arrow-right"></i></button>
                     <div class="slide__transition" id="slide__transition">
-                        <img class="order__img" src="./images/products/product_10/image_1.png" alt="product-img" />
-                        <img class="order__img"  alt="product-img" />
+                        <img class="order__img" alt="product-img" />
+                        <img class="order__img" alt="product-img" />
+                        <img class="order__img" alt="product-img" />
+                        <img class="order__img" alt="product-img" />
+                        <img class="order__img" alt="product-img" />
                     </div>
                 </div>
+                <!-- Phần option -->
                 <div class="main__opt">
                     <div class="opt__infor">
                         <p class="opt__age">New</p>
@@ -63,9 +73,10 @@
                     </div>
                     <div class="opt__img-color">
                         <h2>Màu sắc<p></p></h2>
-                        <img class="img-color 2" alt="anh1" />
-                        <img class="img-color 3" alt="anh2" />
-                        <img class="img-color 4" alt="anh3" />
+                        <img class="img-color 0 img-color--default" alt="anh1" />
+                        <img class="img-color 2" alt="anh2" />
+                        <img class="img-color 3" alt="anh3" />
+                        <img class="img-color 4" alt="anh4" />
                     </div>
                     <div class="opt__size">
                         <h2 class="size__title">Size</h2>
@@ -88,6 +99,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Phần description: mô tả thông tin về kiểu, chi tiết và chính sách -->
             <section class="main__description">
                 <h1 class="title--primary">Mô Tả</h1>
                 <div class="description">
@@ -128,9 +140,11 @@
                     </div>
                 </div>
             </section>
+            <!-- Phần review: cho phép đánh giá số sao và comment -->
             <section class="main__review">
                 <h1 class="title--primary">Phản Hồi</h1>
                 <div class="review__content">
+                    <!-- Phần ngôi sao -->
                     <div class="review__common review__star" id="rating">
                         <input type="radio" name="rating" id="star1" value="1" />
                         <label class="start" for="star1" title="Tuyệt vời 5 sao"></label>
@@ -147,18 +161,20 @@
                         <input type="radio" name="rating" id="star5" value="5" />
                         <label class="start" for="star5" title="Tệ quá 1 sao"></label>
                     </div>
+                    <!-- Phần comment -->
                     <div class="review__common review__comment">
                         <textarea name="comment" id="comment"
                             placeholder="Nhận xét của bạn là động lực cho chúng tôi ngày càng hoàn thiện"></textarea>
                     </div>
                 </div>
+                <!-- nút submit sao và comment -->
                 <div class="review__submit">
                     <button class="button__submit" type="submit">Gửi</button>
                 </div>
             </section>
         </article>
     </main>
-
+    <!-- Phần footer chung cho dự án -->
     <footer class="page__footer">
         <div class="grid wide">
             <div class="footer__services">

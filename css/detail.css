@@ -1,22 +1,4 @@
-/* html {
-    min-width: 498px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-
-.page__main {
-}
-
-.page__footer {
-    margin-top: 20px;
-    height: 50px;
-    background-color: #6bd3f0;
-}
-*/
+/* Tác giả: Nguyễn Huy Lợi MSSV: B2306556 */
 
 .main__order {
     display: flex;
@@ -195,6 +177,10 @@
     background-color: coral;
 }
 
+.add__button:hover {
+    box-shadow: 4px 4px 4px rgb(104, 113, 53);
+}
+
 
 /* Phần mô tả */
 
@@ -246,6 +232,10 @@
 /* liên kết đến đky đnhap trong phần chính sách giao hàng và hoàn trả */
 .description__common p a {
     text-decoration: none;
+}
+
+.description__common p a:hover {
+    color: coral;
 }
 
 .description__title--secondary {
@@ -348,6 +338,11 @@ textarea::placeholder {
     color: white;
     background-color: black;
     margin: 0 auto;
+}
+
+.button__submit:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(104, 113, 53);
 }
 
 

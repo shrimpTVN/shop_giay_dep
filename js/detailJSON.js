@@ -1,3 +1,4 @@
+// Tác giả: Nguyễn Huy Lợi MSSV: B2306556
 //JS cho json vào đồ án
 
 // lấy id từ URL
@@ -17,19 +18,28 @@ fetch("./products.json") //nạp file json từ localhost
         // phần ảnh trượt
         const slider = document.getElementById("slide__transition");
         const slides = slider.children;
-        slides[0].src = product.images[0];
-        slides[1].src = product.images[1];
+        for(let i = 0; i < slides.length; i++){
+            slides[i].src = product.images[i];
+        }
 
         //phần order
         document.querySelector(".opt__title").innerHTML = product.name;
         document.querySelector(".opt__price").innerHTML = product.price - product.discount * product.price + `VNĐ (Đã giảm ${product.discount * 100}%)`;
         var img_color = document.querySelectorAll(".img-color");
         for(var i = 0; i < img_color.length; i++){
-            img_color[i].src = product.images[i+2];
+             if(i==0){
+                img_color[i].src = product.images[i];
+            }else{
+                img_color[i].src = product.images[i+1];
+            }
         }
 
-
         //JS cho phần chọn màu
+        //Màu mặc định
+        var imgDefault = document.querySelector(".img-color--default");
+        imgDefault.style.border = "1px solid black";
+        document.querySelector(".opt__img-color p").innerHTML = product.color_names[0];
+        //Màu khi click
         img_color.forEach(function (e) {
             e.addEventListener("click", function () {
                 img_color.forEach(function (img) {
@@ -37,7 +47,7 @@ fetch("./products.json") //nạp file json từ localhost
                 });
                 e.style.border = "1px solid black";
                 let p = document.querySelector(".opt__img-color p");
-                var index = parseInt(e.classList[1]);
+                var index = parseInt(e.classList[1]);//class để lấy thứ tự màu
                 p.innerHTML =product.color_names[index];
             });
         })
