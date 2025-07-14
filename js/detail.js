@@ -1,3 +1,5 @@
+// Tác giả: Nguyễn Huy Lợi MSSV: B2306556
+
 // tạo slide trượt
 const slider = document.getElementById("slide__transition");
 const slides = slider.querySelectorAll(".order__img");

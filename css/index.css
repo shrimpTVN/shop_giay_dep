@@ -14,14 +14,27 @@
     max-width: 100%;       /* Không vượt quá khung */
     height: auto;          /* Cho phép co chiều cao */
     object-fit: cover;
-    padding-right: 0.5rem;
+   
 }
 .div__content {
      white-space: normal;
      word-break: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.6;
-    font-size: 2.5rem;
+     overflow-wrap: break-word;
+     line-height: 1.6;
+     font-size: 2.5rem;
+}
+.div__content2 {
+     white-space: normal;
+     word-break: break-word;
+     overflow-wrap: break-word;
+     text-align: center;
+     text-transform: uppercase;
+     line-height: 1.6;
+     font-size: 2.5rem;
+     font-weight: bold;
+} 
+.div__content--big {
+    font-size: 4rem;
 }
 .section-product {
     padding: 2rem 0;
@@ -78,4 +91,45 @@
 
 .section-brand__item img:hover {
     transform: scale(1.05);
+}
+.section__video {
+    width: 30%;
+}
+
+.section__video--float-left {
+    float: left;          
+}
+.section__content {
+    width: 70%;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.section__content--float-right {
+    float: right;
+}
+.article__section{
+    overflow: hidden;
+}
+.div__content--background {
+    background-color: #c9c3c3;
+    padding: 3rem;
+    color: white;
+}
+.section__content--row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section__content--col {
+    width: 33.33%;
+    padding: 0.5rem;
+    text-align: center;
+}
+.section__content--image{
+    width: 80%;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-top: 1.5rem;
 }
