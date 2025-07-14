@@ -19,9 +19,22 @@
 .div__content {
      white-space: normal;
      word-break: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.6;
-    font-size: 2.5rem;
+     overflow-wrap: break-word;
+     line-height: 1.6;
+     font-size: 2.5rem;
+}
+.div__content2 {
+     white-space: normal;
+     word-break: break-word;
+     overflow-wrap: break-word;
+     text-align: center;
+     text-transform: uppercase;
+     line-height: 1.6;
+     font-size: 2.5rem;
+     font-weight: bold;
+} 
+.div__content--big {
+    font-size: 4rem;
 }
 .section-product {
     padding: 2rem 0;
@@ -95,6 +108,26 @@
 .section__content--float-right {
     float: right;
 }
-.section__content--sale {
+.article__section{
     overflow: hidden;
+}
+.div__content--background {
+    background-color: blue;
+    padding: 3rem;
+    color: white;
+}
+.section__content--row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__content--col {
+    width: 33.33%;
+    padding: 0.5rem;
+}
+.section__content--image{
+    width: 80%;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 3px;
 }
