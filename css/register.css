@@ -309,7 +309,6 @@ html {
 /* css for pseudo element underline on centered header */
 .article__title--primary::before,
 .aside__title--primary::before {
-<<<<<<< HEAD
   content: "";
   position: absolute;
   width: 200px;
@@ -318,18 +317,6 @@ html {
   left: 50%;
   background: radial-gradient(#cddc39, #fff);
   transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
-=======
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 4px;
-    bottom: -5px;
-    left: 50%;
-    background: radial-gradient(coral, #fff);
-    transform: skewX(-12deg) translateX(-50%); /* I dont understand*/
-    /* left 50%(dịch sang phải) thÌ đầu mút của phần tử giả(before) sẽ nằm giữa title, chứ không phải chính giữa phần tử nằm chính giữa title
-        do đó cần phần tử giả tự mình dịch chuyển sang trái 50% độ dài chính nó */
->>>>>>> f795658e258bf47f3e498ea662e858641f3e8e30
 }
 
 /* CSS for secondary title (h2) */
@@ -509,79 +496,4 @@ body {
   background-color: #1212121a
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.register.container {
-  max-width: 500px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
-}
-
-.register__title {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.register__form .form__group {
-  margin-bottom: 20px;
-}
-
-.register__form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.register__form input {
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  background-color: #2a2a2a;
-  color: #fff;
-  font-size: 15px;
-  transition: border-color 0.3s ease;
-}
-
-.register__form input:focus {
-  border-color: #0099ff;
-  outline: none;
-  background-color: #333;
-}
-
-.register__button {
-  width: 100%;
-  padding: 14px;
-  font-size: 16px;
-  background-color: yellow;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.register__button:hover {
-  background-color: #0056b3;
-}
-
-.register__login-link {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-.register__login-link a {
-  color: #1e90ff;
-  text-decoration: none;
-}
-
-.register__login-link a:hover {
-  text-decoration: underline;
 }
