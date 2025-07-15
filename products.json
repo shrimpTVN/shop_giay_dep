@@ -1,5 +1,23 @@
 [
-  {
+    {
+        "id": 1,
+        "name": "New Balance 530",
+        "brand": "New Balance",
+        "gender": "Women",
+        "price": 260000,
+        "discount": 0.25,
+        "tags": [],
+        "images": [
+            "./images/products/product_1/image_1.png",
+            "./images/products/product_1/image_2.png",
+            "./images/products/product_1/image_3.png",
+            "./images/products/product_1/image_4.png",
+            "./images/products/product_1/image_5.png"
+        ],
+        "color_names": ["Trắng/Hồng", "Trắng/Hồng", "Trắng/Đen", "Trắng/Xanh dương", "Trắng/Xanh lá cây"],
+        "describe": ""
+    },
+    {
         "id": 2,
         "name": "Vans knu skool",
         "brand": "Vans",
