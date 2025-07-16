@@ -123,7 +123,7 @@
         "id": 7,
         "name": "ASICS® GEL-Nimbus 27",
         "brand": "ASICS",
-        "gender": "Men",
+        "gender": "Women",
         "price": 350000,
         "discount": 0,
         "tags": [],
@@ -135,7 +135,7 @@
             "./images/products/product_7/image_4.png",
             "./images/products/product_7/image_5.png"
         ],
-        "color_names": ["Xám/ Xanh rêu", "Xám/ Xanh rêu", "Đen", "Trắng", "Chàm/Xanh Demin"],
+        "color_names": ["Xám/ Trắng", "Xám/ Trắng", "Xanh nước biển/ Trắng", "Hồng/ Trắng", "Nâu/ Be"],
         "describe": ""
     },
     {
