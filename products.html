@@ -24,7 +24,7 @@
                     </button>
                 </form>
             </div>
-            <nav class="header__nav">              
+            <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__list-item"><a class="nav__link" href="index.html">Trang chủ</a></li>
                     <li class="nav__list-item"><a class="nav__link" href="products.html">Sản phẩm</a></li>
@@ -32,7 +32,7 @@
                         <a class="nav__link" href="cart.html">
                             <i class="nav__cart-icon fa-solid fa-bag-shopping"></i>
                         </a>
-                    </li> 
+                    </li>
                     <li class="nav__list-item nav__list-item--login">
                         <a class="nav__link nav__link--white" href="log_in.html">Đăng nhập</a>
                         <a class="nav__link nav__link--white nav__link--border-left" href="register.html">Đăng ký</a>
@@ -51,7 +51,14 @@
 
         <!-- ===== FILTER ===== -->
         <aside class="product-filter">
-            <h2 class="product-filter__title">Filter</h2>
+
+            <button class="filter-toggle-btn"><i class="fa fa-filter"></i> Bộ lọc</button>
+
+
+            <h2 class="product-filter__title">
+                Bộ lọc
+                <button class="filter-close-btn" title="Đóng bộ lọc">✕</button>
+            </h2>
 
 
             <button class="filter-group__accordion">Giới tính</button>
@@ -71,76 +78,74 @@
                 </label>
             </div>
 
-            <button class="filter-group__accordion">Loại giày</button>
-            <!-- ===== Các options filter ===== -->
-            <div class="filter-group__options">
-                <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="shoes-type_option" value="sport_shoes" />
-                    <span>Giày thể thao</span>
-                </label> 
-                <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="shoes-type_option" value="men_dress" />
-                    <span>Giày thời trang nam</span>
-                </label> 
-                <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="shoes-type_option" value="women_dress" />
-                    <span>Giày thời trang nữ</span>
-                </label> 
-                <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="shoes-type_option" value="everyday_footwear" />
-                    <span>Giày dép thường ngày</span>
-                </label> 
-                <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="shoes-type_option" value="kid_shoes" />
-                    <span>Giày trẻ em</span>
-                </label> 
-            </div>
 
             <button class="filter-group__accordion">Thương hiệu</button>
             <!-- ===== Các options filter ===== -->
             <div class="filter-group__options">
                 <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="brand_option" value="nike" />
-                    <span>NIKE</span>
-                </label> 
+                    <input type="checkbox" name="brand_option" value="Nike" />
+                    <span>Nike</span>
+                </label>
                 <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="brand_option" value="adidas" />
-                    <span>adidas</span>
-                </label> 
+                    <input type="checkbox" name="brand_option" value="Adidas" />
+                    <span>Adidas</span>
+                </label>
                 <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="brand_option" value="bitis" />
-                    <span>Biti's</span>
-                </label> 
+                    <input type="checkbox" name="brand_option" value="ASICS" />
+                    <span>ASICS</span>
+                </label>
+                <label class="filter-group-option__custom-checkbox">
+                    <input type="checkbox" name="brand_option" value="New Balance" />
+                    <span>New Balance</span>
+                </label>
+                <label class="filter-group-option__custom-checkbox">
+                    <input type="checkbox" name="brand_option" value="Jordan" />
+                    <span>Jordan</span>
+                </label>
+                <label class="filter-group-option__custom-checkbox">
+                    <input type="checkbox" name="brand_option" value="Vans" />
+                    <span>Vans</span>
+                </label>
+                <label class="filter-group-option__custom-checkbox">
+                    <input type="checkbox" name="brand_option" value="On" />
+                    <span>On</span>
+                </label>
+                <label class="filter-group-option__custom-checkbox">
+                    <input type="checkbox" name="brand_option" value="Crocs" />
+                    <span>Crocs</span>
+                </label>
             </div>
 
-            <button class="filter-group__accordion">Color</button>
+            <button class="filter-group__accordion">Màu sắc</button>
             <!-- ===== Các options filter ===== -->
             <div class="filter-group__options">
                 <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="color_option" value="warm" />
-                    <span>Màu ấm</span>
-                </label> 
-                <label class="filter-group-option__custom-checkbox">
-                    <input type="checkbox" name="color_option" value="cold" />
-                    <span>Màu lạnh</span>
-                </label> 
-                <label class="filter-group-option__custom-checkbox">
                     <input type="checkbox" name="color_option" value="white" />
-                    <span>Đen</span>
-                </label> 
+                    <span>Trắng</span>
+                </label>
                 <label class="filter-group-option__custom-checkbox">
                     <input type="checkbox" name="color_option" value="black" />
-                    <span>Trắng</span>
-                </label> 
+                    <span>Đen</span>
+                </label>
+                <label class="filter-group-option__custom-checkbox">
+                    <input type="checkbox" name="color_option" value="other" />
+                    <span>Màu sắc khác</span>
+                </label>
             </div>
 
             <button class="filter-group__accordion">Giá tiền</button>
             <!-- ===== Các options filter ===== -->
             <div class="filter-group__options">
-                <label class="filter-group-option__custom-range">
+                <!-- <label class="filter-group-option__custom-range">
                     <input type="range" name="price_option" min="0" max="3000000" />
                     <span></span>
-                </label> 
+                </label> -->
+                <div class="filter-group-option__custom-range">
+                    <!-- <span id="price-range-display">0đ - 0đ</span><br> -->
+                    <input type="range" id="price_range" name="price_option" />
+                    <span id="price-current">0đ</span>
+                </div>
+
             </div>
 
         </aside>
@@ -149,18 +154,18 @@
         <section class="product-listing product-filter-listing--two-column-rightside">
             <div class="product-listing__grid" id="productGrid">
 
-                
-<!-- ==========================================-->
+
+                <!-- ==========================================-->
 
 
 
 
                 <article class="product-listing__card">
-                    <div class="product-card__main-image"> 
+                    <div class="product-card__main-image">
                         <!-- (Fill by js) -->
-                         <!-- ---đây là ảnh mặc định hiển thị đầu tiên ---  -->
+                        <!-- ---đây là ảnh mặc định hiển thị đầu tiên ---  -->
                         <img class="product-card-main-image__img" src="images/products/product_13/image_1.png">
-                        
+
                         <!-- --- Nhóm các hover tương ứng mini image ---  -->
                         <img class="product-card-main-image__img" src="images/products/product_13/image_2.png">
                         <img class="product-card-main-image__img" src="images/products/product_13/image_3.png">
@@ -180,32 +185,37 @@
 
                     <div class="product-card__mini-image">
                         <!-- (Fill by js) -->
-                        <img class="product-card-mini-image__img" src="images/products/product_13/image_2.png" data-index="0">
-                        <img class="product-card-mini-image__img" src="images/products/product_13/image_3.png" data-index="1">
-                        <img class="product-card-mini-image__img" src="images/products/product_13/image_4.png" data-index="2">
-                        <img class="product-card-mini-image__img" src="images/products/product_13/image_5.png" data-index="3">
+                        <img class="product-card-mini-image__img" src="images/products/product_13/image_2.png"
+                            data-index="0">
+                        <img class="product-card-mini-image__img" src="images/products/product_13/image_3.png"
+                            data-index="1">
+                        <img class="product-card-mini-image__img" src="images/products/product_13/image_4.png"
+                            data-index="2">
+                        <img class="product-card-mini-image__img" src="images/products/product_13/image_5.png"
+                            data-index="3">
 
                     </div>
 
                     <!-- đường dẫn đến detail.html sẽ là chứa một giá trị id = id của card sản phẩm này trên json  -->
                     <a href="product_detail.html?id=13" class="product-card__main-content">
                         <!-- (Fill by js) -->
-                        <h3 class="product-card-main__name">Brand + tên sản phẩm</h3>
+                        <!-- các ví dụ ở đây sẽ tương ứng key ở file json  -->
+                        <h3 class="product-card-main__name">name</h3>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
-                        <p class="product-card-main__gender">Giới tính</p>
-                        <p class="product-card-main__color">Màu sắc 1/ màu sắc 2/ màu sắc 3</p>
+                        <p class="product-card-main__gender">gender</p>
+                        <p class="product-card-main__color">color_name[0]/color_name[1]/...</p>
                         <div class="product-card-main__price">
-                            <p class="product-card-main__then-price">Giá hiện tại</p>
-                            <p class="product-card-main__original-price">Giá gốc</p>
-                            <p class="product-card-main__sale-percent">-30%</p>
+                            <p class="product-card-main__then-price">Giá hiện tại = price*(1-discount)</p>
+                            <p class="product-card-main__original-price">price</p>
+                            <p class="product-card-main__sale-percent">-discount*100%</p>
                         </div>
                     </a>
                 </article>
-                
+
 
 
 
@@ -437,12 +447,11 @@
 </html>
 
 <!-- Thay thế từ lab3 = prj3 to prj5  -->
- <!-- Thi TH sẽ dựng dựa trên 3 prj này sửa đổi thành đề  -->
-  <!-- html,css mcq multi choice questions: w3school,... -->
-   <!-- css tập trung file BGRieng + 1 số lide BGC -->
-    <!-- jquery chỉ để thi TN, TH sẽ kh cho  -->
-     <!-- js học trên sanfoundry.com  -->
-      <!-- tracnghiem.com về js css html: kiểm tra lại sau khi học xong -->
-       <!-- Chương 13 sách js thầy cho là thầy sửa chương 13 để cho thi TH, có thay thế nằm ở Slide 215(1 web page) trong slide BGRieng: Kiểm tra dữ liệu phía người dùng: Rất hay cho thi TH -->
-        <!-- Biểu thức chính quy js regular exprestion học trên w3school -->
-         
+<!-- Thi TH sẽ dựng dựa trên 3 prj này sửa đổi thành đề  -->
+<!-- html,css mcq multi choice questions: w3school,... -->
+<!-- css tập trung file BGRieng + 1 số lide BGC -->
+<!-- jquery chỉ để thi TN, TH sẽ kh cho  -->
+<!-- js học trên sanfoundry.com  -->
+<!-- tracnghiem.com về js css html: kiểm tra lại sau khi học xong -->
+<!-- Chương 13 sách js thầy cho là thầy sửa chương 13 để cho thi TH, có thay thế nằm ở Slide 215(1 web page) trong slide BGRieng: Kiểm tra dữ liệu phía người dùng: Rất hay cho thi TH -->
+<!-- Biểu thức chính quy js regular exprestion học trên w3school -->

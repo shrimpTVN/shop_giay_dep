@@ -7,6 +7,7 @@
         "price": 565000,
         "discount": 0,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_1/image_1.png",
             "./images/products/product_1/image_2.png",
@@ -25,6 +26,7 @@
         "price": 250000,
         "discount": 0.2,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_2/image_1.png",
             "./images/products/product_2/image_2.png",
@@ -43,6 +45,7 @@
         "price": 350000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_3/image_1.png",
             "./images/products/product_3/image_2.png",
@@ -67,6 +70,7 @@
         "price": 570000,
         "discount": 0.2,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_4/image_1.png",
             "./images/products/product_4/image_2.png",
@@ -85,6 +89,7 @@
         "price": 280000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_5/image_1.png",
             "./images/products/product_5/image_2.png",
@@ -103,6 +108,7 @@
         "price": 280000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_6/image_1.png",
             "./images/products/product_6/image_2.png",
@@ -121,6 +127,7 @@
         "price": 350000,
         "discount": 0,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_7/image_1.png",
             "./images/products/product_7/image_2.png",
@@ -139,6 +146,7 @@
         "price": 280000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_8/image_1.png",
             "./images/products/product_8/image_2.png",
@@ -157,6 +165,7 @@
         "price": 360000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_9/image_1.png",
             "./images/products/product_9/image_2.png",
@@ -175,6 +184,7 @@
         "price": 350000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_10/image_1.png",
             "./images/products/product_10/image_2.png",
@@ -193,6 +203,7 @@
         "price": 180000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_11/image_1.png",
             "./images/products/product_11/image_2.png",
@@ -211,6 +222,7 @@
         "price": 370000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_12/image_1.png",
             "./images/products/product_12/image_2.png",
@@ -229,6 +241,7 @@
         "price": 390000,
         "discount": 0.2,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_13/image_1.png",
             "./images/products/product_13/image_2.png",
@@ -253,6 +266,7 @@
         "price": 280000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_14/image_1.png",
             "./images/products/product_14/image_2.png",
@@ -277,6 +291,7 @@
         "price": 260000,
         "discount": 0.2,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_15/image_1.png",
             "./images/products/product_15/image_2.png",
@@ -295,6 +310,7 @@
         "price": 260000,
         "discount": 0.2,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_16/image_1.png",
             "./images/products/product_16/image_2.png",
@@ -313,6 +329,7 @@
         "price": 290000,
         "discount": 0.3,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_17/image_1.png",
             "./images/products/product_17/image_2.png",
@@ -331,6 +348,7 @@
         "price": 310000,
         "discount": 0.2,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_18/image_1.png",
             "./images/products/product_18/image_2.png",
@@ -349,6 +367,7 @@
         "price": 90.0,
         "discount": 0.0,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_19/image_1.png",
             "./images/products/product_19/image_2.png",
@@ -362,11 +381,12 @@
     {
         "id": 20,
         "name": "adidas Originals Samba",
-        "brand": "adidas",
+        "brand": "Adidas",
         "gender": "Kids",
         "price": 80.0,
         "discount": 0.0,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_20/image_1.png",
             "./images/products/product_20/image_2.png",
@@ -385,6 +405,7 @@
         "price": 110.0,
         "discount": 0.2,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_21/image_1.png",
             "./images/products/product_21/image_2.png",
@@ -403,6 +424,7 @@
         "price": 55.0,
         "discount": 0.1,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_22/image_1.png",
             "./images/products/product_22/image_2.png",
@@ -421,6 +443,7 @@
         "price": 120000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_25/image_1.png",
             "./images/products/product_25/image_2.png",
@@ -439,6 +462,7 @@
         "price": 115000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 0,
         "images": [
             "./images/products/product_26/image_1.png",
             "./images/products/product_26/image_2.png",
@@ -457,6 +481,7 @@
         "price": 100000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_27/image_1.png",
             "./images/products/product_27/image_2.png",
@@ -481,6 +506,7 @@
         "price": 110000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_28/image_1.png",
             "./images/products/product_28/image_2.png",
@@ -505,6 +531,7 @@
         "price": 110000,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_29/image_1.png",
             "./images/products/product_29/image_2.png",
@@ -523,6 +550,7 @@
         "price": 129900,
         "discount": 0.15,
         "tags": [],
+        "is_featured": 1,
         "images": [
             "./images/products/product_30/image_1.png",
             "./images/products/product_30/image_2.png",
