@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./css/detail.css" />
         <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
-        <script defer src="./js/detailJSON.js"></script>
-        <script defer src="./js/detail.js"></script>
     </head>
 
     <body class="page">
@@ -80,6 +78,7 @@
                                 Màu sắc
                                 <p></p>
                             </h2>
+
                             <img class="img-color 0 img-color--default" alt="anh1" />
                             <img class="img-color 2" alt="anh2" />
                             <img class="img-color 3" alt="anh3" />
@@ -88,10 +87,13 @@
                         <div class="opt__size">
                             <h2 class="size__title">Size</h2>
                             <select class="size__select" id="size" name="size">
+                                <option value="36">36</option>
+                                <option value="37">37</option>
                                 <option value="38">38</option>
                                 <option value="39">39</option>
                                 <option value="40">40</option>
                                 <option value="41">41</option>
+                                <option value="42">42</option>
                             </select>
                             <span class="size__table"
                                 ><a target="_blank" href="./images/products/detail/detail_size.jpg">Bảng size</a></span
@@ -99,10 +101,12 @@
                         </div>
                         <div class="opt__quantity">
                             <label for="quantity">Số lượng</label>
-                            <input type="text" name="quantity" id="quantity" value="1" />
+                            <input type="number" name="quantity" id="quantity" value="1" />
                         </div>
                         <div class="opt__add">
-                            <button class="add__button" type="submit">Thêm vào giỏ hàng</button>
+                            <button class="add__button" type="submit" onclick="handleAddCart(event)">
+                                Thêm vào giỏ hàng
+                            </button>
                             <button class="add__button add__button--buy" type="submit">Mua ngay</button>
                         </div>
                     </div>
@@ -184,6 +188,9 @@
                     </div>
                 </section>
             </article>
+
+            <script defer src="./js/detailJSON.js"></script>
+            <script defer src="./js/detail.js"></script>
         </main>
         <!-- Phần footer chung cho dự án -->
         <footer class="page__footer">
