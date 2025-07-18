@@ -47,7 +47,7 @@ function addProductToDOM(product) {
 
                                         <p class="cart__item-detail" id="cart__product-color"
                                         value="${product.colorChosen}">
-                                            Màu:${product.color_names[product.colorChosen]}
+                                            Màu: ${product.color_names[product.colorChosen]}
                                         </p>
                                         <p class="cart__item-detail" id="cart__product-size" value="${
                                             product.sizeChosen

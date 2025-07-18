@@ -8,6 +8,29 @@
         <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/base.css" />
     </head>
+    <nav class="small-screen-nav">
+        <span class="nav__close-icon">
+            <i class="fa-solid fa-xmark" onclick="handleHideNav()"></i>
+        </span>
+        <ul class="ss-nav__list">
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./index.html">Trang chủ</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./products.html">Sản phẩm</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./cart.html">Giỏ hàng</a>
+            </li>
+
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./log_in.html">Đăng nhập</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./register.html">Đăng ký</a>
+            </li>
+        </ul>
+    </nav>
     <body class="page">
         <header class="page__header">
             <div class="header__container grid wide">
@@ -24,6 +47,7 @@
                         </button>
                     </form>
                 </div>
+
                 <nav class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__list-item"><a class="nav__link" href="index.html">Trang chủ</a></li>
@@ -33,6 +57,7 @@
                                 <i class="nav__cart-icon fa-solid fa-bag-shopping"></i>
                             </a>
                         </li>
+
                         <li class="nav__list-item nav__list-item--login">
                             <a class="nav__link nav__link--white" href="log_in.html">Đăng nhập</a>
                             <a class="nav__link nav__link--white nav__link--border-left" href="register.html"
@@ -40,6 +65,9 @@
                             >
                         </li>
                     </ul>
+                    <div class="nav__list-icon-wrap" onclick="handleShowNav()">
+                        <i class="nav__list-icon fa-solid fa-list-ul"></i>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -63,9 +91,9 @@
                         </div>
                         <div class="div__content section__content section__content--float-right">
                             <p>
-                                Chào hè rực rỡ <b>LMHN STORE</b> giảm giá cực sốc từ <b>15% - 30%</b> toàn bộ sản phẩm trong cửa
-                                hàng. Mùa hè đã đến hay sắm ngay cho tủ giày của mình những đôi giày thật chất để cùng
-                                bạn tung tăng khắp phố!
+                                Chào hè rực rỡ <b>LMHN STORE</b> giảm giá cực sốc từ <b>15% - 30%</b> toàn bộ sản phẩm
+                                trong cửa hàng. Mùa hè đã đến hay sắm ngay cho tủ giày của mình những đôi giày thật chất
+                                để cùng bạn tung tăng khắp phố!
                             </p>
                             <p>
                                 Chương trình áp dụng từ <b>01/06/2025 đến 31/08/2025</b> hãy nhanh tay đặt hàng để nhận
@@ -76,24 +104,40 @@
                 </section>
                 <section class="section-banner">
                     <div class="section-banner__slider">
-                       <img class="section-banner__image2" src="./images/index/banner2.png" alt="Banner 2" />
+                        <img class="section-banner__image2" src="./images/index/banner2.png" alt="Banner 2" />
                     </div>
                 </section>
 
                 <section class="section-product">
-                    <h1 class="article__title--primary">Sản Phẩm Mới</h1>   
+                    <h1 class="article__title--primary">Sản Phẩm Mới</h1>
                     <div class="section-product__list">
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_7/image_1.png" alt="Sản phẩm mới" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_7/image_1.png"
+                                alt="Sản phẩm mới"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_8/image_1.png" alt="Sản phẩm mới" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_8/image_1.png"
+                                alt="Sản phẩm mới"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_9/image_1.png" alt="Sản phẩm mới" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_9/image_1.png"
+                                alt="Sản phẩm mới"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_10/image_1.png" alt="Sản phẩm mới" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_10/image_1.png"
+                                alt="Sản phẩm mới"
+                            />
                         </div>
                     </div>
                 </section>
@@ -103,21 +147,36 @@
                     </div>
                 </section>
 
-
                 <section class="section-product">
                     <h1 class="article__title--primary">Sản Phẩm Bán Chạy</h1>
                     <div class="section-product__list">
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_11/image_1.png" alt="Sản phẩm bán chạy" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_11/image_1.png"
+                                alt="Sản phẩm bán chạy"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_12/image_1.png" alt="Sản phẩm bán chạy" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_12/image_1.png"
+                                alt="Sản phẩm bán chạy"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_4/image_1.png" alt="Sản phẩm bán chạy" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_4/image_1.png"
+                                alt="Sản phẩm bán chạy"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_5/image_1.png" alt="Sản phẩm bán chạy" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_5/image_1.png"
+                                alt="Sản phẩm bán chạy"
+                            />
                         </div>
                     </div>
                 </section>
@@ -130,16 +189,33 @@
                     <h1 class="article__title--primary">Sản Phẩm Yêu Thích</h1>
                     <div class="section-product__list">
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_25/image_1.png" alt="Sản phẩm yêu thích" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_25/image_1.png"
+                                alt="Sản phẩm yêu thích"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_26/image_1.png" alt="Sản phẩm yêu thích" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_26/image_1.png"
+                                alt="Sản phẩm yêu thích"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_27/image_1.png" alt="Sản phẩm yêu thích" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_27/image_1.png"
+                                alt="Sản phẩm yêu thích"
+                            />
                         </div>
                         <div class="section-product__item">
-                            <img class="section-product__image" src="./images/products/product_28/image_1.png" alt="Sản phẩm yêu thích" />
+                            <img
+                                class="section-product__image"
+                                src="./images/products/product_28/image_1.png"
+                                alt="Sản phẩm yêu thích"
+                            />
+                        </div>
                     </div>
                 </section>
 
@@ -150,12 +226,13 @@
                     </div>
                     <div class="div__content">
                         <p>
-                            <b>LMHN STORE</b> là một cửa hàng trực tuyến chuyên cung cấp giày dép thời trang và phụ kiện chất
-                            lượng cao. Được tạo ra bởi nhóm sinh viên thực hiện đồ án Nhập môn Lập trình Web. Dù còn non
-                            trẻ nhưng chúng tôi luôn nỗ lực mang đến cho khách hàng những sản phẩm tốt nhất, giá cả hợp
-                            lý và dịch vụ tận tâm. Với phương châm <b><em>"Chất lượng - Thời thượng - Giá yêu thương"</em></b>,
-                            <b>LMHN STORE</b> mong muốn mang đến trải nghiệm mua sắm tiện lợi và thân thiện nhất với mọi khách
-                            hàng.
+                            <b>LMHN STORE</b> là một cửa hàng trực tuyến chuyên cung cấp giày dép thời trang và phụ kiện
+                            chất lượng cao. Được tạo ra bởi nhóm sinh viên thực hiện đồ án Nhập môn Lập trình Web. Dù
+                            còn non trẻ nhưng chúng tôi luôn nỗ lực mang đến cho khách hàng những sản phẩm tốt nhất, giá
+                            cả hợp lý và dịch vụ tận tâm. Với phương châm
+                            <b><em>"Chất lượng - Thời thượng - Giá yêu thương"</em></b
+                            >, <b>LMHN STORE</b> mong muốn mang đến trải nghiệm mua sắm tiện lợi và thân thiện nhất với
+                            mọi khách hàng.
                         </p>
                         <p>
                             Cảm ơn bạn đã ghé thăm! Đừng quên theo dõi chúng tôi để không bỏ lỡ ưu đãi hấp dẫn nào
@@ -187,59 +264,109 @@
                         </div>
                     </div>
                     <div class="div__content div__content--background2">
-                        <p><b>30.000+</b> sản phẩm đã được bán ra </p>
-                        <p>Đã phục vụ <b>20.000+</b> khách hàng </p>
+                        <p><b>30.000+</b> sản phẩm đã được bán ra</p>
+                        <p>Đã phục vụ <b>20.000+</b> khách hàng</p>
                         <p>Đa phân khúc từ <b>Trẻ em đến người lớn</b></p>
-                        <p>Dù chỉ mới được thành lập không lâu nhưng <b>LMHN STORE</b> luôn tin tưởng sẽ phát triển ngày càng lớn mạnh</p>
+                        <p>
+                            Dù chỉ mới được thành lập không lâu nhưng <b>LMHN STORE</b> luôn tin tưởng sẽ phát triển
+                            ngày càng lớn mạnh
+                        </p>
                     </div>
-
                 </section>
 
                 <section class="section-brand">
                     <h1 class="article__title--primary">Thương hiệu hợp tác</h1>
                     <div class="section-brand__list">
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo1.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo1.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo2.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo2.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo3.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo3.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo4.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo4.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo5.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo5.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo6.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo6.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo7.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo7.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo8.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo8.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo9.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo9.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo10.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo10.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo11.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo11.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                         <div class="section-brand__item">
-                            <img class="section-product__image" src="./images/index/pic_logo12.png" alt="Thương hiệu hợp tác" />
+                            <img
+                                class="section-product__image"
+                                src="./images/index/pic_logo12.png"
+                                alt="Thương hiệu hợp tác"
+                            />
                         </div>
                     </div>
                 </section>
             </article>
         </main>
         <footer class="page__footer">
-            <div class="grid wide">
+            <div class="page__footer-wrap grid wide">
                 <div class="footer__services">
                     <div class="services__container services__customer">
                         <h3 class="div__title--tertiary">DỊCH VỤ KHÁCH HÀNG</h3>
@@ -516,5 +643,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./JS/header.js"></script>
     </body>
 </html>
