@@ -155,19 +155,20 @@
 
 .product-listing__card {
     background-color: #f6f6f6;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 
     position: relative;
 
     display: flex;
     flex-direction: column;
 
-    transition: transform 0.4s ease;
+    /* transition: transform 0.4s ease; */
 }
 
 .product-listing__card:hover {
-    border: 2px solid #fff;
-    box-shadow: 2px 4px #2e1e2e;
-    transform: scale(1.1);
+    /* border: 2px solid #fff; */
+    box-shadow: 3px 4px #2e1e2e;
+    /* transform: scale(1.1); */
     z-index: 5;
 
 }
