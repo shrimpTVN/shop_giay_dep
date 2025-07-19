@@ -3,12 +3,15 @@
     overflow: hidden;
 }
 
-.section-banner__slider {
-    display: flex;
-    flex-wrap: wrap; /* Cho phép xuống dòng nếu cần */
-    gap: 2rem;
+ .section-banner__slider1 {
+   display: flex;
+   flex-wrap: wrap; /* Cho phép xuống dòng nếu cần */
+   gap: 2rem; /* Khoảng cách giữa các ảnh */
+   position: relative;
 }
-
+.section-banner__slide {
+    display: none;
+}
 .section-banner__image {
     flex: 1 1 100%;        /* Mặc định ảnh chiếm 100% chiều ngang khung cha */
     max-width: 100%;       /* Không vượt quá khung */
@@ -16,6 +19,50 @@
     object-fit: cover;
    
 }
+.section-banner__prev,
+.section-banner__next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+.section-banner__prev {
+  left: 1rem;
+}
+
+.section-banner__next {
+  right: 1rem;
+}
+
+.section-banner__prev:hover,
+.section-banner__next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ .section-banner__slider {
+   display: flex;
+   flex-wrap: wrap; /* Cho phép xuống dòng nếu cần */
+   gap: 2rem; /* Khoảng cách giữa các ảnh */
+} 
+
 .section-banner__image2 {
     flex: 1 1 100%;        /* Mặc định ảnh chiếm 100% chiều ngang khung cha */
     max-width: 100%;       /* Không vượt quá khung */
@@ -24,6 +71,7 @@
    border-radius: 3px;
    margin-top: 2rem;
 }
+
 
 .div__content {
      white-space: normal;

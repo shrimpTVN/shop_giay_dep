@@ -46,8 +46,15 @@
         <main class="page__main grid wide">
             <article>
                 <section class="section-banner">
-                    <div class="section-banner__slider">
-                        <img class="section-banner__image" src="/images/index/pic_banner1.png" alt="Banner 1" />
+                    <div class="section-banner__slider1">
+                        <div class="section-banner__slide fade">
+                            <img class="section-banner__image" src="/images/index/pic_banner1.png" alt="Banner 1" />
+                        </div>
+                        <div class="section-banner__slide fade">
+                            <img class="section-banner__image" src="/images/index/pic_banner2.png" alt="Banner 2" />
+                        </div>
+                        <a class="section-banner__prev" onclick="plusSlides(-1)">&lt;</a>
+                        <a class="section-banner__next" onclick="plusSlides(1)">&gt;</a>
                     </div>
                 </section>
                 <section class="article__section">
@@ -76,7 +83,7 @@
                 </section>
                 <section class="section-banner">
                     <div class="section-banner__slider">
-                       <img class="section-banner__image2" src="./images/index/banner2.png" alt="Banner 2" />
+                    <img class="section-banner__image2" src="./images/index/banner2.png" alt="Banner 2" />
                     </div>
                 </section>
 
@@ -516,5 +523,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/index.js"></script>
     </body>
 </html>
