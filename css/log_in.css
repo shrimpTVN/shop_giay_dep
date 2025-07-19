@@ -1,4 +1,5 @@
 /* Tác giả: Nguyễn Huy Lợi MSSV: B2306556 */
+/* <!-- Tài liệu tham khảo Tài liệu thực hành thầy Vũ Duy Linh --> */
 
 
 
@@ -13,10 +14,10 @@
 
 .main__container-form {
     width: 410px;
-    height: 480px;
+    height: 500px;
     background-color: white;
     border-radius: 5px;
-    margin: 5% 0 5% 20%;
+    margin: 5% auto 5%;
     border: 1px solid gray;
     border-radius: 5px;
 }
@@ -56,8 +57,8 @@
 
 .form__line {
     display: flex;
-    margin: 10px 0px;
-    height: 30px;
+    margin: 20px 0px 20px;
+    height: 4rem;
     gap: 10px;
 }
 
@@ -71,10 +72,54 @@
     font-size: 1.8rem;
 }
 
-.form__line>input {
+.input-block {
     flex: 1;
+    height: 4rem;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.form__line input {
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.icon-eye {
+    position: absolute;
+    top: 50%;
+    right: -2.1rem;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+}
+
+
+input.valid {
+    border: solid green;
+    background-image: url(../images/login/tick.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.form__line.error input {
+    border: solid red;
+    background-image: url(../images/login/cross.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.message {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 1.4rem;
+}
+
+.form__line.error .message {
+    height: 3rem;
+    color: red;
 }
 
 .form__line--submit>input {
@@ -88,13 +133,17 @@
     background-color: rgb(47, 46, 46);
 }
 
-.form__line--forget>a {
+.form--forget {
+    margin: 0.5rem 0 1rem 3rem;
+}
+
+.form--forget>a {
     text-decoration: none;
     font-size: 1.4rem;
     color: blue;
 }
 
-.form__line--forget>a:hover {
+.form--forget>a:hover {
     color: coral;
 }
 

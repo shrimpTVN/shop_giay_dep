@@ -682,3 +682,31 @@ html {
         width: 20%; /* 2 cột trên mobile */
     }
 }
+
+
+
+
+/* ===== Nút up to top ===== */
+.up-to-top {
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+
+    width: 4rem;
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 1px;
+
+    background-color: #fff;
+
+    color: rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+}
+
+.up-to-top:hover {
+    background-color: #3cc6b7;
+    border: 1px solid #dedace;
+    box-shadow: 1px 0.2rem #2e1e2e;
+    color: #fff;
+}

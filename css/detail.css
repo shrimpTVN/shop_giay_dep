@@ -1,14 +1,24 @@
-/* Tác giả: Nguyễn Huy Lợi MSSV: B2306556 */
+/* Tác giả: Nguyễn Huy Lợi MSSV: B2306556 
+    Tài liệu tham khảo học tập của thầy Nguyễn Văn Linh, LAB 2 và anonymous sticky*/
 
+/* Phần main đã được css bởi base css cho đồng bộ, ngoài ra còn thuộc layout grid 1 cột */
+.page__main {}
+
+/* Chỉ có một block container là article nên xem nó như main
+    Và cho các section trong article có display là block hoặc flex nên đã theo layout mong muốn*/
+.main__article {}
+
+/* Khối section main__order */
 .main__order {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* ảnh trượt */
+/* ảnh trượt chiếm 2/3 chiều ngang*/
 .order__slide {
     flex: 2;
     border: 1px solid;
+    /* Do dùng số lượng ảnh * 100% nên ảnh sẽ tràn ra ngoài nên cần ẩn đi ảnh tràn */
     overflow: hidden;
     width: 100%;
     aspect-ratio: 3 / 2;
@@ -23,6 +33,8 @@
     width: 100%;
 }
 
+/* hai nút bấm cho slide trượt
+    dùng cách tạo đường gạch chân cho h1 để căn giữa nút bấm theo chiều dọc */
 #slide__prev,
 #slide__next {
     position: absolute;
@@ -54,7 +66,7 @@
     /* để lấp vùng trống nếu ảnh nhỏ hơn khung */
 }
 
-/* Lựa chọn bên canh ảnh trượt */
+/* Lựa chọn bên cạnh ảnh trượt chiếm 1/3 chiều ngang*/
 
 .main__opt {
     flex: 1;
@@ -63,22 +75,10 @@
     line-height: 30px;
 }
 
+.opt__infor {}
+
 .opt__age {
     color: #956a29;
-}
-
-.opt__header {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-}
-
-.opt__add-to-cart {
-    font-size: 1.4rem;
-    border: 1px solid gray;
-    background-color: #bfc2c3;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .opt__title {
@@ -104,7 +104,9 @@
 .opt__img-color h2 {
     width: 100%;
 }
-.opt__img-color h2 p {
+
+.opt__img-color p {
+    width: 100%;
     color: rgb(56, 57, 57);
     font-size: 1.4rem;
 }
@@ -182,7 +184,8 @@
 }
 
 
-/* Phần mô tả */
+
+/* CSS cho Phần mô tả */
 
 .main__description {
     margin-top: 30px;
@@ -210,6 +213,8 @@
     transform: skewX(12deg) translateX(-50%);
 }
 
+/* Responsive cho cho phần mô tả dùng flex cùng điểm gãy */
+
 .description {
     display: flex;
     justify-content: space-around;
@@ -217,6 +222,7 @@
     gap: 10px;
 }
 
+/* flex-items */
 .description__common {
     font-size: 1.6rem;
     flex: 1;
@@ -244,10 +250,10 @@
 }
 
 .detail__list {
-    padding: 21px;
+    padding: 0 2.1rem;
 }
 
-/* Phan review */
+/* CSS phần review */
 
 .main__review {
     margin-top: 30px;
@@ -263,7 +269,7 @@
 
 .review__star {
     border: none;
-    /* vì các ngôi sao bi ngược nên cần rtl */
+    /* vì các ngôi sao tô màu ngược nên cần rtl đồng thời làm cho khối ngôi sao căn phải*/
     direction: rtl;
     flex: 1;
 }
@@ -273,6 +279,7 @@
     display: none;
 }
 
+/* Thêm ngôi sao vào gắn vào lable => click vao lable sẽ chọn vào inpur bị ẩn */
 .review__star>label::before {
     margin: 5px;
     font-size: 1.5rem;
@@ -286,6 +293,7 @@
     cursor: pointer;
 }
 
+/* do dùng ~ nên các ngôi sao bị tô màu ngược */
 .review__star input:checked~label {
     color: gold;
 }
@@ -304,7 +312,6 @@
 }
 
 .review__comment textarea {
-    border: 1px solid black;
     width: 80%;
     height: 60px;
     border-radius: 5px;
@@ -318,6 +325,10 @@
 textarea::placeholder {
     color: rgb(39, 38, 38);
     font-size: 1.6rem;
+}
+
+.focus {
+    border: cyan solid 2px;
 }
 
 /* button gui review */
@@ -360,6 +371,8 @@ textarea::placeholder {
         min-width: 600px;
     }
 }
+
+/* RWD cho mobile */
 
 @media (max-width: 739px) {
 

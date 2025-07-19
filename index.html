@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="./css/index.css" />
         <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/base.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
     </head>
     <nav class="small-screen-nav">
         <span class="nav__close-icon">
@@ -74,8 +78,15 @@
         <main class="page__main grid wide">
             <article>
                 <section class="section-banner">
-                    <div class="section-banner__slider">
-                        <img class="section-banner__image" src="/images/index/pic_banner1.png" alt="Banner 1" />
+                    <div class="section-banner__slider1">
+                        <div class="section-banner__slide fade">
+                            <img class="section-banner__image" src="/images/index/pic_banner1.png" alt="Banner 1" />
+                        </div>
+                        <div class="section-banner__slide fade">
+                            <img class="section-banner__image" src="/images/index/pic_banner2.png" alt="Banner 2" />
+                        </div>
+                        <a class="section-banner__prev" onclick="plusSlides(-1)">&lt;</a>
+                        <a class="section-banner__next" onclick="plusSlides(1)">&gt;</a>
                     </div>
                 </section>
                 <section class="article__section">
@@ -643,7 +654,11 @@
                 </div>
             </div>
         </footer>
-
+        <button class="up-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        
+        <script src="./JS/index.js"></script>
         <script src="./JS/header.js"></script>
     </body>
 </html>

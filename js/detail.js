@@ -1,6 +1,9 @@
 // Tác giả: Nguyễn Huy Lợi MSSV: B2306556
+// Tài liệu tham khảo ebook2
 
 // tạo slide trượt
+
+// Dùng cách gián tiếp chọn phần tử
 const slider = document.getElementById("slide__transition");
 const slides = slider.querySelectorAll(".order__img");
 const totalSlides = slides.length;
@@ -41,9 +44,11 @@ setInterval(nextSlide, 5000);
 
   
 
+
 //khi click vào ngôi sao sẽ focus vào comment
 document.getElementById("rating").addEventListener("click", function () {
-  document.getElementById("comment").focus();
+  var comment = document.getElementById("comment");
+  comment.focus();
 });
 
 
