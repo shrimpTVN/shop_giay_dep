@@ -128,7 +128,7 @@ eye.addEventListener("click", () => {
     elPw.setAttribute("type", type);
 
     //chuyển đổi giữa 2 icon khi có click
-    eye.classList.toogle("fa-eye");
-    eye.classList.toogle("fa-eye-slash");
+    eye.classList.toggle("fa-eye");
+    eye.classList.toggle("fa-eye-slash");
 
 })
