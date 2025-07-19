@@ -18,13 +18,13 @@ function addProductToDOM(product) {
     let imageSrc = `./images/products/product_${product.id}/image_${product.colorChosen + 1}.png`;
     //tạo sản phẩm vào add vào danh sách giỏ hàng
     let li = document.createElement("li");
-    li.className = "cart__item";
+    li.className = "cart__item pe-0 p-sm-4 row justify-content-between";
     li.id = `cart__item-${product.id}`;
-    li.innerHTML = `    <div class="cart__item-info">
+    li.innerHTML = `<div class="cart__item-info col-8">
                                     <div class="cart__item-checkbox-wrap">
                                         <input
                                             type="checkbox"
-                                            class="cart__item-checkbox"
+                                            class="cart__item-checkbox me-0 me-md-3 w-200"
                                             id="cart__item-checkbox-${product.id}"
                                             onclick="handleChoose(event.target)"
                                 
@@ -32,49 +32,60 @@ function addProductToDOM(product) {
                                         />
                                     </div>
 
-                                    <img class="cart__item-image" src="${imageSrc}" alt="" />
+                                    <img class="cart__item-image w-25" src="${imageSrc}" alt="" />
                                     <div class="cart__item-detail-wrap">
-                                        <h3 class="cart__item-name" id="cart__product-name">${product.name}</h3>
-                                        <div class="cart__item-price-wrap">
-                                            <p class="cart__item-price"> Giá: </p> 
+                                        <h3 class="cart__item-name fs-3 mb-0" id="cart__product-name">${
+                                            product.name
+                                        }</h3>
+                                        <div class="cart__item-price-wrap text-center align-middle">
+                                            <p class="cart__item-price fs-4 mb-0"> Giá: </p> 
                                             <p class="cart__item-price" id="cart__product-price"
                                             value="${product.discount}">
-                                                 ${product.price - product.price * product.discount}
-                                            </p>
-                                            <p class="cart__item-price" id="cart__product-old-price"
-                                            value="${product.price}">  ${product.discount != 0 ? product.price : ""}</p>
+                                               ${Number(
+                                                   product.price - product.price * product.discount
+                                               ).toLocaleString(
+                                                   "vi-VN"
+                                               )}đ                                             </p>
+                                        <p class="cart__item-price text-decoration-line-through" id="cart__product-old-price fs-4 d-none d-md-block"
+                                        value="${product.price}">  ${
+        product.discount != 0 ? `${Number(product.price).toLocaleString("vi-VN")}đ` : ""
+    }
+                                        </p>
                                         </div>
 
-                                        <p class="cart__item-detail" id="cart__product-color"
+                                        <p class="cart__item-detail mb-0" id="cart__product-color"
                                         value="${product.colorChosen}">
                                             Màu: ${product.color_names[product.colorChosen]}
                                         </p>
-                                        <p class="cart__item-detail" id="cart__product-size" value="${
+                                        <p class="cart__item-detail mb-0" id="cart__product-size" value="${
                                             product.sizeChosen
                                         }">
                                             Kích cở: ${product.sizeChosen}
                                         </p>
-                                        <p class="cart__item-detail" id="cart__product-quantity"
+                                        <p class="cart__item-detail mb-0" id="cart__product-quantity"
                                         value="${product.quantityChosen}">
                                             Số lượng: ${product.quantityChosen}
                                         </p>
                                     </div>
                                 </div>
 
-                                <div class="cart__item-actions">
-                                    <button class="cart__button cart__item-edit" type="button" onclick="handleEdit(event)">
-                                        <i class="cart__button-icon fa-solid fa-pen-to-square"></i><br />Chỉnh sửa
+                                <div class="cart__item-actions row pe-4 col-3">
+                                    <button class="cart__button cart__item-edit col-12 col-md-8 px-md-3" type="button" onclick="handleEdit(event)">
+                                        <i class="cart__button-icon fs-2 mb-3 fa-solid fa-pen-to-square"></i>
+                                        <p class="d-none d-md-block">Chỉnh sửa</p>
                                     </button>
                                     <button
-                                        class="cart__button cart__item-remove"
+                                        class="cart__button cart__item-remove col-12 col-md-4 px-md-3"
                                         type="button"
                                         onclick="handleRemove(event)"
                                     >
                                         <i class="cart__button-icon cart__button-icon--remove fa-solid fa-trash"></i
-                                        ><br />Xóa
+                                        > <p class="d-none d-md-block">Xóa</p>
                                     </button>
                                 </div>
-                                <div class="cart__edit-component">
+
+                                <div class="cart__edit-component 
+                                 top-50 end-0 w-100 w-ms-50">
                                     <div class="edit__item edit__color">
                                         <span class="edit__label"> Màu: </span>
                                         <select class="edit__select edit__select-color"   value="${
@@ -114,7 +125,7 @@ function addProductToDOM(product) {
                                         <span class="edit__label">Số lượng:</span>
                                         <input class="edit__quantity-input"type="number" value="1" min="1" />
                                     </div>
-                                    <div class="edit__item edit__button-wrap">
+                                    <div class="edit__item edit__button-wrap pe-5">
                                         <button
                                             class="edit__button edit__button--gray  cart__button--cancle"
                                             type="button"
@@ -126,7 +137,7 @@ function addProductToDOM(product) {
                                         </button>
                                     </div>
                                 </div>
-                                `;
+        `;
     cartList.appendChild(li);
     if (product.discount != 0) {
         li.querySelector("#cart__product-price").classList.add("cart__item-price--discount");

@@ -33,12 +33,12 @@ html {
     margin: 0 auto;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 767px) {
     html {
         font-size: 50%;
     }
 }
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .grid.wide {
         width: 644px;
     }
