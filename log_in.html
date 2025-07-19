@@ -1,4 +1,5 @@
 <!-- Tác giả: Nguyễn Huy Lợi MSSV: B2306556 -->
+ <!-- Tài liệu tham khảo Tài liệu thực hành thầy Vũ Duy Linh -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -90,23 +91,32 @@
                         </div>
                     </div>
 
-                <form action="" method="post">
+                <form id="log-in-form" action="index.html" method="post">
                     <div class="form__line">
-                        <label for="account"><i class="fa-solid fa-user"></i></label>
-                        <input type="text" name="acount" id="account" placeholder="Email/Số điện thoại/Tên đăng nhập" />
+                        <label for="email"><i class="fa-solid fa-user"></i></label>
+                        <div class="input-block">
+                            <input type="email" name="acount" id="email" placeholder="Email" />
+                            <small class="message"></small>
+                        </div>
                     </div>
+
                     <div class="form__line">
                         <label for="pw"><i class="fa-solid fa-key"></i></label>
-                        <input type="password" name="pw" id="pw" placeholder="Mật khẩu" />
+                        <div class="input-block">
+                            <input type="password" name="pw" id="pw" placeholder="Mật khẩu"/>
+                            <span class="icon-eye"><i id="eye" class="fa-solid fa-eye"></i></span>
+                            <small class="message"></small>
+                        </div>
                     </div>
+
                     <div class="form__line form__line--submit">
                         <input type="submit" value="Đăng nhập" />
                     </div>
-                    <div class="form__line form__line--forget">
-                        <a href="#">Quên mật khẩu?</a>
-                    </div>
                 </form>
             </div>
+                <div class="form--forget">
+                        <a href="#">Quên mật khẩu?</a>
+                    </div>
 
                 <div class="horizon-opt">
                     <hr />
@@ -410,5 +420,6 @@
 
         <!-- code javascript -->
         <script src="./JS/header.js"></script>
+        <script src="./js/login.js"></script>
     </body>
 </html>
