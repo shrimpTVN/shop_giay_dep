@@ -4,11 +4,42 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Giỏ hàng</title>
+
         <link rel="stylesheet" href="./css/base.css" />
-        <link rel="stylesheet" href="./css/cart.css" />
+
         <!-- fontawesome -->
         <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/cart.css" />
     </head>
+    <nav class="small-screen-nav">
+        <span class="nav__close-icon">
+            <i class="fa-solid fa-xmark" onclick="handleHideNav()"></i>
+        </span>
+        <ul class="ss-nav__list">
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./index.html">Trang chủ</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./products.html">Sản phẩm</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./cart.html">Giỏ hàng</a>
+            </li>
+
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./log_in.html">Đăng nhập</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./register.html">Đăng ký</a>
+            </li>
+        </ul>
+    </nav>
     <body class="page">
         <header class="page__header">
             <div class="header__container grid wide">
@@ -25,6 +56,7 @@
                         </button>
                     </form>
                 </div>
+
                 <nav class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__list-item"><a class="nav__link" href="index.html">Trang chủ</a></li>
@@ -34,6 +66,7 @@
                                 <i class="nav__cart-icon fa-solid fa-bag-shopping"></i>
                             </a>
                         </li>
+
                         <li class="nav__list-item nav__list-item--login">
                             <a class="nav__link nav__link--white" href="log_in.html">Đăng nhập</a>
                             <a class="nav__link nav__link--white nav__link--border-left" href="register.html"
@@ -41,6 +74,9 @@
                             >
                         </li>
                     </ul>
+                    <div class="nav__list-icon-wrap" onclick="handleShowNav()">
+                        <i class="nav__list-icon fa-solid fa-list-ul"></i>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -165,12 +201,10 @@
                     </div>
                 </section>
             </article>
-            <script src="./JS/cart_render.js"></script>
-            <script src="./JS/cart.js"></script>
         </main>
 
         <footer class="page__footer">
-            <div class="grid wide">
+            <div class="page__footer-wrap grid wide">
                 <div class="footer__services">
                     <div class="services__container services__customer">
                         <h3 class="div__title--tertiary">DỊCH VỤ KHÁCH HÀNG</h3>
@@ -447,5 +481,16 @@
                 </div>
             </div>
         </footer>
+
+        <!-- code javascript -->
+        <script src="./JS/header.js"></script>
+        <script src="./JS/cart_render.js"></script>
+        <script src="./JS/cart.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

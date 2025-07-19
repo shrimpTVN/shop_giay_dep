@@ -186,6 +186,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .section__content--col {
     width: 33.33%;
@@ -194,8 +195,18 @@
 }
 .section__content--image{
     width: 80%;
-    height: 22rem;
+    height: 30rem;
     object-fit: cover;
     border-radius: 3px;
     margin-top: 1.5rem;
+}
+@media (max-width:739px) {
+    .section__content--col{
+        width: 100%;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .section__content--col {
+        width: 50%;
+    }
 }

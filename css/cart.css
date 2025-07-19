@@ -236,3 +236,10 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+@media (min-width: 1200px) {
+    /* Áp dụng khi màn hình rộng từ 1200px trở lên (breakpoint xl) */
+    .container {
+        max-width: 1200px; /* Đặt chiều rộng tối đa là 1200px */
+    }
+}

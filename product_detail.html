@@ -9,10 +9,30 @@
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./css/detail.css" />
         <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
-        <script defer src="./js/detailJSON.js"></script>
-        <script defer src="./js/detail.js"></script>
     </head>
+    <nav class="small-screen-nav">
+        <span class="nav__close-icon">
+            <i class="fa-solid fa-xmark" onclick="handleHideNav()"></i>
+        </span>
+        <ul class="ss-nav__list">
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./index.html">Trang chủ</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./products.html">Sản phẩm</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./cart.html">Giỏ hàng</a>
+            </li>
 
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./log_in.html">Đăng nhập</a>
+            </li>
+            <li class="ss-nav__list-item">
+                <a class="ss-nav__link" href="./register.html">Đăng ký</a>
+            </li>
+        </ul>
+    </nav>
     <body class="page">
         <!-- Phần header chung cho dự án -->
         <header class="page__header">
@@ -30,6 +50,7 @@
                         </button>
                     </form>
                 </div>
+
                 <nav class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__list-item"><a class="nav__link" href="index.html">Trang chủ</a></li>
@@ -39,6 +60,7 @@
                                 <i class="nav__cart-icon fa-solid fa-bag-shopping"></i>
                             </a>
                         </li>
+
                         <li class="nav__list-item nav__list-item--login">
                             <a class="nav__link nav__link--white" href="log_in.html">Đăng nhập</a>
                             <a class="nav__link nav__link--white nav__link--border-left" href="register.html"
@@ -46,6 +68,9 @@
                             >
                         </li>
                     </ul>
+                    <div class="nav__list-icon-wrap" onclick="handleShowNav()">
+                        <i class="nav__list-icon fa-solid fa-list-ul"></i>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -76,10 +101,9 @@
                             <p class="opt__price"></p>
                         </div>
                         <div class="opt__img-color">
-                            <h2>
-                                Màu sắc
-                                <p></p>
-                            </h2>
+                            <h2>Màu sắc</h2>
+                            <p></p>
+                            
                             <img class="img-color 0 img-color--default" alt="anh1" />
                             <img class="img-color 2" alt="anh2" />
                             <img class="img-color 3" alt="anh3" />
@@ -88,10 +112,13 @@
                         <div class="opt__size">
                             <h2 class="size__title">Size</h2>
                             <select class="size__select" id="size" name="size">
+                                <option value="36">36</option>
+                                <option value="37">37</option>
                                 <option value="38">38</option>
                                 <option value="39">39</option>
                                 <option value="40">40</option>
                                 <option value="41">41</option>
+                                <option value="42">42</option>
                             </select>
                             <span class="size__table"
                                 ><a target="_blank" href="./images/products/detail/detail_size.jpg">Bảng size</a></span
@@ -99,10 +126,12 @@
                         </div>
                         <div class="opt__quantity">
                             <label for="quantity">Số lượng</label>
-                            <input type="text" name="quantity" id="quantity" value="1" />
+                            <input type="number" name="quantity" id="quantity" value="1" />
                         </div>
                         <div class="opt__add">
-                            <button class="add__button" type="submit">Thêm vào giỏ hàng</button>
+                            <button class="add__button" type="submit" onclick="handleAddCart(event)">
+                                Thêm vào giỏ hàng
+                            </button>
                             <button class="add__button add__button--buy" type="submit">Mua ngay</button>
                         </div>
                     </div>
@@ -184,10 +213,13 @@
                     </div>
                 </section>
             </article>
+
+            <script defer src="./js/detailJSON.js"></script>
+            <script defer src="./js/detail.js"></script>
         </main>
         <!-- Phần footer chung cho dự án -->
         <footer class="page__footer">
-            <div class="grid wide">
+            <div class="page__footer-wrap grid wide">
                 <div class="footer__services">
                     <div class="services__container services__customer">
                         <h3 class="div__title--tertiary">DỊCH VỤ KHÁCH HÀNG</h3>
@@ -464,5 +496,7 @@
                 </div>
             </div>
         </footer>
+        <!-- code javascript -->
+        <script src="./JS/header.js"></script>
     </body>
 </html>
