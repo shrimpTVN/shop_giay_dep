@@ -9,6 +9,8 @@ function getProductIdFromURL() {
     return params.get("id");
 }
 
+// Bổ sung của nhóm trưởng cho phần giỏ hàng
+
 let productChosen = {
     sizeChosen: 36,
     colorChosen: 0,
@@ -46,10 +48,12 @@ function handleAddCart(event) {
     addProduct(productChosen);
 }
 
+// tiếp tục render chi tiết sapr phẩm
+
 fetch("./products.json") //nạp file json từ localhost
     .then((response) => response.json()) // chuyển file json sang Object là Array: data
     .then((data) => {
-        const id = getProductIdFromURL(); //Lấy id
+        const id = getProductIdFromURL(); //Lấy id từ url
         const product = data.find((p) => p.id == id); //Tìm sản phảm có id trong url
         productChosen = { ...productChosen, ...product };
         // phần ảnh trượt
