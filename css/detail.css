@@ -70,9 +70,12 @@
 
 .main__opt {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     margin-left: 20px;
     padding-top: 20px;
-    line-height: 30px;
+    line-height: 2.5rem;
 }
 
 .opt__infor {}
@@ -89,11 +92,17 @@
     color: gray;
     font-weight: 200;
     cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 
 .opt__price {
     font-size: 1.6rem;
     font-weight: 500;
+}
+
+.del-money {
+    text-decoration: 1.5px line-through rgb(189, 135, 16);
+    color: #443c3c;
 }
 
 .opt__img-color {
@@ -129,7 +138,7 @@
 .size__select {
     display: inline;
     width: 6rem;
-    padding: 3px 10px;
+    padding: 0.4rem 0.6rem;
     font-size: 1.6rem;
     border-radius: 5px;
     margin-left: 1rem;

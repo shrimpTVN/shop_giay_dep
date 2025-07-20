@@ -13,8 +13,12 @@
 
 
 .main__container-form {
+    display: flex;
+    flex-direction: column;
     width: 410px;
-    height: 500px;
+    height: 85%;
+    min-height: 460px;
+    max-height: 490px;
     background-color: white;
     border-radius: 5px;
     margin: 5% auto 5%;
@@ -24,7 +28,7 @@
 
 .form__header {
     display: flex;
-    margin-top: 45px;
+    margin-top: 8%;
     margin-left: 30px;
     justify-content: space-between;
 }
@@ -37,7 +41,7 @@
 
 .form__qr {
     width: 60px;
-    height: 63px;
+    height: 8%;
     margin-right: 30px;
 }
 
@@ -50,7 +54,7 @@
 }
 
 .main__form form {
-    margin: 45px 30px 5px;
+    margin: 7% 30px 5px;
     gap: 20px;
 }
 
@@ -105,7 +109,7 @@ input.valid {
 
 
 .form__line.error input {
-    border: solid red;
+    border: 1px solid red;
     background-image: url(../images/login/cross.png);
     background-repeat: no-repeat;
     background-position: right center;
@@ -122,6 +126,10 @@ input.valid {
     color: red;
 }
 
+.form__line--submit {
+    height: 3rem;
+}
+
 .form__line--submit>input {
     color: white;
     font-size: 1.6rem;
@@ -134,7 +142,7 @@ input.valid {
 }
 
 .form--forget {
-    margin: 0.5rem 0 1rem 3rem;
+    margin: 0 0 0.5rem 3rem;
 }
 
 .form--forget>a {
@@ -170,8 +178,9 @@ input.valid {
 
 .other-opt {
     display: flex;
+    flex: 1;
     justify-content: space-around;
-    margin: 30px 30px;
+    margin: 5% 30px;
 }
 
 .other-opt>a {
@@ -201,8 +210,9 @@ input.valid {
 }
 
 .new-user {
-    margin-left: 30px;
-    font-size: 1.4rem;
+    flex: 1;
+    margin: 0 auto 1.5rem;
+    font-size: 1.6rem;
 }
 
 .new-user>p a {

@@ -66,7 +66,7 @@ fetch("./products.json") //nạp file json từ localhost
         //phần order
         document.querySelector(".opt__title").innerHTML = product.name;
         document.querySelector(".opt__price").innerHTML =
-            product.price - product.discount * product.price + `VNĐ (Đã giảm ${product.discount * 100}%)`;
+            product.price - product.discount * product.price + `VNĐ <span class="del-money">${product.price}</span> (Đã giảm ${product.discount * 100}%)`;
         var img_color = document.querySelectorAll(".img-color");
         for (var i = 0; i < img_color.length; i++) {
             if (i == 0) {
