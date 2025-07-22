@@ -1,5 +1,6 @@
 // Tác giả: Nguyễn Huy Lợi MSSV: B2306556
-//JS cho json vào đồ án
+// Tài liệu tham khảo: YTB f8, chatGPT-cách sử dụng file JSON để lấy dữ liệu render: hàm fetch()
+//JS cho json vào đồ án 
 
 // lấy id từ URL
 function getProductIdFromURL() {

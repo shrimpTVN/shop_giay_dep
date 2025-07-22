@@ -1,8 +1,19 @@
+/* Tác giả: Nguyễn Huy Lợi MSSV: B2306556 */
+/* <!-- Tài liệu tham khảo: Tài liệu thực hành thầy Vũ Duy Linh --> */
+
+// Set tài khoản mật khẩu cố định trên localStorage
+if (!localStorage.getItem('users')) {
+    const users = [
+        { username: 'loi@gmail.com', password: 'password1' }
+    ]
+    localStorage.setItem('users', JSON.stringify(users));
+}
+
 // hàm tìm tổ tiên có lớp form__line
 function findAncentor(elmt) {
-    while(elmt.parentElement !== elmt) {
+    while (elmt.parentElement !== elmt) {
         elmt = elmt.parentElement;
-        if(elmt.classList[0] == "form__line") {
+        if (elmt.classList[0] == "form__line") {
             break;
         }
     }
@@ -12,7 +23,7 @@ function findAncentor(elmt) {
 // thông điệp khi hợp lệ của 1 input
 function successMessage(elmt) {
     const formLine = findAncentor(elmt);
-    if(formLine.classList.contains("error")) {
+    if (formLine.classList.contains("error")) {
         formLine.classList.remove("error");
         formLine.classList.add("success");
     } else {
@@ -25,7 +36,7 @@ function successMessage(elmt) {
 // thông điệp khi không hợp lệ của 1 input
 function errorMessage(elmt, message) {
     const formLine = findAncentor(elmt);
-    if(formLine.classList.contains("success")) {
+    if (formLine.classList.contains("success")) {
         formLine.classList.remove("success");
         formLine.classList.add("error");
     } else {
@@ -43,9 +54,9 @@ function validateEmail(email) {
 
 // kiểm tra sự hợp lệ của email
 function checkEmail(elmt) {
-    if(elmt.value === "") {
+    if (elmt.value === "") {
         errorMessage(elmt, "Trường này không thể bỏ trống.");
-    } else if(!validateEmail(elmt.value)) {
+    } else if (!validateEmail(elmt.value)) {
         errorMessage(elmt, "Không đúng định dạng email.");
     } else {
         successMessage(elmt);
@@ -55,9 +66,9 @@ function checkEmail(elmt) {
 
 // kiểm tra sự hợp lệ của password
 function checkPw(elmt) {
-    if(elmt.value === "") {
+    if (elmt.value === "") {
         errorMessage(elmt, "Trường này không thể bỏ trống.");
-    } else if(elmt.value.length < 8) {
+    } else if (elmt.value.length < 8) {
         errorMessage(elmt, "Mật khẩu ít nhất 8 kí tự.");
     } else {
         successMessage(elmt);
@@ -105,15 +116,32 @@ logInForm.addEventListener("submit", (evt) => {
     var arrformLines = Array.from(formLines);
     arrformLines.pop();
     arrformLines.forEach(item => {
-        if(!item.classList.contains("success")){
+        if (!item.classList.contains("success")) {
             valid = false;
         }
     });
 
-    if(valid) {
-        alert("Đăng nhập thành công!");
-        // chuyển sang trang chủ khi đăng nhập thành công
-        window.location.href = "index.html";
+    if (valid) {
+        var logINSuccess = false;
+        if (localStorage.getItem('users')) {
+            var users = JSON.parse(localStorage.getItem('users'));
+            // nên dùng for in hoặc of để break khi true
+            users.forEach(item => {
+                var email = document.getElementById("email").value;
+                var pw = document.getElementById("pw").value;
+                if (item.username === email && item.password === pw) {
+                    logINSuccess = true;
+                }
+            })
+        }
+        if (logINSuccess) {
+            alert("Đăng nhập thành công!");
+            // chuyển sang trang chủ khi đăng nhập thành công
+            window.location.href = "index.html";
+        } else {
+            alert("Email hoặc mật khẩu không đúng.");
+        }
+
     } else {
         alert("Vui lòng nhập đúng thông tin đăng nhập.");
     }
