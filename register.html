@@ -1,119 +1,144 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Đăng ký</title>
-        <link rel="stylesheet" href="./css/register.css" />
-        <link rel="stylesheet" href="./css/base.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/f372bd276d.js" crossorigin="anonymous"></script>
-    </head>
-    <nav class="small-screen-nav">
-        <span class="nav__close-icon">
-            <i class="fa-solid fa-xmark" onclick="handleHideNav()"></i>
-        </span>
-        <ul class="ss-nav__list">
-            <li class="ss-nav__list-item">
-                <a class="ss-nav__link" href="./index.html">Trang chủ</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f372bd276d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <nav class="small-screen-nav">
+    <span class="nav__close-icon">
+      <i class="fa-solid fa-xmark" onclick="handleHideNav()"></i>
+    </span>
+    <ul class="ss-nav__list">
+      <li class="ss-nav__list-item">
+        <a class="ss-nav__link" href="./index.html">Trang chủ</a>
+      </li>
+      <li class="ss-nav__list-item">
+        <a class="ss-nav__link" href="./products.html">Sản phẩm</a>
+      </li>
+      <li class="ss-nav__list-item">
+        <a class="ss-nav__link" href="./cart.html">Giỏ hàng</a>
+      </li>
+
+      <li class="ss-nav__list-item">
+        <a class="ss-nav__link" href="./log_in.html">Đăng nhập</a>
+      </li>
+      <li class="ss-nav__list-item">
+        <a class="ss-nav__link" href="./register.html">Đăng ký</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <!-- Phần header dùng chung -->
+    <header class="page__header">
+      <div class="header__container grid wide">
+        <a href="./index.html"
+          ><img
+            class="header__logo"
+            src="./images/shop-logo.png"
+            alt="shop-logo"
+        /></a>
+        <div class="header__search">
+          <form class="header__search-form" action="" method="get">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="Tìm kiếm sản phẩm, danh mục, thương hiệu..."
+            />
+            <button class="header__search-button" type="submit">
+              <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link" href="index.html">Trang chủ</a>
             </li>
-            <li class="ss-nav__list-item">
-                <a class="ss-nav__link" href="./products.html">Sản phẩm</a>
+            <li class="nav__list-item">
+              <a class="nav__link" href="products.html">Sản phẩm</a>
             </li>
-            <li class="ss-nav__list-item">
-                <a class="ss-nav__link" href="./cart.html">Giỏ hàng</a>
+            <li class="nav__list-item nav__list-item--cart">
+              <a class="nav__link" href="cart.html">
+                <i class="nav__cart-icon fa-solid fa-bag-shopping"></i>
+              </a>
             </li>
 
-            <li class="ss-nav__list-item">
-                <a class="ss-nav__link" href="./log_in.html">Đăng nhập</a>
+            <li class="nav__list-item nav__list-item--login">
+              <a class="nav__link nav__link--white" href="log_in.html"
+                >Đăng nhập</a
+              >
+              <a
+                class="nav__link nav__link--white nav__link--border-left"
+                href="register.html"
+                >Đăng ký</a
+              >
             </li>
-            <li class="ss-nav__list-item">
-                <a class="ss-nav__link" href="./register.html">Đăng ký</a>
-            </li>
-        </ul>
-    </nav>
-    <body>
-        <!-- Phần header dùng chung -->
-        <header class="page__header">
-            <div class="header__container grid wide">
-                <a href="./index.html"><img class="header__logo" src="./images/shop-logo.png" alt="shop-logo" /></a>
-                <div class="header__search">
-                    <form class="header__search-form" action="" method="get">
-                        <input
-                            type="text"
-                            class="header__search-input"
-                            placeholder="Tìm kiếm sản phẩm, danh mục, thương hiệu..."
-                        />
-                        <button class="header__search-button" type="submit">
-                            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-                </div>
+          </ul>
+          <div class="nav__list-icon-wrap" onclick="handleShowNav()">
+            <i class="nav__list-icon fa-solid fa-list-ul"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-                <nav class="header__nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item"><a class="nav__link" href="index.html">Trang chủ</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="products.html">Sản phẩm</a></li>
-                        <li class="nav__list-item nav__list-item--cart">
-                            <a class="nav__link" href="cart.html">
-                                <i class="nav__cart-icon fa-solid fa-bag-shopping"></i>
-                            </a>
-                        </li>
+    <main>
+      <div class="register container">
+        <h2 class="register__title">Đăng ký tài khoản</h2>
+        <form class="register__form" action="#" method="post">
+          <div class="form__group">
+            <label for="fullname">Họ và tên *</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-                        <li class="nav__list-item nav__list-item--login">
-                            <a class="nav__link nav__link--white" href="log_in.html">Đăng nhập</a>
-                            <a class="nav__link nav__link--white nav__link--border-left" href="register.html"
-                                >Đăng ký</a
-                            >
-                        </li>
-                    </ul>
-                    <div class="nav__list-icon-wrap" onclick="handleShowNav()">
-                        <i class="nav__list-icon fa-solid fa-list-ul"></i>
-                    </div>
-                </nav>
-            </div>
-        </header>
+          <div class="form__group">
+            <label for="phone">Số điện thoại *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form__group">
+            <label for="username">Tên đăng nhập *</label>
+            <input type="text" id="username" name="username" required />
+          </div>
 
-        <main>
-            <div class="register container">
-                <h2 class="register__title">Đăng ký tài khoản</h2>
-                <form class="register__form" action="#" method="post">
-                    <div class="form__group">
-                        <label for="fullname">Họ và tên *</label>
-                        <input type="text" id="fullname" name="fullname" required />
-                    </div>
-                    <div class="form__group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
+          <div class="form__group">
+            <label for="password">Mật khẩu *</label>
+            <input type="password" id="password" name="password" required />
+          </div>
 
-                    <div class="form__group">
-                        <label for="phone">Số điện thoại *</label>
-                        <input type="tel" id="phone" name="phone" required />
-                    </div>
-                    <div class="form__group">
-                        <label for="username">Tên đăng nhập *</label>
-                        <input type="text" id="username" name="username" required />
-                    </div>
+          <div class="form__group">
+            <label for="confirm-password">Nhập lại mật khẩu *</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
 
-                    <div class="form__group">
-                        <label for="password">Mật khẩu *</label>
-                        <input type="password" id="password" name="password" required />
-                    </div>
+          <button type="submit" class="register__button">Đăng ký</button>
+        </form>
 
-                    <div class="form__group">
-                        <label for="confirm-password">Nhập lại mật khẩu *</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required />
-                    </div>
-
-                    <button type="submit" class="register__button">Đăng ký</button>
-                </form>
-
-                <p class="register__login-link">Đã có tài khoản? <a href="log_in.html">Đăng nhập</a></p>
-            </div>
-        </main>
-
-        <footer class="page__footer">
+        <p class="register__login-link">
+          Đã có tài khoản? <a href="log_in.html">Đăng nhập</a>
+        </p>
+      </div>
+    </main>
+<footer class="page__footer">
             <div class="page__footer-wrap grid wide">
                 <div class="footer__services">
                     <div class="services__container services__customer">
@@ -390,9 +415,9 @@
                     <p class="">©2025 - Bản quyền thuộc về LMNH Shoe Store</p>
                 </div>
             </div>
-        </footer>
 
-        <!-- code javascript -->
-        <script src="./JS/header.js"></script>
-    </body>
+    <!-- code javascript -->
+    <script src="./JS/header.js"></script>
+    <script src="./JS/register.js"></script>
+  </body>
 </html>
