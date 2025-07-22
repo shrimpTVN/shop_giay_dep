@@ -122,8 +122,10 @@ logInForm.addEventListener("submit", (evt) => {
     });
 
     if (valid) {
+        // kiểm tra tài khoản mật khẩu
         var logINSuccess = false;
         if (localStorage.getItem('users')) {
+            // lấy tài khoản hoặc mật khẩu(dạng JSON) đã set cố định trên localStorage và chuyển về Array of Object
             var users = JSON.parse(localStorage.getItem('users'));
             // nên dùng for in hoặc of để break khi true
             users.forEach(item => {
@@ -134,10 +136,12 @@ logInForm.addEventListener("submit", (evt) => {
                 }
             })
         }
+        // Đăng nhập thành công
         if (logINSuccess) {
             alert("Đăng nhập thành công!");
             // chuyển sang trang chủ khi đăng nhập thành công
             window.location.href = "index.html";
+            // Đăng nhập thất bại
         } else {
             alert("Email hoặc mật khẩu không đúng.");
         }
