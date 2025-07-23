@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Kiểm tra trường bắt buộc
     if (value === "") {
-      showError(input, "Trường này là bắt buộc");
+      showError(input, "Yêu cầu nhập thông tin");
       return false;
     }
 

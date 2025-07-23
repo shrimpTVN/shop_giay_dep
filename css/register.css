@@ -27,10 +27,10 @@
 .register__form input {
   width: 100%;
   padding: 1.2rem 1.6rem;
-  border: 1px solid #444;
+  border: 1px solid #000000;
   border-radius: 3px;
-  background-color: #2a2a2a;
-  color: #fff;
+  background-color: rgb(0 0 0 / 0%);
+  color: #000000;
   font-size: 1.5rem;
   transition: border-color 0.3s ease;
 }
@@ -38,7 +38,7 @@
 .register__form input:focus {
   border-color: #0099ff;
   outline: none;
-  background-color: #333;
+  background-color: #ffffff00;
 }
 
 .register__button {
