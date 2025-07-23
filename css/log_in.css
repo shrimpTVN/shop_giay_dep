@@ -74,6 +74,13 @@
     text-align: center;
     cursor: pointer;
     font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form__line>label>i {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .input-block {
