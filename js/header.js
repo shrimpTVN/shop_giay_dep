@@ -35,4 +35,7 @@ if (logined != -1) {
     let user = JSON.parse(localStorage.getItem("users"))[logined] || { fullname: "User" };
     nav_login.innerHTML = ` <span class="nav__username">${user.fullname}</span>
                             <i class="nav__user-icon fa-solid fa-circle-user"></i>`;
+
+    document.querySelector(".ss-nav__list-item--register").style.display = "none";
+    document.querySelector(".ss-nav__list-item--login").style.display = "none";
 }
