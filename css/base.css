@@ -407,7 +407,7 @@ html {
 /* define size for main sides */
 /* main page have only one column -> three grows - một cột và 3 hàng */
 .page__main--one-column {
-    grid-template-areas: "left-cell" "aticle-cell" "right-cell";
+    grid-template-areas: "left-cell" "article-cell" "right-cell";
     /* grid-template-columns: auto; */
 }
 
@@ -609,7 +609,7 @@ html {
 
 .services__logo {
     padding: 0.5rem;
-    margin: 0 0.4rem;
+    margin: 0.4rem 0.4rem;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -682,9 +682,6 @@ html {
         width: 20%; /* 2 cột trên mobile */
     }
 }
-
-
-
 
 /* ===== Nút up to top ===== */
 .up-to-top {

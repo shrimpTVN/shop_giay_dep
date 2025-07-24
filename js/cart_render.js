@@ -46,7 +46,7 @@ function addProductToDOM(product) {
                                                ).toLocaleString(
                                                    "vi-VN"
                                                )}đ                                             </p>
-                                        <p class="cart__item-price text-decoration-line-through" id="cart__product-old-price fs-4 d-none d-md-block"
+                                        <p class="cart__item-price text-decoration-line-through fs-4 d-none d-md-block" id="cart__product-old-price"
                                         value="${product.price}">  ${
         product.discount != 0 ? `${Number(product.price).toLocaleString("vi-VN")}đ` : ""
     }
@@ -140,8 +140,11 @@ function addProductToDOM(product) {
         `;
     cartList.appendChild(li);
     if (product.discount != 0) {
-        li.querySelector("#cart__product-price").classList.add("cart__item-price--discount");
-        li.querySelector("#cart__product-old-price").classList.add("cart__item-price--old");
+        const priceEl = li.querySelector("#cart__product-price");
+        if (priceEl) priceEl.classList.add("cart__item-price--discount");
+
+        const oldPriceEl = li.querySelector("#cart__product-old-price");
+        if (oldPriceEl) oldPriceEl.classList.add("cart__item-price--old");
     }
 }
 

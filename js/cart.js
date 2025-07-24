@@ -70,7 +70,6 @@ function getIndex(item) {
 function handleEdit(event) {
     let item = event.target.closest("li");
     // bỏ chọn sản phẩm để phần tính giá ko bị sai.
-    unChecked(item);
 
     let itemIndex = getIndex(item);
     let editComponent = item.querySelector(".cart__edit-component");
@@ -82,10 +81,15 @@ function handleEdit(event) {
 
     // Xử lý sự kiện xác nhận chỉnh sửa
     function handleConfirm(event) {
+        // bỏ chọn sản phẩm để phần tính giá ko bị sai
+        unChecked(item);
+
+        // lấy các giá trị từ component chỉnh sửa
         let selectColor = Number(editComponent.querySelector(".edit__select-color").value);
         let selectSize = Number(editComponent.querySelector(".edit__select-size").value);
         let editQuantity = Number(editComponent.querySelector(".edit__quantity-input").value);
-        function updateTag(addQuantity) {
+
+        function updateTag(quantity) {
             let colorInfor = item.querySelector("#cart__product-color");
             let sizeInfor = item.querySelector("#cart__product-size");
             let quantityInfor = item.querySelector("#cart__product-quantity");
@@ -97,11 +101,13 @@ function handleEdit(event) {
 
             colorInfor.innerText = `Màu: ${cartListProduct[itemIndex].color_names[Number(selectColor)]}`;
             sizeInfor.innerText = `Kích cở: ${selectSize} `;
-            quantityInfor.innerText = `Số lượng: ${editQuantity + addQuantity}`;
+            quantityInfor.innerText = `Số lượng: ${quantity}`;
+
+            console.log(quantity);
 
             colorInfor.setAttribute("value", selectColor);
             sizeInfor.setAttribute("value", selectSize);
-            quantityInfor.setAttribute("value", editQuantity);
+            quantityInfor.setAttribute("value", quantity);
         }
 
         function updateLocalStorage() {
@@ -109,7 +115,6 @@ function handleEdit(event) {
 
             cartListProduct[itemIndex].colorChosen = Number(selectColor);
             cartListProduct[itemIndex].sizeChosen = Number(selectSize);
-            cartListProduct[itemIndex].quantityChosen = Number(editQuantity);
             // Tìm sản phẩm trùng (khác index)
             let duplicateIndex = cartListProduct.findIndex(
                 (item, idx) =>
@@ -120,10 +125,11 @@ function handleEdit(event) {
             );
 
             if (duplicateIndex !== -1) {
-                // Cộng quantity
-                cartListProduct[itemIndex].quantityChosen += cartListProduct[duplicateIndex].quantityChosen;
+                // Cập nhật số lượng sản phẩm
+                cartListProduct[itemIndex].quantityChosen =
+                    cartListProduct[duplicateIndex].quantityChosen + editQuantity;
                 // cập nhật thông tin trên thẻ li
-                updateTag(cartListProduct[duplicateIndex].quantityChosen);
+                updateTag(cartListProduct[itemIndex].quantityChosen);
                 // Xóa sản phẩm trùng khỏi mảng
                 cartListProduct.splice(duplicateIndex, 1);
 
@@ -132,10 +138,11 @@ function handleEdit(event) {
                 // console.log("xoas");
                 if (duplicateLi) duplicateLi.remove();
             } else {
+                // Nếu không có sản phẩm trùng, cập nhật thông tin của sản phẩm theo thông tin tùy chọn
+                cartListProduct[itemIndex].quantityChosen = Number(editQuantity);
                 updateTag(0);
             }
 
-            console.log(cartListProduct);
             localStorage.setItem("cartListProduct", JSON.stringify(cartListProduct));
         }
 
@@ -169,6 +176,7 @@ function handleRemove(event) {
         item.remove();
     }
     let item = event.target.closest("li");
+
     // bỏ chọn sản phẩm để phần tính giá ko bị sai
     removeItem(item);
 }
