@@ -1,3 +1,5 @@
+// Tác giả: Nguyễn Tiểu Mẫn MSSV: B2304068
+// Tài liệu tham khảo : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow , chatGPT-cách thêm chuyển slide tự động
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,4 +27,9 @@ function showSlides(n) {
 
   // Hiển thị slide hiện tại
   slides[slideIndex - 1].style.display = "block";
+
+  // Chuyển slide tự động
+  setInterval(() => {
+    plusSlides(1);
+  }, 5000);
 }
