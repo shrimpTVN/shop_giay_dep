@@ -7,7 +7,6 @@
     === ĐỊNH DẠNG CSS CỦA BỘ CHỌN .up-to-top ĐƯỢC ĐẶT Ở base.css ĐỂ THUẬN TIỆN SỬ DỤNG Ở index.html  ====
     ===================================================================================================== */
 
-
 /* =================== LAYOUT =================== */
 /* GC I.1 */
 .page__content--one-column {
@@ -107,7 +106,7 @@
 
 .filter-group-option__custom-checkbox:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 3px 3px #113E21;
+    box-shadow: 3px 3px #113e21;
 }
 
 .filter-group-option__custom-checkbox span {
@@ -203,17 +202,17 @@
 
 .product-card__main-image {
     padding: 1.5rem 1.5rem;
-    background-color: #EAEEEF;
+    background-color: #eaeeef;
 }
 
 /* Ảnh chính hiển thị của thẻ sản phẩm luôn bị ẩn */
-.product-card__main-image>img {
+.product-card__main-image > img {
     display: none;
-    background-color: #EAEEEF;
+    background-color: #eaeeef;
 }
 
 /* Ảnh chính hiển thị của thẻ sản phẩm khi được JS đánh dấu là hiển thị(Add Class active) */
-.product-card__main-image>img.active {
+.product-card__main-image > img.active {
     display: block;
 }
 
@@ -266,7 +265,7 @@
     display: none;
 }
 
-.product-card-header__favourite input[type="checkbox"]:checked+span {
+.product-card-header__favourite input[type="checkbox"]:checked + span {
     background-color: #3cc6b7;
     border: 1px solid #dedace;
     box-shadow: 1px 0.2rem #2e1e2e;

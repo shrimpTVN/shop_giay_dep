@@ -1,6 +1,6 @@
 // Tác giả: Nguyễn Huy Lợi MSSV: B2306556
 // Tài liệu tham khảo: YTB f8, chatGPT-cách sử dụng file JSON để lấy dữ liệu render: hàm fetch()
-//JS cho json vào đồ án 
+//JS cho json vào đồ án
 
 // lấy id từ URL
 function getProductIdFromURL() {
@@ -20,7 +20,7 @@ let productChosen = {
 
 function handleAddCart(event) {
     function addProduct(product) {
-        let cartListProduct = JSON.parse(localStorage.getItem("cartListProduct"));
+        let cartListProduct = JSON.parse(localStorage.getItem(`cart${localStorage.getItem("logined")}`)) || [];
 
         let check = false;
         //xử lý khi thêm sản phẩm có cùng tên, cùng màu, cùng size với 1 sản phẩm đã có trong giỏ hàng
@@ -38,7 +38,7 @@ function handleAddCart(event) {
             }
         });
         if (!check) cartListProduct.unshift(product);
-        localStorage.setItem("cartListProduct", JSON.stringify(cartListProduct));
+        localStorage.setItem(`cart${localStorage.getItem("logined")}`, JSON.stringify(cartListProduct));
         alert("Thêm vào giỏ hàng thành công");
     }
 
@@ -67,7 +67,9 @@ fetch("./products.json") //nạp file json từ localhost
         //phần order
         document.querySelector(".opt__title").innerHTML = product.name;
         document.querySelector(".opt__price").innerHTML =
-            product.price - product.discount * product.price + `VNĐ <span class="del-money">${product.price}</span> (Đã giảm ${product.discount * 100}%)`;
+            product.price -
+            product.discount * product.price +
+            `VNĐ <span class="del-money">${product.price}</span> (Đã giảm ${product.discount * 100}%)`;
         var img_color = document.querySelectorAll(".img-color");
         for (var i = 0; i < img_color.length; i++) {
             if (i == 0) {

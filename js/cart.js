@@ -1,7 +1,7 @@
 console.log(localStorage);
 console.log("cart");
+cartListProduct = JSON.parse(localStorage.getItem(`cart${localStorage.getItem("logined")}`)) || [];
 console.log(cartListProduct);
-
 // xử lý bỏ chọn sản phẩm khi có sự thay đổi
 function unChecked(item) {
     //item = li
@@ -143,7 +143,7 @@ function handleEdit(event) {
                 updateTag(0);
             }
 
-            localStorage.setItem("cartListProduct", JSON.stringify(cartListProduct));
+            localStorage.setItem(`cart${localStorage.getItem("logined")}`, JSON.stringify(cartListProduct));
         }
 
         // cập nhật lại dữ liệu trong mảng cartListproduct và dữ liệu trong localStorage
@@ -168,7 +168,7 @@ function handleRemove(event) {
         // xóa sản phẩm ra khỏi Database
         function removeFromDB(index) {
             cartListProduct.splice(index, 1);
-            localStorage.setItem("cartListProduct", JSON.stringify(cartListProduct));
+            localStorage.setItem(`cart${localStorage.getItem("logined")}`, JSON.stringify(cartListProduct));
         }
 
         unChecked(item);

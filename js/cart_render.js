@@ -1,26 +1,28 @@
 // lấy dữ liệu các sản phẩm từ localStorage
 let localStorage = window.localStorage;
-if (!localStorage.getItem("cartListProduct")) {
-    localStorage.setItem("cartListProduct", "[]");
-}
-let cartListProduct = JSON.parse(localStorage.getItem("cartListProduct"));
-// console.log(cartListProduct);
-// lấy tag <ul> để chèn các tag <li> chứa sản phẩm vào
-let cartList = document.getElementsByClassName("cart__list")[0];
 
-// render các sản phẩm đã có trong giỏ hàng từ trước
-cartListProduct.forEach((product) => {
-    addProductToDOM(product);
-});
+if (Number(localStorage.getItem("logined")) === -1) {
+    alert("Bạn cần đăng nhập để vào giỏ hàng");
+} else {
+    let cartListProduct = JSON.parse(localStorage.getItem(`cart${localStorage.getItem("logined")}`)) || [];
+    console.log(cartListProduct);
 
-// render 1 sản phẩm vào giỏ hàng
-function addProductToDOM(product) {
-    let imageSrc = `./images/products/product_${product.id}/image_${product.colorChosen + 1}.png`;
-    //tạo sản phẩm vào add vào danh sách giỏ hàng
-    let li = document.createElement("li");
-    li.className = "cart__item pe-0 p-sm-4 row justify-content-between";
-    li.id = `cart__item-${product.id}`;
-    li.innerHTML = `<div class="cart__item-info col-8">
+    // lấy tag <ul> để chèn các tag <li> chứa sản phẩm vào
+    let cartList = document.getElementsByClassName("cart__list")[0];
+
+    // render các sản phẩm đã có trong giỏ hàng từ trước
+    cartListProduct.forEach((product) => {
+        addProductToDOM(product);
+    });
+
+    // render 1 sản phẩm vào giỏ hàng
+    function addProductToDOM(product) {
+        let imageSrc = `./images/products/product_${product.id}/image_${product.colorChosen + 1}.png`;
+        //tạo sản phẩm vào add vào danh sách giỏ hàng
+        let li = document.createElement("li");
+        li.className = "cart__item pe-0 p-sm-4 row justify-content-between";
+        li.id = `cart__item-${product.id}`;
+        li.innerHTML = `<div class="cart__item-info col-8">
                                     <div class="cart__item-checkbox-wrap">
                                         <input
                                             type="checkbox"
@@ -48,8 +50,8 @@ function addProductToDOM(product) {
                                                )}đ                                             </p>
                                         <p class="cart__item-price text-decoration-line-through fs-4 d-none d-md-block" id="cart__product-old-price"
                                         value="${product.price}">  ${
-        product.discount != 0 ? `${Number(product.price).toLocaleString("vi-VN")}đ` : ""
-    }
+            product.discount != 0 ? `${Number(product.price).toLocaleString("vi-VN")}đ` : ""
+        }
                                         </p>
                                         </div>
 
@@ -138,18 +140,19 @@ function addProductToDOM(product) {
                                     </div>
                                 </div>
         `;
-    cartList.appendChild(li);
-    if (product.discount != 0) {
-        const priceEl = li.querySelector("#cart__product-price");
-        if (priceEl) priceEl.classList.add("cart__item-price--discount");
+        cartList.appendChild(li);
+        if (product.discount != 0) {
+            const priceEl = li.querySelector("#cart__product-price");
+            if (priceEl) priceEl.classList.add("cart__item-price--discount");
 
-        const oldPriceEl = li.querySelector("#cart__product-old-price");
-        if (oldPriceEl) oldPriceEl.classList.add("cart__item-price--old");
+            const oldPriceEl = li.querySelector("#cart__product-old-price");
+            if (oldPriceEl) oldPriceEl.classList.add("cart__item-price--old");
+        }
     }
-}
 
-function addProduct(product) {
-    cartListProduct.push(product);
-    localStorage.setItem("cartListProduct", JSON.stringify(cartListProduct));
-    addProductToDOM(product);
+    function addProduct(product) {
+        cartListProduct.push(product);
+        localStorage.setItem(`cart${localStorage.getItem("logined")}`, JSON.stringify(cartListProduct));
+        addProductToDOM(product);
+    }
 }

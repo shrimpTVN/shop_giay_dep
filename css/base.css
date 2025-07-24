@@ -217,6 +217,17 @@ html {
     border-radius: 8px;
 }
 
+.nav__username {
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.nav__user-icon {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
 .nav__list-icon-wrap {
     display: none;
 }
