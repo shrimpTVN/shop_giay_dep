@@ -1,6 +1,16 @@
-/* ===== Định nghĩa MAIN thành hai cột ===== */
+/*  =====================================================================================================
+    === NGƯỜI THỰC HIỆN: VÕ NHỰT HÀO   -|-   MSSV: B2303808                                          ====
+    =====================================================================================================
+    === CẤU TRÚC CSS TRANG SẢN PHẨM (COMMENTED)                                                      ====
+    === Grouped: Layout | Filter | Product Card | Responsive                                         ====
+    === Wireframe Mapping (GC = Grid Container, GI = Grid Item, Flex = Flex Container)               ====
+    === ĐỊNH DẠNG CSS CỦA BỘ CHỌN .up-to-top ĐƯỢC ĐẶT Ở base.css ĐỂ THUẬN TIỆN SỬ DỤNG Ở index.html  ====
+    ===================================================================================================== */
+
+
+/* =================== LAYOUT =================== */
+/* GC I.1 */
 .page__content--one-column {
-    /* grid-template-columns: auto; co the dinh nghia mot o nhu nay  */
     display: grid;
     grid-template-columns: 23fr 73fr;
     grid-template-rows: auto 1fr;
@@ -9,26 +19,22 @@
         "filter-cell product_listing-cell";
 }
 
-/* --- Định nghĩa BANNER thành hàng thứ nhất ---*/
+/* GI of I.1 */
 .page-content__title--one-column {
-    /* border: solid red; */
     grid-area: banner-cell;
 }
 
-/* --- Định nghĩa FILTER dạt trái hàng thứ hai --- */
+/* GI of I.1 */
 .product-filter-listing--two-column-leftside {
-    /* border: solid yellow; */
     grid-area: filter-cell;
 }
 
-/* --- Định nghĩa PRODUCT-LISTING dạt phải hàng thứ hai --- */
+/* GI of I.1 */
 .product-filter-listing--two-column-rightside {
-    /* border: solid green; */
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
     grid-area: product_listing-cell;
 }
 
-/* ===== Định nghĩa BANNER kiểu FLEX row ===== */
+/* Flex I.1.a */
 .page-content__title {
     display: flex;
     justify-content: center;
@@ -36,21 +42,19 @@
     height: 125px;
 }
 
-/* ===== Định nghĩa FILTER kiểu FLEX column ===== */
+/* =================== FILTER PANEL =================== */
+/* Flex I.1.b */
 .product-filter {
     display: flex;
     flex-direction: column;
-    /* default là row */
     align-items: flex-start;
-    /* default là stretch nên cần chỉnh */
     flex-wrap: nowrap;
-    /* default là wrap sẽ làm bể bố cục */
     overflow: hidden;
-    /* phần sổ ra nhiểu hơn chiều dài mặc định nên có của cha thì sẽ bị ẩn */
     padding: 0 3rem 0 6px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* --- Tạo cho BFC của filter title một đường gạch dưới ---  */
+/* FlexItem of I.1.b */
 .product-filter__title {
     border-bottom: 1px solid rgba(0, 0, 0, 1);
     width: 100%;
@@ -58,38 +62,37 @@
     padding-bottom: 1rem;
 }
 
-/* --- các GROUP filter ---  */
+/* FlexItem of I.1.b & Flex I.1.b.1*/
 .filter-group__accordion {
+    display: flex;
+    justify-content: space-between;
     background-color: #3f3f3f;
     cursor: pointer;
-
     margin: 1px;
-    padding: 1.5rem 1rem 1.5rem 0.8rem;
+    padding: 1.5rem 1.3rem 1.5rem 0.8rem;
     width: 98%;
     border: none;
-
     text-align: left;
     color: #fff;
     outline: none;
-
     transition: 0.4s;
 }
 
+/* I.1.b.1 Khi được Hover hoặc được JS đánh dấu là đang mở(Add Class active)  */
 .active,
 .filter-group__accordion:hover {
     background-color: #111111;
     color: #fff;
 }
 
+/* FlexItem of I.1.b */
 .filter-group__options {
     background-color: #fff;
-
     width: 100%;
     margin: -1px 0 1rem 1px;
     padding: 1rem 1rem 0 1rem;
     border-left: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-
     display: none;
     flex-direction: column;
     gap: 0.5rem;
@@ -105,7 +108,6 @@
 .filter-group-option__custom-checkbox:hover {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px #113E21;
-
 }
 
 .filter-group-option__custom-checkbox span {
@@ -118,27 +120,52 @@
     transform: scale(1.2);
 }
 
-.filter-group__accordion:after {
-    content: '+';
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #fff;
-    float: right;
-}
-
-.filter-group-option__custom-checkbox input[type="checkbox"] {
-    accent-color: #3cc6b7;
-    /* outline-color: #fff; */
-}
-
+/* Thay đổi màu sắc mặc định theo Browser của Checkbox và Range  */
+.filter-group-option__custom-checkbox input[type="checkbox"],
 .filter-group-option__custom-range input[type="range"] {
     accent-color: #3cc6b7;
 }
 
-.active:after {
-    content: "-";
+/* =================== FILTER TOGGLE BUTTON (mobile) =================== */
+.filter-toggle-btn {
+    display: none;
+    position: fixed;
+    top: 18rem;
+    left: 1rem;
+    z-index: 999;
+    background-color: #3cc6b7;
+    border: none;
+    height: 4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
 }
 
+.filter-close-btn {
+    float: right;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #111;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.filter-close-btn:hover {
+    color: #3cc6b7;
+}
+
+@media (min-width: 1240px) {
+    .filter-close-btn {
+        display: none; /* Chỉ hiển thị ở mobile/tablet */
+    }
+}
+
+/* =================== PRODUCT CARD =================== */
+/* Flex I.1.c */
 .product-listing {
     display: flex;
     flex-direction: column;
@@ -146,33 +173,32 @@
     padding: 0 0.7rem 0 1rem;
 }
 
+/* FlexItem of I.1.c & GC I.1.c.1 */
 .product-listing__grid {
     display: grid;
-    grid-template-columns: 21rem 21rem 21rem 21rem;
+    grid-template-columns: repeat(4, 21rem);
     gap: 2rem;
     padding: 0 1rem 1rem 1rem;
+    justify-content: center;
 }
 
+/* GI of I.1.c.1 */
 .product-listing__card {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     overflow: hidden;
-
     position: relative;
-
     display: flex;
     flex-direction: column;
-
     transition: transform 0.4s ease;
 }
 
+/* Trạng thái được Hover của thẻ sản phẩm */
 .product-listing__card:hover {
-    /* border: 2px solid #fff; */
     box-shadow: 3px 4px #2e1e2e;
     transform: scale(1.05);
     z-index: 5;
-
 }
 
 .product-card__main-image {
@@ -180,15 +206,13 @@
     background-color: #EAEEEF;
 }
 
-/* .product-listing__card:hover .product-card__mini-image {
-    display: flex;
-} */
-
+/* Ảnh chính hiển thị của thẻ sản phẩm luôn bị ẩn */
 .product-card__main-image>img {
     display: none;
     background-color: #EAEEEF;
 }
 
+/* Ảnh chính hiển thị của thẻ sản phẩm khi được JS đánh dấu là hiển thị(Add Class active) */
 .product-card__main-image>img.active {
     display: block;
 }
@@ -198,14 +222,14 @@
     width: 100%;
 }
 
+/* Header của thẻ sản phẩm bao gồm Feature và Favourite */
+/* Sử dụng vị trí tuyệt đối(Absolute) với cha là thẻ sản phẩm */
 .product-card__header-content {
     z-index: 3;
     position: absolute;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     width: 100%;
     margin-top: 1rem;
 }
@@ -228,10 +252,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: bold;
     font-size: 1.5rem;
-
     width: 100%;
     height: 100%;
     border-radius: 1rem;
@@ -251,12 +273,11 @@
     color: #fff;
 }
 
+/* Các ảnh nhỏ cho event Hover thay đổi ảnh chính */
 .product-card__mini-image {
     z-index: 1;
-
     display: flex;
     align-items: center;
-
     margin: 1.2rem 1rem 0.7rem 1rem;
     border-radius: 100%;
     width: 3.1rem;
@@ -269,18 +290,21 @@
     aspect-ratio: 1/1;
 }
 
+/* Ảnh nhỏ được Hover -> đánh dấu khung viền giúp người dùng biết rõ đang ở ảnh nhỏ nào */
 .product-card-mini-image__img--active {
     border-radius: 100%;
     border: 1.5px solid #2e1e2e;
 }
 
+/* Khối dữ liệu chính của thẻ sản phẩm bao gồm: Tên sản phẩm, Giá tiền, Màu sắc,...  */
 .product-card__main-content {
     padding-left: 0.5rem;
-
     text-decoration: none;
     color: #111;
 }
 
+/* Màu sắc các ngôi sao đại diện cho Rating  */
+/* Tạm thời vẫn chưa thiết kế đầy đủ do phụ thuộc vào JSON */
 .checked {
     color: #1a73e8;
 }
@@ -320,33 +344,12 @@
     font-size: 1.5rem;
 }
 
-/* Nút toggle cho filter */
-.filter-toggle-btn {
-    display: none;
-
-    position: fixed;
-    top: 18rem;
-    left: 1rem;
-    z-index: 999;
-
-    background-color: #3cc6b7;
-    border: none;
-    height: 4rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-
-    color: white;
-
-
-    cursor: pointer;
-}
-
-/* Filter ẩn và trượt ra từ trái */
+/* =================== RESPONSIVE =================== */
 @media (max-width: 1239.98px) {
     .page__content--one-column {
         grid-template-areas:
-        "banner-cell banner-cell"
-        "product_listing-cell product_listing-cell";
+            "banner-cell banner-cell"
+            "product_listing-cell product_listing-cell";
     }
 
     .product-filter {
@@ -357,9 +360,9 @@
         height: 100%;
         background-color: #fff;
         z-index: 998;
+        padding: 2rem 1rem;
         transition: left 0.3s ease-in-out;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-        padding: 2rem 1rem;
         overflow-y: auto;
     }
 
@@ -371,12 +374,16 @@
         display: block;
     }
 
-    /* Ẩn vùng filter cố định trong grid layout */
     .product-filter-listing--two-column-leftside {
-        display: none;
+        visibility: hidden;
+        pointer-events: none;
     }
 
-    /* Giãn full width cho sản phẩm */
+    .product-filter.show.product-filter-listing--two-column-leftside {
+        visibility: visible;
+        pointer-events: auto;
+    }
+
     .product-filter-listing--two-column-rightside {
         grid-area: product_listing-cell;
         width: 100%;
@@ -385,21 +392,6 @@
     .product-listing__grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-/* Tablet nhỏ */
-@media (max-width: 768px) {
-    .product-listing__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.product-listing__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 21rem);
-    gap: 2rem;
-    padding: 0 1rem 1rem 1rem;
-    justify-content: center;
 }
 
 @media (max-width: 1199.98px) {
@@ -411,30 +403,5 @@
 @media (max-width: 768px) {
     .product-listing__grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-
-.filter-close-btn {
-    float: right;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #111;
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 0.5rem;
-    transition: color 0.2s ease;
-}
-
-.filter-close-btn:hover {
-    color: #3cc6b7;
-}
-
-@media (min-width: 1240px) {
-    .filter-close-btn {
-        display: none;
-        /* chỉ hiện trên mobile/tablet */
     }
 }
